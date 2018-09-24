@@ -1,0 +1,81 @@
+.jumbotron{
+    background: url("../Competition-Photos/IMG_3208-2bnftq2.jpg") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.jumbotron .container {
+  height: 700px;
+  margin-top: 20px;
+}
+
+.contact-us {
+	font-weight: bold;
+	font-size: 70px;
+	color: white;
+	font-family: Lucida Grande;
+	text-shadow: 2px 2px black;
+}
+
+.info {
+	width: 550px;
+	color: white;
+}
+
+.info p{
+	font-size: 20px;
+	font-family: Arial;
+}
+
+.info a{
+	color: white;
+	text-decoration: underline;
+}
+
+.info a:hover {
+	color:white;
+}
+
+/*.fa.fa-facebook-official {
+	font-size: 60px;
+	color: #3B5998;
+}
+
+.fa.fa-twitter-square {
+	font-size: 60px;
+	color: #00aced;
+}
+
+.fa.fa-instagram {
+	font-size: 60px;
+	color: #bc2a8d;
+}*/
+
+i {
+	margin-right: 25px;
+	padding: 3px;
+}
+
+.fa-stack-1x {
+    color:white;
+}
+
+.icon-facebook {
+   color:#3b5998;
+   font-size: 35px !important;
+   margin-right: 20px;
+}
+
+.icon-twitter {
+    color:#00aced;
+    font-size: 35px !important;
+    margin-right: 20px;
+}
+
+.icon-instagram{
+    color:#bc2a8d;
+    font-size: 35px !important;
+    margin-right: 20px;
+}

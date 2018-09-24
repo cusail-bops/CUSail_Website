@@ -1,0 +1,171 @@
+
+
+header.masthead {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  color: white;
+  background-position: center;
+  background-image: url("../images/sailboat1.JPG");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.masthead .header-content .header-content-inner h1 {
+      font-size: 90px;
+      font-weight: 700;
+      font-family: Lucida Grande;
+      text-shadow: 2px 2px black;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-transform: uppercase; }
+   header.masthead .header-content .header-content-inner hr {
+      margin: 30px auto; }
+    header.masthead .header-content .header-content-inner p {
+      font-size: 30px;
+      font-weight: 300;
+      text-shadow: 2px 2px black;
+      margin-bottom: 50px;
+      color: white; }   
+
+
+.btn-default:hover {
+    color: #ff0000;
+    border-color: #ff0000
+    background-color: #ff0000; }
+
+
+.container {
+	color: black;
+}
+
+.row{
+	color: black;
+}
+
+
+.col-lg-3 {
+	color: black;
+}
+
+.section {
+	color: black;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto; }
+  .portfolio-box .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: black;
+    background: rgba(112, 174, 249, 1);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        padding: 0 15px;
+        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 18px; }
+  .portfolio-box:hover .portfolio-box-caption {
+    opacity: 0.5; }
+  .portfolio-box:focus {
+    outline: none; }
+  @media (min-width: 768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+      font-size: 16px; }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+      font-size: 22px; } }
+
+.text-faded {
+  color: rgba(0, 2, 4, 1); }
+
+
+hr {
+    max-width: 50px;
+    border-width: 3px;
+    border-color: black;
+	}
+
+.text-primary {
+    color: black;
+}
+
+.text-primary {
+    color: red!important;
+    }
+
+
+section {
+  padding: 30px 0; }
+
+  .carousel-inner {
+  	height: 600px;
+  }
+
+  .carousel-item img{
+  	width: 100%;
+  }
+
+.by-the-numbers{
+	font-family: Arial;
+	font-size: 45px;
+	color: black;
+}
+
+#services {
+	padding: 40px;
+}
+
+.numberheading {
+	font-size: 25px;
+	font-family: Arial;
+}
+
+.overlay {
+	background-image: url('../Competition-Photos/IMG_3208-2bnftq2.jpg');
+}
+
+.bg-danger {
+	background-color: #F5F5F5!important;
+}
+
+.logo {
+	width: 200px;
+	padding: 20px;
+}
+
+.display-4 {
+  font-family: Lucida Grande;
+  font-size: 47px;
+}
+
+.ruinawebsite {
+  color: black;
+  text-decoration: underline;
+}
+
+.ruinawebsite:hover{
+  color: black;
+}

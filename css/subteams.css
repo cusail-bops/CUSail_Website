@@ -1,0 +1,71 @@
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+header.masthead {
+    height: 550px !important;
+    min-height: 0px !important;
+    font-family: Lucida Grande;
+    text-shadow: 2px 2px black;
+    background-image: url("../images/IMG_0824.JPG")!important;
+    margin-bottom: 10px;
+}
+
+
+
+/*.jumbotron{
+    background: url("../images/IMG_0827.JPG") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.jumbotron .container {
+    height: 500px;
+}*/
+
+.subteam-title {
+    font-family: Lucida Grande;
+    text-align: center;
+    font-size: 90px;
+    padding: 0px !important;
+    text-shadow: 3px 3px black;
+    color: white;
+}
+
+
+.mechanical {
+    padding: 30px 0;
+    height: 400px;
+    width: 100%;
+}
+
+.navigation {
+    padding: 30px 0;
+    height: 450px;
+    width: 100%;
+}
+
+.business {
+    padding: 30px 0;
+    padding-top: 50px;
+    height: 450px;
+    width: 100%;
+}
+
+.display-1 {
+    font-family: Lucida Grande;
+    padding: 60px;
+}
+
+.display-4 {
+    font-family: Lucida Grande;
+    font-size: 47px;
+}

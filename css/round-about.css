@@ -1,0 +1,15 @@
+/*!
+ * Start Bootstrap - Round About (http://startbootstrap.com/template-overviews/round-about)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-round-about/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 60px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 70px;
+    }
+}

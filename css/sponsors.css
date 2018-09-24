@@ -1,0 +1,70 @@
+.jumbotron{
+    background: url("../images/IMG_0827.JPG") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.jumbotron .container {
+  height: 400px;
+}
+
+.recruit-title {
+  color: white;
+  font-weight: bold;
+  font-size: 90px;
+  font-family: Lucida Grande;
+  text-align: center;
+  padding: 50px;
+  text-shadow: 2px 2px black;
+}
+
+button {
+  margin-left: 185px;
+  padding: 20px;
+}
+
+
+
+
+.thankyou {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.cornell {
+  width: 300px;
+  padding: 20px;
+  margin-left: 120px;
+  margin-bottom: 30px;
+}
+
+.solidworks {
+  width: 450px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.bentley {
+  width: 450px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.duna {
+  width: 450px;
+  margin-left: 33%;
+  margin-bottom: 50px;
+}
+
+#about {
+  margin-top: 0px;
+  padding: 10px;
+}
+
+.lead {
+  font-family: Arial;
+}

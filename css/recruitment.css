@@ -1,0 +1,59 @@
+#about {
+	margin-top: 0px;
+	padding: 20px;
+}
+
+.jumbotron{
+    background: url("../images/whit&maryjumping.JPG") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.jumbotron .container {
+	height: 500px;
+}
+
+.recruit-title {
+	color: white;
+	font-weight: bold;
+	font-size: 90px;
+	font-family: Lucida Grande;
+	text-align: center;
+	padding: 110px;
+	text-shadow: 2px 2px black;
+}
+
+#contact {
+	padding: 40px;
+}
+
+.lead {
+	font-family: Arial;
+}
+
+li {
+	font-family: Arial;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 35px !important;
+}
+
+.email {
+	color: black;
+	text-decoration: underline;
+}
+.email:hover {
+	color: black;
+}
+
+.applybutton {
+	text-align: center;
+}
+
+.upperclassmen {
+	padding-top: 20px;
+}
