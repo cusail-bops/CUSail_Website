@@ -61,9 +61,10 @@ h1 {
 }
 
 .flip-card-back {
-  background-color: #ff6666;
+  background-color: transparent;
   color: black;
   transform: rotateY(180deg);
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 
