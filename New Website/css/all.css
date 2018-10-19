@@ -1,6 +1,17 @@
+/*@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);*/
+
+html {
+  font-family: 'Libre Franklin', sans-serif !important;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
   padding: 50px;
+}
+
+h1 {
+  color: black;
+  font-family: 'Libre Franklin', sans-serif;
+
 }
 
 .center {
@@ -54,3 +65,42 @@ body {
   color: black;
   transform: rotateY(180deg);
 }
+
+
+
+.faqHeader {
+        font-size: 27px;
+        margin: 20px;
+        font-family: 'Libre Franklin', sans-serif;
+        color: black;
+    }
+
+    a {
+      color: black;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after{
+        /*font-family: "Times New Roman", Times, serif;*/
+        /*content: "\f054"; /* "play" icon */*/
+        float: right;
+        color: black;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after{
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: black;
+    }
