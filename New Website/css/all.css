@@ -80,6 +80,11 @@ h1 {
       font-family: 'Libre Franklin', sans-serif;
     }
 
+    a:hover{
+      color: #B31B1B;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+
     .panel-heading [data-toggle="collapse"]:after{
         /*font-family: "Times New Roman", Times, serif;*/
         /*content: "\f054"; /* "play" icon */*/
