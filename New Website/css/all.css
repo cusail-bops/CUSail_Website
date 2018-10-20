@@ -192,3 +192,8 @@ h1 h2 h3 h4 p{
         transform: rotate(90deg);
         color: black;
     }
+
+    .sailvane3 {
+      width: 400px;
+      transform: rotate(90deg);
+    }
