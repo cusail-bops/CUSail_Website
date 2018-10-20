@@ -65,6 +65,13 @@ h1 h2 h3 h4 p{
   left: 0;
 }
 
+.bio {
+  margin-top: 30%;
+  margin-right: 15px;
+  margin-left: 15px;
+  
+}
+
 /* front pane, placed above back */
 .front {
   z-index: 2;
