@@ -14,6 +14,14 @@ h1 {
 
 }
 
+.subteams {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.subteams li {
+  display: inline-block;
+}
+
 .center {
   margin-left: 5%;
   /*margin-right: 5%;*/
@@ -85,6 +93,10 @@ h1 {
       color: #B31B1B;
       font-family: 'Libre Franklin', sans-serif;
     }
+
+    /*a:link{
+      color: black;
+    }*/
 
     .panel-heading [data-toggle="collapse"]:after{
         /*font-family: "Times New Roman", Times, serif;*/
