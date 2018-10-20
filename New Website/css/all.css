@@ -90,6 +90,13 @@ h1 h2 h3 h4 p{
 
 .subteams li {
   display: inline-block;
+  padding: 10px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.subteams a {
+    color: #B31B1B;
 }
 
 .center {
