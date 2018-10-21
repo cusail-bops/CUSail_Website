@@ -2,10 +2,21 @@
 
 html {
   font-family: 'Libre Franklin', sans-serif !important;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
   padding: 50px;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 150px;
 }
 
 h1 h2 h3 h4 p{
@@ -97,6 +108,10 @@ h1 h2 h3 h4 p{
 
 .subteams a {
     color: #B31B1B;
+}
+
+.p-5 {
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .center {
