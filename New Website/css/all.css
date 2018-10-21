@@ -101,13 +101,20 @@ h1 h2 h3 h4 p{
 
 .subteams li {
   display: inline-block;
-  padding: 10px;
+  padding-left: 20px;
   text-align: center;
-  font-size: 36px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #B31B1B;
+  width: 25%;
 }
 
 .subteams a {
-    color: #B31B1B;
+  color: #B31B1B;
+}
+
+.subteams li:hover {
+  background-color: #B31B1B;
 }
 
 .p-5 {
