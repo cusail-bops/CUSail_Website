@@ -16,7 +16,7 @@ body {
   padding: 50px;
   position: relative;
   min-height: 100%;
-  padding-bottom: 150px;
+  padding-bottom: 300px;
 }
 
 h1 h2 h3 h4 p{
@@ -230,4 +230,24 @@ h1 h2 h3 h4 p{
   text-align: center;
   color: white;
   font-family: 'Libre Franklin', sans-serif;
+}
+
+.quicklinks a{
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+  /*font-weight: bolder;*/
+}
+.quicklinks a:hover{
+  color: black;
+}
+
+.footerheader {
+  font-family: 'Libre Franklin', sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.contactfooter {
+  color: black;
+  font-weight: bold;
 }
