@@ -111,6 +111,8 @@ h1 h2 h3 h4 p{
 
 .subteams a {
   color: #B31B1B;
+  background-color: white;
+  /*width: 100%;*/
 }
 
 .subteams li:hover {
