@@ -4,6 +4,7 @@ html {
   font-family: 'Libre Franklin', sans-serif !important;
   height: 100%;
   box-sizing: border-box;
+  width: 100%;
 }
 
 *,
@@ -127,7 +128,7 @@ h1 h2 h3 h4 p{
   margin-left: 5%;
   /*margin-right: 5%;*/
   /*margin: auto;*/
-  width: 100%;
+  width: 95%;
   padding: 10px;
   display: flex;
   flex-direction: row;
