@@ -261,3 +261,12 @@ h1 h2 h3 h4 p{
   color: black;
   font-weight: bold;
 }
+
+.rowsmall {
+  display: flex;
+}
+
+.columnsmall {
+  flex: 25%;
+  padding: 50px;
+}
