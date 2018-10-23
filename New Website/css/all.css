@@ -26,6 +26,10 @@ h1 h2 h3 h4 p{
 
 }
 
+.biocard {
+  width: 300px;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -462,7 +466,7 @@ body {
 .center {
   width: 100%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 10px;
 }
   .timeline > li:nth-child(even) {
     margin-bottom: 0px;
@@ -590,10 +594,22 @@ body {
 }
 .center {
   width: 100%;
-  margin-left: auto;
+  margin-left: 0px;
   margin-right: auto;
   padding: 0px;
+  display: inline-block;
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
 }
+
+.biocard {
+  width: 278px;
+}
+
+.card {
+  width: 278px;
+}
+
 
   .timeline > li:nth-child(even) {
     margin-bottom: 0px;
