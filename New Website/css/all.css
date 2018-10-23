@@ -120,6 +120,10 @@ h1 h2 h3 h4 p{
   background-color: #B31B1B;
 }
 
+.mobilesubteam {
+  display: none;
+}
+
 .p-5 {
   font-family: 'Libre Franklin', sans-serif;
 }
@@ -240,6 +244,11 @@ h1 h2 h3 h4 p{
   text-align: center;
   color: white;
   font-family: 'Libre Franklin', sans-serif;
+}
+
+.footerpic {
+  margin-left: 30px;
+  width: 100px;
 }
 
 .quicklinks a{
@@ -442,7 +451,12 @@ body {
   padding: 50px;
   position: relative;
   min-height: 100%;
-  padding-bottom: 300px;
+  padding-bottom: 900px;
+  /*margin-bottom: 400px;*/
+}
+
+.mobilesubteam {
+  display: block;
 }
 
 .center {
@@ -494,8 +508,8 @@ body {
   padding: 50px;
   position: relative;
   min-height: 100%;
-  padding-bottom: 300px;
-  margin-bottom: 400px;
+  padding-bottom: 900px;
+  /*margin-bottom: 400px;*/
 }
 .center {
   width: 100%;
@@ -549,12 +563,38 @@ body {
   padding-bottom: 900px;
   /*margin-bottom: 400px;*/
 }
+
+.mobilesubteam {
+  display: block;
+}
+
+.desktopsubteams {
+  display: none;
+}
+
+.mobilesubteam li {
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif !important;
+  color: #B31B1B;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mobilesubteam a{
+  color: #B31B1B;
+}
+
+.footerpic {
+  margin-left: 0px;
+  width: 100px;
+}
 .center {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
 }
+
   .timeline > li:nth-child(even) {
     margin-bottom: 0px;
     min-height: 0px;
@@ -593,3 +633,7 @@ body {
   }
 }
 /*End of boat time line code*/
+
+.boatgraphic {
+  background-color: 
+}
