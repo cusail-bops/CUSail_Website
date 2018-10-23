@@ -23,7 +23,6 @@ body {
 h1 h2 h3 h4 p{
   color: black;
   font-family: 'Libre Franklin', sans-serif;
-
 }
 
 .biocard {
@@ -691,5 +690,9 @@ body {
 }
 
 .fontcaption {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.pageheaders {
   font-family: 'Libre Franklin', sans-serif;
 }
