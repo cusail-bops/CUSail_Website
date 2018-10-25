@@ -1,160 +1,164 @@
-@import "compass/css3";
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400);
-* {
+/*body {
+  background-color: none;
+}*/
+
+.accordion {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
   margin: 0;
   padding: 0;
-  border: 0;
-}
-html, body {
-  min-height: 100%;
-}
-body {
-  font-size: 15px;
-  /*font-family: 'Source Code Pro', sans-serif;*/
-  font-family: 'Libre Franklin', sans-serif;
-  overflow-x: hidden;
-  color: black;
+  text-align: center;
 }
 
-.stairs {
-  position: relative;
-  animation: slide-in 0.5s backwards;
-}
-.stairs:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.stairs:nth-child(1) h2 {
-  background: #b31b1b;
-  color: #001436;
-}
-.stairs:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.stairs:nth-child(2) h2 {
-  background: #b31b1b;
-  color: #001436;
-}
-.stairs:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.stairs:nth-child(3) h2 {
-  background: #b31b1b;
-  color: #001436;
-}
-.stairs:nth-child(4) {
-  animation-delay: 0.8s;
-}
-.stairs:nth-child(4) h2 {
-  background: #b31b1b;
-  color: #001436;
-}
-.stairs:nth-child(5) {
-  animation-delay: 1s;
-}
-.stairs:nth-child(5) h2 {
-  background: #71f474;
-  color: #59c05a;
-}
-.stairs:nth-child(6) {
-  animation-delay: 1.2s;
-}
-.stairs:nth-child(6) h2 {
-  background: #71f48b;
-  color: #59c06d;
-}
-.stairs:nth-child(7) {
-  animation-delay: 1.4s;
-}
-.stairs:nth-child(7) h2 {
-  background: #71f4a3;
-  color: #59c080;
-}
-.stairs:nth-child(8) {
-  animation-delay: 1.6s;
-}
-.stairs:nth-child(8) h2 {
-  background: #71f4bb;
-  color: #59c093;
-}
-.stairs:nth-child(9) {
-  animation-delay: 1.8s;
-}
-.stairs:nth-child(9) h2 {
-  background: #71f4d3;
-  color: #59c0a6;
-}
-.stairs h2 {
-  display: inline-block;
-  box-shadow: -1px 1px, -2px 2px, -3px 3px, -4px 4px, -5px 5px, -6px 6px, -7px 7px, -8px 8px, -9px 9px, -10px 10px;
-  font-weight: 300;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  padding-left: 10%;
-  padding-right: 1em;
-  margin-left: -5px;
-  transition: 0.4s;
-}
-.stairs h2 a {
-  padding: 1em 0;
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  font-family: 'Libre Franklin', sans-serif;
-}
-.stairs h2:hover {
-  box-shadow: -1px 1px, -2px 2px, -3px 3px, -4px 4px, -5px 5px, -6px 6px, -7px 7px, -8px 8px, -9px 9px, -10px 10px, -11px 11px, -12px 12px, -13px 13px, -14px 14px, -15px 15px;
-  transform: translate3d(5px, -5px, 0);
-  transition: 0.15s;
-}
-.stairs h2:active {
-  box-shadow: -1px 1px, -2px 2px, -3px 3px, -4px 4px, -5px 5px, -6px 6px, -7px 7px, -8px 8px, -9px 9px, -10px 10px;
-  transform: translate3d(0px, 0px, 0);
-  transition: 0.15s;
-}
-.stairs h3 {
-  display: inline-block;
-  color: black;
-  /*font-style: italic;*/
-  font-size: 16px;
-  margin-left: 15px;
-}
-.stairs h3 .category {
-  border: 2px solid #b31b1b;
-  padding: 10px;
-  border-radius: 15px;
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  display: inline-block;
-}
-@keyframes slide-in {
-  from {
-    transform: translate3d(-100%, 0, 0);
-  }
+.accordion ul li {
+  display: table-cell;
+  /*vertical-align: bottom;*/
+  /*position: relative;*/
+  width: 20%;
+  /*height: 350px;*/
+  /*background-repeat: no-repeat;*/
+  background-position: center center;
+  transition: all 600ms ease-in-out;
 }
 
-.sponsorbenefits li{
-  display: inline-block;
-  font-family: 'Libre Franklin', sans-serif;
-}
-
-.date {
-  display: inline-block;
-}
-
-.levels {
+.accordion ul li .compinsidetext {
+  display: block;
+  overflow: hidden;
   width: 100%;
 }
 
-
-a.deco-none: {
-    color:#000000 !important;
-    text-decoration:none;
+.accordion ul li .compinsidetext a {
+  display: block;
+  height: 350px;
+  width: 100%;
+  /*position: relative;*/
+  /*z-index: 3;*/
+  /*vertical-align: bottom;*/
+  /*padding: 15px 20px;*/
+  box-sizing: border-box;
+  color: #fff;
+  /*text-shadow: 1px 1px 2px #000;*/
+  /*filter: invert(100%);*/
+  text-decoration: none;
+  font-family: 'Libre Franklin', sans-serif;
+  transition: all 300ms ease-in-out;
 }
 
-a:hover{
-  color:black !important;
-  text-decoration:none;
+.accordion ul li .compinsidetext a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  /*overflow-wrap: normal;*/
+  /*position: relative;*/
+  /*z-index: 5;*/
+  /*white-space: nowrap;*/
+  /*overflow: normal;*/
+  /*-webkit-transform: translateX(-20px);*/
+  /*transform: translateX(-20px);*/
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.accordion ul li .compinsidetext a h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  /*text-overflow: wrap;*/
+  font-size: 18px;
+  /*padding-top: 10%;*/
+  /*text-transform: uppercase;*/
+  /*margin-bottom: 2px;*/
+  /*top: 160px;*/
 }
 
+.accordion ul li .compinsidetext h3 {
+  font-family: 'Libre Franklin', sans-serif;
+  /*text-overflow: wrap;*/
+  font-size: 28.7px;
+  padding: 6px;
+  /*padding-top: 10%;*/
+  /*text-transform: uppercase;*/
+  /*margin-bottom: 2px;*/
+  /*top: 160px;*/
+}
 
+.accordion ul li .compinsidetext a p {
+  /*top: 160px;*/
+  font-size: 18px;
+  padding-left: 1em;
+}
+
+.accordion ul li:nth-child(1) { 
+  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington.jpg"); */
+  background-color: #b31b1b;
+  background-position: 50% 30%;
+}
+
+.accordion ul li:nth-child(2) { 
+  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_cinema_flex_whale_wars_gavin_garrison.jpg"); */
+  background-color: #001436;
+ background-position: 70% 0%;
+}
+
+.accordion ul li:nth-child(3) { 
+  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington_bts.jpg"); */
+  background-color: #b31b1b;
+background-position: 50% 50%;
+}
+
+.accordion ul li:nth-child(4) { 
+  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_travel_rapidbox.jpg"); */
+  background-color: #001436;
+  background-position: 30% 40%;
+}
+
+.accordion ul li:nth-child(5) { 
+  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_enthusiast_portrait_photography_little_studio_basics_lights.jpg"); */
+  background-color: #b31b1b;
+  background-position: 60% 64%;
+}
+
+.accordion ul li:nth-child(6) { 
+  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_flex_enthusiast_portrait_photography.jpg"); */
+  background-color: #b31b1b;
+  background-position: 70% 25%;
+}
+
+.accordion ul li { background-size: cover; }
+.accordion ul:hover li { width: 15%; }
+.accordion ul:hover li:hover { width: 85%; }
+
+/*.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }*/
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+ @media screen and (max-width: 680px) {
+  
+  /*body { margin: 0; }*/
+  .accordion { height: auto; }
+
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .accordion ul li .compinsidetext a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
