@@ -1,167 +1,112 @@
-/*body {
-  background-color: none;
-}*/
+/* Import */
 
-.accordion {
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-  margin: 0px auto;
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700);
+
+/* Variables */
+
+/*@background: #252827;
+
+@color-primary: #4298C3;
+@color-light: white;
+@spacing: 50px;
+@radius: 4px;
+
+@date: 120px;
+@dotborder: 4px;
+@dot: 11px;
+@line: 4px;
+
+@font-title: 'Oswald', sans-serif;
+@font-text: 'Source Sans Pro', sans-serif;*/
+
+/* Base */
+
+body {
+  background: #252827;
+  font-size: 16px;  
 }
 
-.accordion ul {
-  width: 100%;
-  display: table;
-  table-layout: fixed;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+strong {
+  font-weight: 600;
 }
 
-.accordion ul li {
-  display: table-cell;
-  /*vertical-align: bottom;*/
-  /*position: relative;*/
-  width: 20%;
-  /*height: 350px;*/
-  /*background-repeat: no-repeat;*/
-  background-position: center center;
-  transition: all 600ms ease-in-out;
+h1 {
+ font-family: 'Oswald', sans-serif;
+ letter-spacing: 1.5px;
+ color: white;  
+ font-weight: 100;
+ font-size: 2.4em;
 }
 
-.accordion ul li .compinsidetext {
-  display: block;
-  overflow: hidden;
-  width: 100%;
+#content {
+  margin-top: 50px;
+  text-align: center;  
 }
 
-.accordion ul li .compinsidetext a {
-  display: block;
-  height: 350px;
-  width: 100%;
-  /*position: relative;*/
-  /*z-index: 3;*/
-  /*vertical-align: bottom;*/
-  /*padding: 15px 20px;*/
-  box-sizing: border-box;
-  color: #fff;
-  /*text-shadow: 1px 1px 2px #000;*/
-  /*filter: invert(100%);*/
-  text-decoration: none;
-  font-family: 'Libre Franklin', sans-serif;
-  transition: all 300ms ease-in-out;
-}
+/* Timeline */
 
-.accordion ul li .compinsidetext a * {
-  opacity: 0;
-  margin: 0;
-  width: 100%;
-  /*overflow-wrap: normal;*/
-  /*position: relative;*/
-  /*z-index: 5;*/
-  /*white-space: nowrap;*/
-  /*overflow: normal;*/
-  /*-webkit-transform: translateX(-20px);*/
-  /*transform: translateX(-20px);*/
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-}
-.accordion ul li .compinsidetext a h2 {
-  font-family: 'Libre Franklin', sans-serif;
-  /*text-overflow: wrap;*/
-  font-size: 18px;
-  /*padding-top: 10%;*/
-  /*text-transform: uppercase;*/
-  /*margin-bottom: 2px;*/
-  /*top: 160px;*/
-}
-
-.accordion ul li .compinsidetext h3 {
-  font-family: 'Libre Franklin', sans-serif;
-  /*text-overflow: wrap;*/
-  font-size: 28.7px;
-  padding: 6px;
-  /*padding-top: 10%;*/
-  /*text-transform: uppercase;*/
-  /*margin-bottom: 2px;*/
-  /*top: 160px;*/
-}
-
-.accordion ul li .compinsidetext a p {
-  /*top: 160px;*/
-  font-size: 18px;
-  padding-left: 1em;
-  padding-right: 1em;
-  word-wrap: normal;
-  font-family: 'Libre Franklin', sans-serif;
-}
-
-.accordion ul li:nth-child(1) { 
-  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington.jpg"); */
-  background-color: #b31b1b;
-  background-position: 50% 30%;
-}
-
-.accordion ul li:nth-child(2) { 
-  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_cinema_flex_whale_wars_gavin_garrison.jpg"); */
-  background-color: #001436;
- background-position: 70% 0%;
-}
-
-.accordion ul li:nth-child(3) { 
-  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington_bts.jpg"); */
-  background-color: #b31b1b;
-background-position: 50% 50%;
-}
-
-.accordion ul li:nth-child(4) { 
-  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_travel_rapidbox.jpg"); */
-  background-color: #001436;
-  background-position: 30% 40%;
-}
-
-.accordion ul li:nth-child(5) { 
-  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_enthusiast_portrait_photography_little_studio_basics_lights.jpg"); */
-  background-color: #b31b1b;
-  background-position: 60% 64%;
-}
-
-.accordion ul li:nth-child(6) { 
-  /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_flex_enthusiast_portrait_photography.jpg"); */
-  background-color: #b31b1b;
-  background-position: 70% 25%;
-}
-
-.accordion ul li { background-size: cover; }
-.accordion ul:hover li { width: 15%; }
-.accordion ul:hover li:hover { width: 85%; }
-
-/*.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }*/
-
-.accordion ul:hover li:hover a * {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
- @media screen and (max-width: 680px) {
+.timeline {
+  border-left: 4px solid #4298C3;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;    
+  background: fade(white, 3%);
+  color: fade(white, 80%);
+  font-family: 'Source Sans Pro', sans-serif;  
+  margin: 50px auto;  
+  letter-spacing: 0.5px;   
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;   
+  padding: 50px;   
+  list-style: none;
+  text-align: left;  
+  font-weight: 100;  
+  max-width: 30%; 
   
-  /*body { margin: 0; }*/
-  .accordion { height: auto; }
-
-  .accordion ul li,
-  .accordion ul li:hover,
-  .accordion ul:hover li,
-  .accordion ul:hover li:hover {
-    position: relative;
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    -webkit-transition: none;
-    transition: none;
+  h1, h2, h3 {
+   font-family: 'Oswald', sans-serif;
+   letter-spacing: 1.5px;
+   font-weight: 100;
+   font-size: 1.4em;    
   }
-  .accordion ul li .compinsidetext a * {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+  
+  .event {
+    border-bottom: 1px dashed fade(white, 10%);
+    padding-bottom: (50px * 0.5);
+    margin-bottom: 50px;  
+    position: relative;
+
+    &:last-of-type { 
+      padding-bottom: 0;
+      margin-bottom: 0; 
+      border: none;      
+    }
+
+    &:before, &:after {
+      position: absolute;
+      display: block;
+      top: 0;
+    }
+
+    &:before {
+      left: (((120px * 0.6) + 50px + 4px + 11px + (4px * 2)) * 1.5) * -1;    
+      color: fade(white, 40%);    
+      content: attr(data-date);
+      text-align: right;
+      font-weight: 100;    
+      font-size: 0.9em;
+      min-width: 120px;
+    }
+
+    &:after {
+      box-shadow: 0 0 0 4px fade(#4298C3,100%);    
+      left: (50px + 4px + (11px * 0.35)) * -1;        
+      background: lighten(@background,5%);    
+      border-radius: 50%;  
+      height: 11px;
+      width: 11px;
+      content: "";
+      top: 5px;
+    }
   }
 }
