@@ -885,7 +885,7 @@ a:hover{
   /*height: 350px;*/
   /*background-repeat: no-repeat;*/
   background-position: center center;
-  transition: all 600ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .accordion ul li .compinsidetext {
