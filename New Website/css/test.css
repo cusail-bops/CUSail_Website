@@ -1,85 +1,136 @@
-/*@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700);*/
-/* Import */
-/* Variables */
-/* Base */
 body {
-  background: white;
-  font-size: 16px;
-}
-strong {
-  font-weight: 600;
-}
-h1 {
-  font-family: 'Libre Franklin', sans-serif;
-  letter-spacing: 1.5px;
+  font-family: Arial;
+  padding: 25px;
+  background-color: white;
   color: black;
-  font-weight: 100;
-  font-size: 2.4em;
+    text-align: center; 
 }
-#content {
-  margin-top: 50px;
-  text-align: center;
-}
-/* Timeline */
-.timeline {
-  border-left: 4px solid #b31b1b;
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
-  background: white;
-  color: black;
-  font-family: 'Libre Franklin', sans-serif;
-  margin: 50px auto;
-  letter-spacing: 0.5px;
+
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
   position: relative;
-  line-height: 1.4em;
-  font-size: 1.03em;
-  padding: 50px;
-  list-style: none;
-  text-align: left;
-  font-weight: 100;
-  max-width: 50%;
-}
-.timeline h1,
-.timeline h2,
-.timeline h3 {
-  font-family: 'Libre Franklin', sans-serif;
-  letter-spacing: 1.5px;
-  font-weight: 100;
-  font-size: 1.4em;
-}
-.timeline .event {
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-  padding-bottom: 25px;
+  display:inline;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
   margin-bottom: 20px;
-  position: relative;
 }
-.timeline .event:last-of-type {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
+.end { margin-right: 0 !important; }
+/* Column Grids End */
+
+.wrapper { width: 980px; margin: 30px auto; position: relative;}
+.counter { background-color: #ffffff; padding: 20px 0; border-radius: 5px;}
+.count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+.count-text { font-size: 13px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+.fa-2x { margin: 0 auto; float: none; display: table; color: #b31b1b; }
+
+@-webkit-keyframes wrench {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  28% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  38% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  48% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  58% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 }
-.timeline .event:before,
-.timeline .event:after {
-  position: absolute;
-  display: block;
-  top: 0;
+
+@keyframes wrench {
+  80% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
-.timeline .event:before {
-  left: -217.5px;
-  color: rgba(255, 255, 255, 0.4);
-  content: attr(data-date);
-  text-align: right;
-  font-weight: 100;
-  font-size: 0.9em;
-  min-width: 120px;
+
+.faa-wrench.animated,
+.faa-wrench.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-wrench {
+  -webkit-animation: wrench 2s ease infinite;
+  animation: wrench 2s;
+  transform-origin-x: 90%;
+  transform-origin-y: 35%;
+  transform-origin-z: initial;
 }
-.timeline .event:after {
-  box-shadow: 0 0 0 4px #b31b1b;
-  left: -57.85px;
-  background: white;
-  border-radius: 50%;
-  height: 11px;
-  width: 11px;
-  content: "";
-  top: 5px;
-}
+
