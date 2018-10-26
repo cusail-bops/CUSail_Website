@@ -294,163 +294,7 @@ a.accordion-toggle .panel-title:hover {
 
 
 /*Boat Timeline CSS*/
-.timeline {
-    position: relative;
-    padding:4px 0 0 0;
-    margin-top:22px;
-    list-style: none;
-    font-family: 'Libre Franklin', sans-serif !important;
-}
 
-.timelinedescription {
-  font-family: 'Libre Franklin', sans-serif !important;
-  color:black;
-}
-
-.timeline>li:nth-child(even) {
-    position: relative;
-    margin-bottom: 50px;
-    height: 180px;
-    right:-100px;
-}
-
-.timeline>li:nth-child(odd) {
-    position: relative;
-    margin-bottom: 50px;
-    height: 180px;
-    left:-100px;
-}
-
-.timeline>li:before,
-.timeline>li:after {
-    content: " ";
-    display: table;
-}
-
-.timeline>li:after {
-    clear: both;
-    min-height: 170px;
-}
-
-.timeline > li .timeline-panel {
-  position: relative;
-  float: left;
-  width: 41%;
-  padding: 0 20px 20px 30px;
-  text-align: right;
-}
-
-.timeline>li .timeline-panel:before {
-    right: auto;
-    left: -15px;
-    border-right-width: 15px;
-    border-left-width: 0;
-}
-
-.timeline>li .timeline-panel:after {
-    right: auto;
-    left: -14px;
-    border-right-width: 14px;
-    border-left-width: 0;
-}
-
-.timeline>li .timeline-image {
-    z-index: 100;
-    position: absolute;
-    left: 50%;
-    border: 7px solid #B31B1B;
-    border-radius: 100%;
-    background-color: #B31B1B;
-    box-shadow: 0 0 5px black;
-    width: 200px;
-    height: 200px;
-    margin-left: -100px;
-}
-
-.timeline>li .timeline-image h4 {
-    margin-top: 12px;
-    font-size: 10px;
-    line-height: 14px;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel {
-    float: right;
-    padding: 0 30px 20px 20px;
-    text-align: left;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel:before {
-    right: auto;
-    left: -15px;
-    border-right-width: 15px;
-    border-left-width: 0;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel:after {
-    right: auto;
-    left: -14px;
-    border-right-width: 14px;
-    border-left-width: 0;
-    font-family: 'Libre Franklin', sans-serif !important;
-}
-
-.timeline>li:last-child {
-    margin-bottom: 0;
-}
-
-.timeline .timeline-heading h4 {
-  margin-top:22px;
-    margin-bottom: 4px;
-    padding:0;
-    color: #B31B1B;
-    font-family: 'Libre Franklin', sans-serif !important;
-}
-
-.timeline .timeline-heading h4.subheading {
-  margin:0;
-  padding:0;
-    text-transform: none;
-    font-size:18px;
-    color: #B31B1B;
-    font-family: 'Libre Franklin', sans-serif !important;
-}
-
-.timeline .timeline-body>p,
-.timeline .timeline-body>ul {
-    margin-bottom: 0;
-    color:black;
-    font-family: 'Libre Franklin', sans-serif !important;
-}
-/*Style for even div.line*/
-.timeline>li:nth-child(odd) .line:before {
-    content: "";
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 690px;
-    width: 4px;
-    height:340px;
-    background-color: #B31B1B;
-    -ms-transform: rotate(-44deg); /* IE 9 */
-    -webkit-transform: rotate(-44deg); /* Safari */
-    transform: rotate(-44deg);
-    box-shadow: 0 0 5px black;
-}
-/*Style for odd div.line*/
-.timeline>li:nth-child(even) .line:before  {
-    content: "";
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 450px;
-    width: 4px;
-    height:340px;
-    background-color: #B31B1B;
-    -ms-transform: rotate(44deg); /* IE 9 */
-    -webkit-transform: rotate(44deg); /* Safari */
-    transform: rotate(44deg);
-    box-shadow: 0 0 5px black;
-}
 /* Medium Devices, .visible-md-* */
 @media (min-width: 992px) and (max-width: 1199px) {
 html {
@@ -580,6 +424,10 @@ body {
   /*margin-bottom: 400px;*/
 }
 
+.timeline {
+  width: 90% !important;
+}
+
 .mobilesubteam {
   display: block;
 }
@@ -621,7 +469,6 @@ body {
 .card {
   width: 278px;
 }
-
 
   .timeline > li:nth-child(even) {
     margin-bottom: 0px;
@@ -1023,5 +870,85 @@ background-position: 50% 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+
+/*Timeline for competition events on home page*/
+strong {
+  font-weight: 600;
+}
+h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  letter-spacing: 1.5px;
+  color: black;
+  font-weight: 100;
+  font-size: 2.4em;
+}
+#content {
+  margin-top: 50px;
+  text-align: center;
+}
+/* Timeline */
+.timeline {
+  border-left: 4px solid #b31b1b;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: white;
+  color: black;
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  width: 60%;
+}
+.timeline h1,
+.timeline h2,
+.timeline h3 {
+  font-family: 'Libre Franklin', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline .event {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -217.5px;
+  color: rgba(255, 255, 255, 0.4);
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #b31b1b;
+  left: -57.85px;
+  background: white;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
 }
 
