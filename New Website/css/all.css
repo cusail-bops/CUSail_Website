@@ -33,6 +33,10 @@ a.accordion-toggle .panel-title:hover {
   color: #b31b1b !important;
 }
 
+.navbar-default {
+  background-color: #f2f2f2 !important;
+}
+
 
 .biocard {
   width: 300px;
@@ -253,7 +257,7 @@ a.accordion-toggle .panel-title:hover {
   padding: 30px;
   background-color: #f2f2f2;
   text-align: center;
-  color: white;
+  color: #b31b1b;
   font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -262,14 +266,9 @@ a.accordion-toggle .panel-title:hover {
   width: 100px;
 }
 
-/*Jackson did this for the red text on gray lit*/
-.footertext {
-  color: #B31B1B;
-}
-
 .quicklinks a{
   font-family: 'Libre Franklin', sans-serif;
-  color: white;
+  color: #b31b1b;
   /*font-weight: bolder;*/
 }
 .quicklinks a:hover{
