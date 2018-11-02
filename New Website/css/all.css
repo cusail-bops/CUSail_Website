@@ -1072,4 +1072,20 @@ h1 {
   transform-origin-z: initial;
 }
 
+.sailing1 {
+  width: 500px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.sailing3 {
+  width: 500px;
+  height: 400px;
+  padding-left: 70px;
+  padding-top: 10px;
+/*  padding-right: 30px;*/
+}
 
