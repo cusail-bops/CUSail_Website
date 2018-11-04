@@ -11,13 +11,11 @@ h4 {
   text-transform: uppercase;
 }
 a {
-  color: #29a598;
   transition: background-color 0.2s ease-in-out,
               color 0.2s ease-in-out;
 }
 a:focus,
 a:hover {
-  background-color: #29a598;
   color: #fffefd;
 }
 
