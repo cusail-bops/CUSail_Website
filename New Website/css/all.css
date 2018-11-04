@@ -555,11 +555,11 @@ body {
 
 .font {
   font-family: 'Libre Franklin', sans-serif;
-  font-weight: bold;
 }
 
 .fontcaption {
   font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
 }
 
 .pageheaders {
@@ -1090,5 +1090,13 @@ h1 {
   padding-left: 70px;
   padding-top: 10px;
 /*  padding-right: 30px;*/
+}
+
+.col-lg-12 img {
+  margin: auto;
+}
+
+.article-caption {
+  text-align: center;
 }
 
