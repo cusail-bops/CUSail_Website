@@ -915,7 +915,10 @@ h1 {
   position: relative;
   line-height: 1.4em;
   font-size: 1.03em;
-  padding: 50px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
   list-style: none;
   text-align: left;
   font-weight: 100;
