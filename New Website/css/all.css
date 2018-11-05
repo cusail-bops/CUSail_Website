@@ -14,10 +14,18 @@ html {
 }
 
 body {
-  padding: 50px;
+  padding-top: 50px;
   position: relative;
   min-height: 100%;
   padding-bottom: 300px;
+  width: 100%;
+}
+
+.contain-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 h1 h2 h3 h4 p{
@@ -314,6 +322,12 @@ body {
   /*margin-bottom: 400px;*/
 }
 
+.splash {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
 .mobilesubteam {
   display: block;
 }
@@ -371,6 +385,12 @@ body {
   /*margin-bottom: 400px;*/
 }
 
+.splash {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
 /*.boatgraphic {
   width: 60%;
 }*/
@@ -425,6 +445,12 @@ body {
   min-height: 100%;
   padding-bottom: 900px;
   /*margin-bottom: 400px;*/
+}
+
+.splash {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 .timeline {
@@ -884,6 +910,12 @@ background-position: 50% 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
+  .splash {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
 }
 
 
@@ -1100,3 +1132,96 @@ h1 {
   text-align: center;
 }
 
+/*Cover photo home page*/
+.splash {
+  background: url("../pictures/droneboat1.jpg") no-repeat fixed center;
+  background-size: cover;
+  color: black;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.splash .container {
+  padding-top: 25vh; /* No JS fallback*/
+  padding-bottom: 15vh; /* No JS fallback*/
+}
+
+.splash h1 {
+  font-size: 3em;
+  margin-bottom: .15em;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.splash .lead, .splash .continue {
+  display: block;
+  text-align: center;
+}
+
+.splash .lead {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.splash .continue {
+  font-size: 4em;
+  padding-top: 50px;
+}
+
+.splash .continue a {
+  /*border: 4px solid #fff;
+  border-radius: 100%;*/
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  width: 80px;
+}
+.splash .continue a:hover {
+  /*background-color: rgba(255, 255, 255, .25);*/
+}
+
+.intro .container, .features .container, .portfolio .container, .contact .container {
+  padding: 5em 0;
+}
+
+.intro, .features, .portfolio, .contact {
+  text-align: center;
+}
+
+.intro {
+  background-color: #E74C3C;
+  color: #fff;
+}
+
+.intro a, .intro a:hover, .intro a:focus, .intro a:active, .intro a:visited {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  
+  .splash {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .splash h1 {
+    font-size: 6em;
+  }
+  
+  .splash .lead {
+    font-size: 3em;
+  }
+  
+  .features .col-3 {
+    float: left;
+    margin: 2em 5% 0 0;
+    padding: 0 1em;
+    width: 30%;
+  }
+  
+  .features .col-3:last-of-type {
+    margin-right: 0;
+  }
+
+}

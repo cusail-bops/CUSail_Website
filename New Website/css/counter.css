@@ -30,7 +30,7 @@ body {
   margin-right: 2%;
   margin-bottom: 20px;
 }
-.end { margin-right: 0 !important; }
+/*.end { margin-right: 0 !important; }*/
 /* Column Grids End */
 
 .wrapper { width: 980px; margin: 30px auto; position: relative;}
