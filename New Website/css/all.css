@@ -594,12 +594,13 @@ body {
 }
 
 /*Sponsorship page steps*/
-@import "compass/css3";
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400);
-
+/*@import "compass/css3";*/
+/*@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400);
+*/
 .stairs {
   position: relative;
   animation: slide-in 0.5s backwards;
+  /*width: 50%;*/
 }
 .stairs:nth-child(1) {
   animation-delay: 0.2s;
