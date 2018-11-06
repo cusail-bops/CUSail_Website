@@ -1164,6 +1164,7 @@ h1 {
 .splash .lead {
   font-size: 1.5em;
   margin-bottom: 1em;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .splash .continue {
