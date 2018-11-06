@@ -378,7 +378,7 @@ html {
   width: 100%;
 }
 body {
-  padding: 50px;
+  padding-top: 50px;
   position: relative;
   min-height: 100%;
   padding-bottom: 900px;
@@ -440,11 +440,16 @@ html {
   width: 100%;
 }
 body {
-  padding: 50px;
+  padding-top: 50px;
   position: relative;
   min-height: 100%;
   padding-bottom: 900px;
   /*margin-bottom: 400px;*/
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0px;
 }
 
 .splash {
@@ -548,8 +553,9 @@ body {
   top: 50%;*/
   padding-top: 5px;
   vertical-align: middle;
-  width: 110px;
+  width: 114px;
   height: 45px;
+  padding-left: 4px;
 }
 
 
@@ -591,6 +597,9 @@ body {
 .pageheaders {
   font-family: 'Libre Franklin', sans-serif;
   text-align: center;
+  width: 85%;
+  margin: auto;
+  padding-top: 50px;
 }
 
 /*Sponsorship page steps*/
@@ -1216,6 +1225,7 @@ h1 {
     padding: 0px;
     margin: 0px;
   }
+
   .splash h1 {
     font-size: 6em;
   }
@@ -1225,10 +1235,10 @@ h1 {
   }
   
   .features .col-3 {
-    float: left;
-    margin: 2em 5% 0 0;
-    padding: 0 1em;
-    width: 30%;
+    /*float: left;*/
+    /*margin: 2em 5% 0 0;*/
+    /*padding: 0 1em;*/
+    /*width: 30%;*/
   }
   
   .features .col-3:last-of-type {
