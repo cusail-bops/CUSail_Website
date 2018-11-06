@@ -1184,7 +1184,7 @@ h1 {
 }
 
 .intro .container, .features .container, .portfolio .container, .contact .container {
-  padding: 5em 0;
+  padding: 30px;
 }
 
 .intro, .features, .portfolio, .contact {
@@ -1192,8 +1192,15 @@ h1 {
 }
 
 .intro {
-  background-color: #E74C3C;
-  color: #fff;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.aboutpara {
+  width: 80%;
+  margin: auto;
 }
 
 .intro a, .intro a:hover, .intro a:focus, .intro a:active, .intro a:visited {
