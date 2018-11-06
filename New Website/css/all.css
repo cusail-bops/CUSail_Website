@@ -1143,8 +1143,10 @@ h1 {
 }
 
 .splash .container {
-  padding-top: 25vh; /* No JS fallback*/
-  padding-bottom: 15vh; /* No JS fallback*/
+  padding-top: 24vh; /* No JS fallback*/
+  padding-bottom: 17vh; /* No JS fallback*/
+  margin-bottom: 30px;
+  margin-top: 80px;
 }
 
 .splash h1 {
