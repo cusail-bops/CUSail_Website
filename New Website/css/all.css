@@ -1234,3 +1234,12 @@ h1 {
   }
 
 }
+
+.tiles {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.tiles img {
+  padding: 10px;
+}
