@@ -1194,11 +1194,11 @@ h1 {
   /*background-color: rgba(255, 255, 255, .25);*/
 }
 
-.intro .container, .features .container, .portfolio .container, .contact .container {
+.intro .container, .container, .portfolio .container, .contact .container {
   padding: 30px;
 }
 
-.intro, .features, .portfolio, .contact {
+.intro, .portfolio, .contact {
   text-align: center;
 }
 
