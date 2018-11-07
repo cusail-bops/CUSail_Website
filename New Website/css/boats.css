@@ -19,6 +19,10 @@ a:hover {
   color: #fffefd;
 }
 
+.row {
+  margin: 0px;
+}
+
   /*Jumbotron Styles
 =====================*/
 .jumbotron {
