@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
 
 body {
-  background-image: url('https://res.cloudinary.com/gus-armistead/image/upload/v1463646309/cheap_diagonal_fabric_1_bqzjmi.png');
-  font-family: 'Montserrat', sans-serif;
-  color: #6B6B6B;
-  text-shadow: 1px 1px #EFEFEF;
+  /*background-image: url('https://res.cloudinary.com/gus-armistead/image/upload/v1463646309/cheap_diagonal_fabric_1_bqzjmi.png');*/
+  font-family: 'Libre Franklin', sans-serif !important;
+  color: black;
+  /*text-shadow: 1px 1px #EFEFEF;*/
 }
 
 .meet-the-team {
@@ -16,12 +16,12 @@ body {
   text-align: center;
   position: relative;
   margin: 55px 0;
-  color: #F3F3F3;
-  text-shadow: 4px 3px 3px #676767;
+  color: black;
+  /*text-shadow: 4px 3px 3px #676767;*/
 }
 
 .title:after {
-  background: #93AFF3;
+  background: #b31b1b;
   content: "";
   height: 8px;
   left: 0;

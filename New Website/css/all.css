@@ -1255,3 +1255,125 @@ h1 {
 .tiles img {
   padding: 10px;
 }
+
+/*faculty advisor*/
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
+
+body {
+  /*background-image: url('https://res.cloudinary.com/gus-armistead/image/upload/v1463646309/cheap_diagonal_fabric_1_bqzjmi.png');*/
+  font-family: 'Libre Franklin', sans-serif !important;
+  color: black;
+  /*text-shadow: 1px 1px #EFEFEF;*/
+}
+
+.meet-the-team {
+  margin-bottom: 100px;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  margin: 50px 0;
+  color: black;
+  /*text-shadow: 4px 3px 3px #676767;*/
+}
+
+.title:after {
+  background: #b31b1b;
+  content: "";
+  height: 8px;
+  left: 0;
+  margin: 50px auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0px;
+  width: 185px;
+  box-shadow: 4px 3px 3px #717171;
+}
+
+.team-section {
+  width: 85%;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.team-member {
+  height: 200px;
+  display: inline;
+  margin: 20px 15px;
+  
+}
+
+.image-holder {
+  float: left;
+}
+
+.image-holder img {
+  border-radius: 50%;
+  display: inline;
+  width: 200px;
+}
+
+.text-holder {
+  float: right;
+  height: 100%;
+  padding: 0 0 0 20px;
+  position: relative;
+  width: 350px;
+}
+
+.text-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.team-name {
+  font-size: 21px;
+  margin: 12px 0;
+}
+
+.team-job {
+  font-style: italic;
+  color: #6B6B6B;
+  margin: 12px 0;
+}
+
+.team-bio {
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.team-contact {
+  margin: 14px 0;
+}
+
+.team-contact a {
+  text-decoration: none;
+  color: #6B6B6B;
+}
+
+.team-contact a:hover {
+  text-decoration: underline;
+}
+
+.shadow {
+  height: 20px;
+  width: 200px;
+  background-color: rgba(255,255,255,0);
+  -webkit-box-shadow: 20px 215px 150px 20px rgba(0,0,0,0.54);
+  -moz-box-shadow: 20px 215px 150px 20px rgba(0,0,0,0.54);
+  /*box-shadow: 20px 215px 175px 30px rgba(0,0,0,0.75);*/
+}
+
