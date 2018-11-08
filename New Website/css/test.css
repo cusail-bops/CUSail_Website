@@ -1,0 +1,101 @@
+/* body{
+        margin-top:20px !important;
+    }*/
+
+    /*h3, p{
+        margin: 0 !important;
+    }*/
+
+    /*a:hover,
+    a:focus{
+        text-decoration: none !important;
+    }*/
+
+.testimonial{
+    margin:0px 50px 30px;
+    font-family: 'Libre Franklin', sans-serif !important;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-left: 10px solid #b31b1b;
+    border-right: 10px solid #b31b1b;
+    padding: 40px 30px 40px;
+    position: relative;
+}
+.testimonial:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 10px;
+    background-color: #b31b1b;
+}
+.testimonial:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 10px;
+    background-color:#b31b1b;
+}
+.testimonial .testimonial-content{
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+
+.testimonial .pic{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    border:1px solid #b31b1b;
+}
+
+.testimonial .pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial .testimonial-title{
+    display: inline-block;
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+
+.testimonial .testimonial-title a{
+    display: block;
+    color:#b31b1b;
+    font-size: 22px;
+    text-transform: Uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+
+.testimonial .testimonial-title small{
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+
+.owl-theme .owl-controls{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.owl-theme .owl-controls .owl-page span{
+    height:15px !important;
+    width: 15px !important;
+    background-color: #b31b1b!important;
+    opacity: 0.8 ;
+    border-radius: 0 !important;
+    transform:rotate(45deg) !important;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background-color: black !important;
+}
+

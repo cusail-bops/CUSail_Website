@@ -30,13 +30,110 @@
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 
   </head>
 
   <body>
+<!--     <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonial</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+   
+</head>
+<body> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>I joined CUSail on the Mechanical team my freshmen year because I was bribed with McDonalds. Best decision of my life. yada yada yada i gained some skills and stuff and probs got an internship from this and met some cool people who i have convinced to be my friends.
+                            </p>
+                        </div>
+                        <div class="pic">
+                            <img src="headshots/maryessex.jpeg">
+                        </div>
+                        <h3 class="testimonial-title">
+                            <a href="#">Mary</a>
+                            <small>Operations Research and Engineering</small>
+                        </h3>
+                    </div>
 
- 
+
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>CUSail is super cool i get to build things and fix things. i enjoy having a hammer and chain saw and whatever other tools builders have. also ece is cool and i really like dogs. also band is very cool but cusail is lit cause we have new logos and i throw the parties yay
+                            </p>
+                        </div>
+                        <div class="pic">
+                            <img src="headshots/jacksonkopitz.jpeg">
+                        </div>
+                        <h3 class="testimonial-title">
+                            <a href="#">Jackson</a>
+                            <small>Electrical and Computer Engineering</small>
+                        </h3>
+                    </div>
+
+
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>I just joined cusail but i already can't escape. it has changed my life in 2 months and im pretty good at cad and yay.  also memes are cool and cusail is lit idk what else to say here lol
+                            </p>
+                        </div>
+                        <div class="pic">
+                            <img src="headshots/nickallen.jpeg">
+                        </div>
+                        <h3 class="testimonial-title">
+                            <a href="#">Nick</a>
+                            <small>Mechanical Engineering</small>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $("#testimonial-slider").owlCarousel({
+
+                items:1,
+
+                itemsDesktop:[1000,1],
+
+                itemsDesktopSmall:[979,1],
+
+                itemsTablet:[768,1],
+
+                pagination:true,
+
+                navigation:false,
+
+                slideSpeed:1000,
+
+                singleItem:false,
+
+                navigationText:["",""],
+
+                autoPlay:7000
+
+            });
+
+        });
+
+    </script>
 
 
   </body>
