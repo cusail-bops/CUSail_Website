@@ -1,120 +1,101 @@
-/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
+/* body{
+        margin-top:20px !important;
+    }*/
 
-body {
-  /*background-image: url('https://res.cloudinary.com/gus-armistead/image/upload/v1463646309/cheap_diagonal_fabric_1_bqzjmi.png');*/
-  font-family: 'Libre Franklin', sans-serif !important;
-  color: black;
-  /*text-shadow: 1px 1px #EFEFEF;*/
+    /*h3, p{
+        margin: 0 !important;
+    }*/
+
+    /*a:hover,
+    a:focus{
+        text-decoration: none !important;
+    }*/
+
+.testimonial{
+    margin:0px 50px 30px;
+    font-family: 'Libre Franklin', sans-serif !important;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-left: 10px solid #b31b1b;
+    border-right: 10px solid #b31b1b;
+    padding: 40px 30px 40px;
+    position: relative;
+}
+.testimonial:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 10px;
+    background-color: #b31b1b;
+}
+.testimonial:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 10px;
+    background-color:#b31b1b;
+}
+.testimonial .testimonial-content{
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'Libre Franklin', sans-serif !important;
 }
 
-.meet-the-team {
-  margin-bottom: 100px;
+.testimonial .pic{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    border:1px solid #b31b1b;
 }
 
-.title {
-  font-size: 60px;
-  text-align: center;
-  position: relative;
-  margin: 55px 0;
-  color: black;
-  /*text-shadow: 4px 3px 3px #676767;*/
+.testimonial .pic img{
+    width: 100%;
+    height: 100%;
 }
 
-.title:after {
-  background: #b31b1b;
-  content: "";
-  height: 8px;
-  left: 0;
-  margin: 50px auto;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 30px;
-  width: 185px;
-  box-shadow: 4px 3px 3px #717171;
+.testimonial .testimonial-title{
+    display: inline-block;
+    font-family: 'Libre Franklin', sans-serif !important;
 }
 
-.team-section {
-  width: 85%;
-  margin: auto;
-  padding: 0;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: center;
+.testimonial .testimonial-title a{
+    display: block;
+    color:#b31b1b;
+    font-size: 22px;
+    text-transform: Uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Libre Franklin', sans-serif !important;
 }
 
-.team-member {
-  height: 200px;
-  display: inline;
-  margin: 20px 15px;
-  
+.testimonial .testimonial-title small{
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    font-family: 'Libre Franklin', sans-serif !important;
 }
 
-.image-holder {
-  float: left;
+.owl-theme .owl-controls{
+    margin-top: 50px;
+    margin-left: 30px;
 }
-
-.image-holder img {
-  border-radius: 50%;
-  display: inline;
-  width: 200px;
+.owl-theme .owl-controls .owl-page span{
+    height:15px !important;
+    width: 15px !important;
+    background-color: #b31b1b!important;
+    opacity: 0.8 ;
+    border-radius: 0 !important;
+    transform:rotate(45deg) !important;
 }
-
-.text-holder {
-  float: right;
-  height: 100%;
-  padding: 0 0 0 20px;
-  position: relative;
-  width: 280px;
-}
-
-.text-content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.team-name {
-  font-size: 18px;
-  margin: 12px 0;
-}
-
-.team-job {
-  font-style: italic;
-  color: #6B6B6B;
-  margin: 12px 0;
-}
-
-.team-bio {
-  font-size: 14px;
-  margin: 14px 0;
-}
-
-.team-contact {
-  margin: 14px 0;
-}
-
-.team-contact a {
-  text-decoration: none;
-  color: #6B6B6B;
-}
-
-.team-contact a:hover {
-  text-decoration: underline;
-}
-
-.shadow {
-  height: 20px;
-  width: 200px;
-  background-color: rgba(255,255,255,0);
-  -webkit-box-shadow: 20px 215px 150px 20px rgba(0,0,0,0.54);
-  -moz-box-shadow: 20px 215px 150px 20px rgba(0,0,0,0.54);
-  box-shadow: 20px 215px 175px 30px rgba(0,0,0,0.75);
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background-color: black !important;
 }
 
