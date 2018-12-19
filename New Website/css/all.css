@@ -153,7 +153,7 @@ a.accordion-toggle .panel-title:hover {
 }
 
 .center {
-  margin-left: 5%;
+  margin-left: 8%;
   /*margin-right: 5%;*/
   /*margin: auto;*/
   width: 95%;
@@ -600,6 +600,29 @@ body {
   width: 85%;
   margin: auto;
   padding-top: 50px;
+}
+
+.ourteamblurb {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.ourteamheader {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.ourteampic {
+  margin: auto;
+  width: 100%;
+}
+
+#teampic {
+  width: 60%;
+  margin-left: 20%;
 }
 
 /*Sponsorship page steps*/
