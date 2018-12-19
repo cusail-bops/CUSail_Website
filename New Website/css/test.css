@@ -1,101 +1,59 @@
-/* body{
-        margin-top:20px !important;
-    }*/
-
-    /*h3, p{
-        margin: 0 !important;
-    }*/
-
-    /*a:hover,
-    a:focus{
-        text-decoration: none !important;
-    }*/
-
-.testimonial{
-    margin:0px 50px 30px;
-    font-family: 'Libre Franklin', sans-serif !important;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    border-left: 10px solid #b31b1b;
-    border-right: 10px solid #b31b1b;
-    padding: 40px 30px 40px;
+body {
+    margin: 0;
+    padding: 0;
+    background: #EEE;
+    font: 10px/13px 'Lucida Sans',sans-serif;
+}
+.wrap {
+    overflow: hidden;
+    margin: 10px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+    float: left;
     position: relative;
+    width: 20%;
+    padding-bottom: 20%;
 }
-.testimonial:before{
-    content: "";
+
+.boxInner {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 10px;
-    background-color: #b31b1b;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
 }
-.testimonial:after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    height: 10px;
-    background-color:#b31b1b;
-}
-.testimonial .testimonial-content{
-    margin-bottom: 30px;
-    font-size: 15px;
-    line-height: 30px;
-    font-family: 'Libre Franklin', sans-serif !important;
-}
+ .boxInner img { width: 100% }
 
-.testimonial .pic{
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    margin-right: 15px;
-    border:1px solid #b31b1b;
-}
 
-.testimonial .pic img{
-    width: 100%;
-    height: 100%;
+@media only screen and (max-width:480px) { 
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 100%;
+        padding-bottom: 100%;
+    }
 }
-
-.testimonial .testimonial-title{
-    display: inline-block;
-    font-family: 'Libre Franklin', sans-serif !important;
+@media only screen and (max-width:650px) and (min-width:481px) { 
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
 }
-
-.testimonial .testimonial-title a{
-    display: block;
-    color:#b31b1b;
-    font-size: 22px;
-    text-transform: Uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-family: 'Libre Franklin', sans-serif !important;
+@media only screen and (max-width:1050px) and (min-width:651px) { 
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+    }
 }
-
-.testimonial .testimonial-title small{
-    font-size: 15px;
-    font-style: italic;
-    color: black;
-    font-family: 'Libre Franklin', sans-serif !important;
+@media only screen and (max-width:1290px) and (min-width:1051px) { 
+    /* Medium desktop: 4 tiles */
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+    }
 }
-
-.owl-theme .owl-controls{
-    margin-top: 50px;
-    margin-left: 30px;
-}
-.owl-theme .owl-controls .owl-page span{
-    height:15px !important;
-    width: 15px !important;
-    background-color: #b31b1b!important;
-    opacity: 0.8 ;
-    border-radius: 0 !important;
-    transform:rotate(45deg) !important;
-}
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-    background-color: black !important;
-}
-
