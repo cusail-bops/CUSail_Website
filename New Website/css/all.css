@@ -1198,7 +1198,7 @@ h1 {
   padding-top: 24vh; /* No JS fallback*/
   padding-bottom: 17vh; /* No JS fallback*/
   margin-bottom: 30px;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .splash h1 {
@@ -1221,7 +1221,7 @@ h1 {
 
 .splash .continue {
   font-size: 4em;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .splash .continue a {
