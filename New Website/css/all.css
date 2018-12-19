@@ -619,6 +619,16 @@ body {
   padding-top: 50px;
 }
 
+#fleetheader {
+  text-align: center;
+}
+
+#funteampic {
+  width: 30%;
+  margin-left: 35%;
+  padding-top: 20px;
+}
+
 .ourteamblurb {
   font-family: 'Libre Franklin', sans-serif;
   text-align: center;
