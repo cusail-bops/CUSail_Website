@@ -150,6 +150,15 @@ a.accordion-toggle .panel-title:hover {
 
 .p-5 {
   font-family: 'Libre Franklin', sans-serif;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+#leadpic {
+  width: 40%;
+  float: right;
 }
 
 .center {
