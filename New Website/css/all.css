@@ -624,6 +624,8 @@ body {
   text-align: center;
   margin: auto;
   padding: 10px;
+  width: 40%;
+  padding-bottom: 20px;
 }
 
 .ourteamheader {
