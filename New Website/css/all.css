@@ -157,8 +157,10 @@ a.accordion-toggle .panel-title:hover {
 }
 
 .teampics {
-  width: 40%;
+  width: 45%;
+  padding-left: 2%;
   float: right;
+  padding-bottom: 40px;
 }
 
 .teamsparas {
