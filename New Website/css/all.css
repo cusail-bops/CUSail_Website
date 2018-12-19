@@ -152,20 +152,26 @@ a.accordion-toggle .panel-title:hover {
   font-family: 'Libre Franklin', sans-serif;
   width: 80%;
   margin-left: 10%;
-  margin-right: 10%;
+  /*margin-right: 10%;*/
   text-align: center;
 }
 
-#leadpic {
+.teampics {
   width: 40%;
   float: right;
+}
+
+.teamsparas {
+  /*padding-right: 10px;*/
+  /*width: 40%;*/
+  text-align: center;
 }
 
 .center {
   margin-left: 8%;
   /*margin-right: 5%;*/
   /*margin: auto;*/
-  width: 95%;
+  width: 92%;
   padding: 10px;
   display: flex;
   flex-direction: row;
