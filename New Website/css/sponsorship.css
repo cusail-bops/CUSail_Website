@@ -38,6 +38,45 @@
   padding-right: 5%;
 }
 
+.dinghy {
+    display: block;
+    width: 100px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.motorboat {
+    display: block;
+    width: 150px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yacht {
+    display: block;
+    width: 200px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ac {
+    display: block;
+    width: 250px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boatheader {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  padding-top: 50px;
+}
 
 @media only screen and (max-width:650px) { 
     /* Smartphone and tablet view: 1 tile */
