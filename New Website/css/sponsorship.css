@@ -40,7 +40,7 @@
 
 
 @media only screen and (max-width:650px) { 
-    /* Smartphone view: 1 tile */
+    /* Smartphone and tablet view: 1 tile */
     .boxone {
         width: 100%;
         padding-bottom: 100%;
@@ -50,8 +50,8 @@
         padding-bottom: 100%;
     }
 }
-@media only screen and (max-width:1290px) and (min-width:651px) { 
-    /* Tablet view: 2 tiles */
+@media only screen and (min-width:651px) { 
+    /* laptops and desktops view: 2 tiles */
     .boxone {
         width: 40%;
         padding-bottom: 40%;
@@ -61,17 +61,3 @@
         padding-bottom: 60%;
     }
 }
-/*@media only screen and (max-width:1050px) and (min-width:651px) { 
-     Small desktop / ipad view: 3 tiles 
-    .box {
-        width: 33.3%;
-        padding-bottom: 33.3%;
-    }
-}
-@media only screen and (max-width:1290px) and (min-width:1051px) { 
-     Medium desktop: 4 tiles 
-    .box {
-        width: 25%;
-        padding-bottom: 25%;
-    }
-}*/
