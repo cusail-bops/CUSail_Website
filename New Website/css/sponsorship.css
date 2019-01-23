@@ -100,3 +100,25 @@
         padding-bottom: 60%;
     }
 }
+
+.btn {
+  border: 2px solid #b31b1b;
+  background-color: white;
+  color: #b31b1b;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin:auto;
+}
+
+.danger {
+  border-color: #b31b1b;
+  color: black;
+}
+
+.danger:hover {
+  background: #b31b1b;
+  color: white;
+}
