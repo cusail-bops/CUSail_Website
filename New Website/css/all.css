@@ -464,6 +464,34 @@ body {
   /*margin-bottom: 400px;*/
 }
 
+.team-section {
+  margin-bottom: 300px !important;
+}
+
+.image-holder {
+  margin-bottom: 70px !important;
+  margin-left: 20%;
+}
+
+.team-bio {
+  font-size: 16px;
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+
+.team-name {
+  text-align: center;
+}
+
+.team-job {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.text-holder {
+  margin-bottom: 0px;
+}
+
 .counter { 
   background-color: #ffffff; 
   padding: 20px 0; 
