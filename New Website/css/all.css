@@ -662,6 +662,7 @@ body {
   position: relative;
   animation: slide-in 0.5s backwards;
   /*width: 50%;*/
+  margin-left: 30%;
 }
 .stairs:nth-child(1) {
   animation-delay: 0.2s;
