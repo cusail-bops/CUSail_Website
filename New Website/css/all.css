@@ -1335,15 +1335,15 @@ body {
 .title:after {
   background: #b31b1b;
   content: "";
-  height: 8px;
+  height: 5px;
   left: 0;
-  margin: 50px auto;
+  margin: 43px auto;
   position: absolute;
   right: 0;
   text-align: center;
   top: 0px;
   width: 185px;
-  box-shadow: 4px 3px 3px #717171;
+  box-shadow: 1px 1px 1px #717171;
 }
 
 .team-section {
