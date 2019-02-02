@@ -92,8 +92,12 @@ a.accordion-toggle .panel-title:hover {
   position: relative;
 }
 
+#boatfeatures{
+  padding-bottom: 850px;
+}
+
 /* hide back of pane during swap */
-.front, .back {
+.front, .back {@
   backface-visibility: hidden;
 
   position: absolute;
@@ -492,6 +496,10 @@ body {
   text-align: center;
   margin: auto;
   padding: 0px;
+}
+
+#boatfeatures{
+  padding-bottom: 0px;
 }
 
 #funteampic {
