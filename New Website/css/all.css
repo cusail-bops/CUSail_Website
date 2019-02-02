@@ -620,6 +620,8 @@ body {
 
 .card {
   width: 278px;
+  margin-left: 48.5px;
+
 }
 
   .timeline > li:nth-child(even) {
