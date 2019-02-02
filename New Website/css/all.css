@@ -494,6 +494,12 @@ body {
   padding: 0px;
 }
 
+#funteampic {
+  width: 100% !important;
+  margin-left: 0% !important;
+  padding-top: 20px;
+}
+
 .ourteampic {
   margin: auto;
   width: 100%;
