@@ -481,6 +481,16 @@ body {
   /*margin-right: 20px;*/
 }
 
+.ourteampic {
+  margin: auto;
+  width: 100%;
+}
+
+#teampic {
+  width: 100% !important;
+  margin: auto !important;
+}
+
 .team-name {
   text-align: center;
 }
@@ -502,6 +512,15 @@ body {
   width: 32% !important; 
   text-align: center;
   margin-left: 48% !important;
+}
+
+.ourteamblurb {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  width: 80% !important;
+  padding-bottom: 20px;
 }
 
 .wrapper { 
