@@ -481,6 +481,19 @@ body {
   /*margin-right: 20px;*/
 }
 
+.teamsparas {
+  text-align: center;
+  margin: 5%;
+}
+
+.p-5 {
+  font-family: 'Libre Franklin', sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+}
+
 .ourteampic {
   margin: auto;
   width: 100%;
@@ -489,6 +502,13 @@ body {
 #teampic {
   width: 100% !important;
   margin: auto !important;
+}
+
+.teampics {
+  width: 100%;
+  padding-left: 0%;
+  float: none !important;
+  padding-bottom: 0px;
 }
 
 .team-name {
