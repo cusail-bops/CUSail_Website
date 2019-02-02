@@ -374,3 +374,13 @@ color: #b31b1b;
 
 }
 
+@media only screen and (max-width: 767px) {
+
+	#contactpagepic {
+	width: 100%;
+	margin-left: 0%;
+
+}
+
+}
+
