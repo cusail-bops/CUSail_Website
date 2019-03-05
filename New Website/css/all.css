@@ -138,6 +138,11 @@ a.accordion-toggle .panel-title:hover {
   width: 20%;
 }
 
+#sponsordescription {
+  width:60%;
+  margin-left:20%;
+}
+
 .subteams a {
   color: #B31B1B;
   background-color: white;
@@ -518,6 +523,11 @@ body {
   margin: auto !important;
 }
 
+#sponsordescription {
+  width: 100%;
+  margin-left: 0%;
+}
+
 .teampics {
   width: 100%;
   padding-left: 0%;
@@ -558,8 +568,8 @@ body {
 }
 
 .wrapper { 
-  width: 100%; 
-  margin-left: 0% !important; 
+  width: 90% !important; 
+  margin: 5% !important; 
   position: relative; 
   display: block; 
   text-align: center;
