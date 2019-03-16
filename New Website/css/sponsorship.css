@@ -1,33 +1,34 @@
 .wrap {
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 10px;
-    max-width: 1500px;
+    /*max-width: 1500px;*/
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
+    padding-bottom: 0px;
 }
 .boxone {
-    float: left;
-    position: relative;
-    width: 20%;
-    padding-bottom: 20%;
+    /*float: left;*/
+    /*position: relative;*/
+    /*width: 20%;*/
+    /*padding-bottom: 20%;*/
 }
 .boxtwo {
-    float: left;
-    position: relative;
-    width: 20%;
-    padding-bottom: 20%;
+    /*float: left;*/
+    /*position: relative;*/
+    /*width: 20%;*/
+    /*padding-bottom: 20%;*/
 }
 
 .boxInner {
-    position: absolute;
+    /*position: absolute;*/
     left: 10px;
     right: 10px;
     top: 10px;
     bottom: 10px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
- .boxInner img { width: 100% }
+ /*.boxInner img { width: 100% }*/
 
 .center {
   margin: auto;
@@ -56,18 +57,19 @@
 
 .yacht {
     display: block;
-    width: 200px;
-    padding-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 17%;
+    margin: auto;
 }
 
 .ac {
-    display: block;
-    width: 250px;
-    padding-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 30%;
+    margin: 1%;
+}
+
+.aircraftc {
+    width: 100%;
+    margin-left: 18%;
+    display: inline-block;
 }
 
 .boatheader {
@@ -99,4 +101,27 @@
         width: 60%;
         padding-bottom: 60%;
     }
+}
+
+.btn {
+  border: 2px solid #b31b1b;
+  border-radius: 50px 50px 50px 50px;
+  background-color: white;
+  color: #b31b1b;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin:auto;
+}
+
+.danger {
+  border-color: #b31b1b;
+  color: black;
+}
+
+.danger:hover {
+  background: #b31b1b;
+  color: white;
 }

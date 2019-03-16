@@ -92,8 +92,12 @@ a.accordion-toggle .panel-title:hover {
   position: relative;
 }
 
+#boatfeatures{
+  padding-bottom: 850px;
+}
+
 /* hide back of pane during swap */
-.front, .back {
+.front, .back {@
   backface-visibility: hidden;
 
   position: absolute;
@@ -132,6 +136,11 @@ a.accordion-toggle .panel-title:hover {
   font-weight: bold;
   color: #B31B1B;
   width: 20%;
+}
+
+#sponsordescription {
+  width:60%;
+  margin-left:20%;
 }
 
 .subteams a {
@@ -464,6 +473,122 @@ body {
   /*margin-bottom: 400px;*/
 }
 
+.team-section {
+  margin-bottom: 300px !important;
+}
+
+.image-holder {
+  margin-bottom: 70px !important;
+  margin-left: 20%;
+}
+
+.team-bio {
+  font-size: 16px;
+  margin-bottom: 0px !important;
+  text-align: left;
+  /*margin-left: 0px !important;*/
+  /*margin-right: 20px;*/
+}
+
+.teamsparas {
+  text-align: center;
+  margin: 5%;
+}
+
+.p-5 {
+  font-family: 'Libre Franklin', sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+}
+
+#boatfeatures{
+  padding-bottom: 0px;
+}
+
+#funteampic {
+  width: 100% !important;
+  margin-left: 0% !important;
+  padding-top: 20px;
+}
+
+.ourteampic {
+  margin: auto;
+  width: 100%;
+}
+
+#teampic {
+  width: 100% !important;
+  margin: auto !important;
+}
+
+#sponsordescription {
+  width: 100%;
+  margin-left: 0%;
+}
+
+.teampics {
+  width: 100%;
+  padding-left: 0%;
+  float: none !important;
+  padding-bottom: 0px;
+}
+
+.team-name {
+  text-align: center;
+}
+
+.team-job {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.text-holder {
+  margin-bottom: 0px;
+}
+
+.counter { 
+  background-color: #ffffff; 
+  padding: 20px 0; 
+  border-radius: 5px; 
+  display: block !important;
+  width: 32% !important; 
+  text-align: center;
+  margin-left: 48% !important;
+}
+
+.ourteamblurb {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  width: 80% !important;
+  padding-bottom: 20px;
+}
+
+.wrapper { 
+  width: 90% !important; 
+  margin: 5% !important; 
+  position: relative; 
+  display: block; 
+  text-align: center;
+}
+
+.count-title { 
+  font-size: 40px; 
+  font-weight: normal;  
+  margin-top: 10px; 
+  margin-bottom: 0; 
+  text-align: center; 
+}
+
+.large-number {
+  /*width: 5%;*/
+  /*text-align: left;*/
+  margin-right: 50%;
+}
+
 .container-fluid {
   width: 100%;
   margin: 0px;
@@ -519,6 +644,8 @@ body {
 
 .card {
   width: 278px;
+  margin-left: 48.5px;
+
 }
 
   .timeline > li:nth-child(even) {
@@ -662,6 +789,7 @@ body {
   position: relative;
   animation: slide-in 0.5s backwards;
   /*width: 50%;*/
+  margin-left: 30%;
 }
 .stairs:nth-child(1) {
   animation-delay: 0.2s;
@@ -1334,15 +1462,15 @@ body {
 .title:after {
   background: #b31b1b;
   content: "";
-  height: 8px;
+  height: 5px;
   left: 0;
-  margin: 50px auto;
+  margin: 43px auto;
   position: absolute;
   right: 0;
   text-align: center;
   top: 0px;
   width: 185px;
-  box-shadow: 4px 3px 3px #717171;
+  box-shadow: 1px 1px 1px #717171;
 }
 
 .team-section {
