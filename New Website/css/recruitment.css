@@ -1,6 +1,56 @@
-.application {
-  padding-top: 100px;
-  padding-right: 100px;
-  padding-bottom: 100px;
-  padding-left: 100px;
+.recruitmentpageheaders {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
+
+.btn {
+  border: 2px solid #b31b1b;
+  border-radius: 50px 50px 50px 50px;
+  background-color: white;
+  color: #b31b1b;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin:auto;
+}
+.danger {
+  border-color: #b31b1b;
+  color: black;
+}
+
+.danger:hover {
+  background: #b31b1b;
+  color: white;
+}
+
+.Dates {
+  text-align: center;
+  color: #b31b1b;
+}
+
+#info-session {
+  text-align: center;
+}
+
+.button-format {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.space-below {
+  padding-bottom: 30px;
+}
+
+.space-below-less {
+  padding-bottom: 5px;
+}
+
+/* .makered{
+  color: #b31b1b;
+} */

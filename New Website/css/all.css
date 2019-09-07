@@ -109,7 +109,7 @@ a.accordion-toggle .panel-title:hover {
   margin-top: 30%;
   margin-right: 15px;
   margin-left: 15px;
-  
+
 }
 
 /* front pane, placed above back */
@@ -195,7 +195,7 @@ a.accordion-toggle .panel-title:hover {
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  
+
 }
 
 .flip-card-inner {
@@ -548,12 +548,12 @@ body {
   margin-bottom: 0px;
 }
 
-.counter { 
-  background-color: #ffffff; 
-  padding: 20px 0; 
-  border-radius: 5px; 
+.counter {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-radius: 5px;
   display: block !important;
-  width: 32% !important; 
+  width: 32% !important;
   text-align: center;
   margin-left: 48% !important;
 }
@@ -567,20 +567,20 @@ body {
   padding-bottom: 20px;
 }
 
-.wrapper { 
-  width: 90% !important; 
-  margin: 5% !important; 
-  position: relative; 
-  display: block; 
+.wrapper {
+  width: 90% !important;
+  margin: 5% !important;
+  position: relative;
+  display: block;
   text-align: center;
 }
 
-.count-title { 
-  font-size: 40px; 
-  font-weight: normal;  
-  margin-top: 10px; 
-  margin-bottom: 0; 
-  text-align: center; 
+.count-title {
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .large-number {
@@ -688,7 +688,7 @@ body {
 /*End of boat time line code*/
 
 .boatgraphic {
-  background-color: 
+  background-color:
 }
 
 .headerimg {
@@ -721,7 +721,7 @@ body {
 {
     margin-top: 10%;
 }
-.how-img 
+.how-img
 {
     text-align: center;
 }
@@ -1032,37 +1032,37 @@ a:hover{
   font-family: 'Libre Franklin', sans-serif;
 }
 
-.accordion ul li:nth-child(1) { 
+.accordion ul li:nth-child(1) {
   /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington.jpg"); */
   background-color: #b31b1b;
   background-position: 50% 30%;
 }
 
-.accordion ul li:nth-child(2) { 
+.accordion ul li:nth-child(2) {
   /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_cinema_flex_whale_wars_gavin_garrison.jpg"); */
   background-color: #001436;
  background-position: 70% 0%;
 }
 
-.accordion ul li:nth-child(3) { 
+.accordion ul li:nth-child(3) {
   /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington_bts.jpg"); */
   background-color: #b31b1b;
 background-position: 50% 50%;
 }
 
-.accordion ul li:nth-child(4) { 
+.accordion ul li:nth-child(4) {
   /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_travel_rapidbox.jpg"); */
   background-color: #001436;
   background-position: 30% 40%;
 }
 
-.accordion ul li:nth-child(5) { 
+.accordion ul li:nth-child(5) {
   /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_enthusiast_portrait_photography_little_studio_basics_lights.jpg"); */
   background-color: #b31b1b;
   background-position: 60% 64%;
 }
 
-.accordion ul li:nth-child(6) { 
+.accordion ul li:nth-child(6) {
   /*background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_flex_enthusiast_portrait_photography.jpg"); */
   background-color: #b31b1b;
   background-position: 70% 25%;
@@ -1080,7 +1080,7 @@ background-position: 50% 50%;
   transform: translateX(0);
 }
  @media screen and (max-width: 680px) {
-  
+
   /*body { margin: 0; }*/
   .accordion { height: auto; }
 
@@ -1199,7 +1199,7 @@ h1 {
 .count-text { font-size: 16px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; color: black;}
 .fa-2x { margin: 0 auto; float: none; display: table; color: #b31b1b; }
 .count-title {
-  font-family: 'Libre Franklin', sans-serif !important; 
+  font-family: 'Libre Franklin', sans-serif !important;
 }
 
 @-webkit-keyframes wrench {
@@ -1399,7 +1399,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  
+
   .splash {
     width: 100%;
     padding: 0px;
@@ -1409,18 +1409,18 @@ h1 {
   .splash h1 {
     font-size: 6em;
   }
-  
+
   .splash .lead {
     font-size: 3em;
   }
-  
+
   .features .col-3 {
     /*float: left;*/
     /*margin: 2em 5% 0 0;*/
     /*padding: 0 1em;*/
     /*width: 30%;*/
   }
-  
+
   .features .col-3:last-of-type {
     margin-right: 0;
   }
@@ -1478,7 +1478,7 @@ body {
   margin: auto;
   padding: 0;
   list-style: none;
-  
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1492,7 +1492,7 @@ body {
   height: 200px;
   display: inline;
   margin: 20px 15px;
-  
+
 }
 
 .image-holder {
@@ -1659,4 +1659,3 @@ body {
 .owl-theme .owl-controls.clickable .owl-page:hover span{
     background-color: black !important;
 }
-
