@@ -51,6 +51,54 @@
   padding-bottom: 5px;
 }
 
+.recruitment_video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.recruitment_video iframe,
+.recruitment_video object,
+.recruitment_video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* .makered{
   color: #b31b1b;
 } */
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 767px) {
+  html {
+    font-family: 'Libre Franklin', sans-serif !important;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .container {
+    width: 100% !important;
+  }
+
+  .navbar-header {
+    width: 375px !important;
+
+  }
+
+  .recruitment_video {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .collapse {
+    width: 100%;
+  }
+
+  .navbar{
+    width: 100%;
+  }
+}
