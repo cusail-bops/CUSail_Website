@@ -1324,7 +1324,7 @@ h1 {
 
 /*Cover photo home page*/
 .splash {
-  background: url("../pictures/droneboat1.jpg") no-repeat fixed center;
+  background: url("../images/index/background_drone_boat.jpg") no-repeat fixed center;
   background-size: cover;
   color: black;
   width: 100%;

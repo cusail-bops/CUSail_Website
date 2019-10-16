@@ -72,6 +72,11 @@
   color: #b31b1b;
 } */
 
+.recruitment-status{
+  margin-top: 6em;
+}
+
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 767px) {
   html {
