@@ -126,6 +126,25 @@ body {
   /*top: 50%;*/
 }
 
+h1.hometitle{
+  text-align: left;
+  font-weight: 800;
+  padding-left: 0;
+  margin-left: 1.5em;
+  font-size: 8em;
+}
+
+h2.homesubtitle{
+  text-align: left;
+  padding-left: 0;
+  margin-left: 4.2em;
+  font-size: 1em;
+}
+
+#title-container{
+  padding-top: 6em;
+}
+
 
 /* https://coolors.co/2c3e50-e74c3c-ffffff-3498db-95a3b3 */
 
@@ -140,7 +159,7 @@ Utilities
 .cf::before,
 .cf::after {
     content: "";
-    display: table; 
+    display: table;
 }
 
 .cf::after {
@@ -154,5 +173,3 @@ html {
 img {
   max-width: 100%;
 }*/
-
-
