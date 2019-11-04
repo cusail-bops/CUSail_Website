@@ -25,11 +25,12 @@
 }
 
 .desktopsubteams{
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1.0em;
+  margin-bottom: 1.0em;
 }
 
 .who-we-are{
+  margin-top: 2em;
   margin-bottom: 2em;
 }
 
@@ -47,17 +48,38 @@ section{
   position: fixed;
   width: 100%;
   align-content: center;
-  margin-top: 0;
-  margin-bottom: 0
-  padding: 0;
+  padding: 0em !important;
+  margin: 0em !important;
   background-color: #f2f2f2 !important;
-  z-index:9999
+  z-index:9999;
+  top: 50px;
+}
+
+.sticky ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sticky ul li{
+  padding: 0em;
+  width: 9em;
+
+}
+
+.sticky ul li a{
+  background-color: #f2f2f2;
+  font-size: .8em;
+  padding-left: 0em;
+  padding-right: 0em;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
 }
+
+
 
 @media (min-width: 900px) {
   .mobilesubteam{

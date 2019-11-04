@@ -211,6 +211,10 @@ img {
   border-style: none;
 }
 
+img#teampic{
+  border: 1px solid black;
+}
+
 svg {
   overflow: hidden;
   vertical-align: middle;

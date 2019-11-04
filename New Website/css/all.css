@@ -5,6 +5,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -166,10 +167,11 @@ a.accordion-toggle .panel-title:hover {
 }
 
 .teampics {
-  width: 45%;
-  padding-left: 2%;
+  width: 35em;
+  margin-left: 2%;
   float: right;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border: 1px solid black;
 }
 
 .teamsparas {
@@ -518,11 +520,6 @@ body {
   width: 100%;
 }
 
-#teampic {
-  width: 100% !important;
-  margin: auto !important;
-}
-
 #sponsordescription {
   width: 100%;
   margin-left: 0%;
@@ -779,6 +776,7 @@ body {
 #teampic {
   width: 60%;
   margin-left: 20%;
+  border: 1px solid black;
 }
 
 /*Sponsorship page steps*/
