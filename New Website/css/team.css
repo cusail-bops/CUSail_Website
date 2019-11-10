@@ -30,6 +30,7 @@
 }
 
 .who-we-are{
+  margin-top: 6em;
   margin-bottom: 2em;
 }
 
@@ -42,7 +43,6 @@ section{
   margin-top: 2em;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   width: 100%;
@@ -63,7 +63,10 @@ section{
 .sticky ul li{
   padding: 0em;
   width: 9em;
+}
 
+.sticky ul li:hover{
+  background-color: #393939;
 }
 
 .sticky ul li a{
@@ -73,15 +76,23 @@ section{
   padding-right: 0em;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+.underline{
+  text-decoration: underline;
 }
 
+div #leads{
+  margin-bottom: 10em;
+}
 
 
 @media (min-width: 900px) {
   .mobilesubteam{
     display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navbar-default{
+    margin-bottom: 10em;
   }
 }
