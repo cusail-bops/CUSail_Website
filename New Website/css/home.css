@@ -145,6 +145,21 @@ h2.homesubtitle{
   padding-top: 6em;
 }
 
+@media (max-width: 600px){
+  h1.hometitle{
+    text-align: center;
+    margin-left: 0em;
+    font-size: 6em;
+  }
+
+  h2.homesubtitle{
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0em;
+  }
+
+}
+
 
 /* https://coolors.co/2c3e50-e74c3c-ffffff-3498db-95a3b3 */
 
