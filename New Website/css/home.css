@@ -126,7 +126,7 @@ body {
   /*top: 50%;*/
 }
 
-h1.hometitle{
+/* h1.hometitle{
   text-align: left;
   font-weight: 800;
   padding-left: 0;
@@ -143,10 +143,10 @@ h2.homesubtitle{
 
 #title-container{
   padding-top: 6em;
-}
+}  */
 
 @media (max-width: 600px){
-  h1.hometitle{
+  /* h1.hometitle{
     text-align: center;
     margin-left: 0em;
     font-size: 6em;
@@ -156,7 +156,7 @@ h2.homesubtitle{
     text-align: center;
     padding-left: 0;
     margin-left: 0em;
-  }
+  } */
 
 }
 
