@@ -63,6 +63,7 @@ section{
 .sticky ul li{
   padding: 0em;
   width: 9em;
+  flex-grow: 1;
 }
 
 .sticky ul li:hover{
@@ -92,6 +93,14 @@ div #leads{
 }
 
 @media (max-width: 767px)  {
+  html{
+    scroll-behavior: auto;
+  }
+
+  #topnavbar{
+    z-index: 100000;
+  }
+
   a:hover{
     text-decoration: underline;
   }
@@ -102,7 +111,7 @@ div #leads{
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #f2f2f2 !important;
-    z-index:9999;
+    z-index:100;
     top: 50px;
   }
 

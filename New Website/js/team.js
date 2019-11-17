@@ -1,16 +1,10 @@
-console.log(document.body.clientWidth)
-
 let selector
-
 if (window.screen.width <= 767) {
   selector = "subteam-navbar-mobile"
 }
 else{
   selector = "subteam-navbar"
 }
-
-console.log(selector)
-
 const navbar = document.getElementById(selector)
 
 navbar.addEventListener('click', function(){
