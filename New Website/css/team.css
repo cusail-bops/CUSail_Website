@@ -121,4 +121,14 @@ div #leads{
     flex-grow: 1;
   }
 
+  #teampic{
+    width: 100%;
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .teampics{
+    margin: 0;
+  }
+
 }
