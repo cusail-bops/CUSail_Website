@@ -8,7 +8,7 @@ else{
 const navbar = document.getElementById(selector)
 
 navbar.addEventListener('click', function(){
-  console.log("clicked")
+  // console.log("clicked")
   currentUnderline = document.getElementsByClassName("underline")
   if (currentUnderline[0]){
     currentUnderline[0].classList.remove("underline")
