@@ -68,19 +68,28 @@
 
 .aircraftc {
     width: 100%;
-    margin-left: 18%;
     display: inline-block;
+    text-align: center;
 }
 
 .boatheader {
   font-family: 'Libre Franklin', sans-serif;
   text-align: center;
-  width: 85%;
-  margin: auto;
-  padding-top: 50px;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
-@media only screen and (max-width:650px) { 
+#sponsors-div{
+  margin-top: 1.3em;
+}
+
+@media (max-width: 800px){
+  .pageheaders{
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width:650px) {
     /* Smartphone and tablet view: 1 tile */
     .boxone {
         width: 100%;
@@ -91,7 +100,7 @@
         padding-bottom: 100%;
     }
 }
-@media only screen and (min-width:651px) { 
+@media only screen and (min-width:651px) {
     /* laptops and desktops view: 2 tiles */
     .boxone {
         width: 40%;
