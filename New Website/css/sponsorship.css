@@ -66,10 +66,14 @@
     margin: 1%;
 }
 
-.aircraftc {
+.aircraftc{
     width: 100%;
     display: inline-block;
     text-align: center;
+}
+
+.aircraftc img{
+  margin: 1em;
 }
 
 .boatheader {
