@@ -1,0 +1,92 @@
+body {
+  font-family: 'Libre Franklin', sans-serif !important;
+  scroll-behavior: smooth;
+  margin: 0em;
+}
+
+/* desktop navbar */
+#top-navbar{
+  background-color: #F2F2F2;
+  height: 50px;
+  border-style: solid;
+  border-width: .015px 0px .05px 0px;
+  border-color: rgb(219, 219, 219);
+}
+
+#top-navbar-logo{
+  width: 114px;
+  margin-left: 3em;
+  margin-top: .25em;
+}
+
+#navbar-links-container{
+    float: right;
+    margin-right: 2.1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#navbar-links-container a{
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.onThisPage{
+  color: #B31B1B;
+}
+
+.notOnThisPage{
+  color: #777;
+}
+
+/* mobile navbar */
+.hidden{
+  display: none;
+}
+
+
+@media (max-width: 900px){
+/* navbar */
+
+
+#mobile-top-navbar{
+  background-color: #F2F2F2;
+  height: 295px;
+}
+
+#hamburger-icon{
+  display: initial;
+  float: right;
+  height: 30px;
+  margin-right: 1em;
+  margin-top: .55em;
+}
+
+#hamburger-icon:hover{
+  cursor: pointer;
+}
+
+#navbar-links-container{
+  display: none;
+}
+
+.mobile-navbar-links-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: .25em;
+}
+
+#mobile-navbar-links-container a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 1em;
+    padding-top: .82em;
+    padding-bottom: .82em;
+}
+
+
+
+
+}
