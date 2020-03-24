@@ -1,3 +1,4 @@
+// add and remove mobile navbar
 const mobileNavbarLinksContainer = document.getElementById("mobile-navbar-links-container")
 const mobileTopNavbar = document.getElementById("mobile-top-navbar")
 let mobileIsDisplayed = false;

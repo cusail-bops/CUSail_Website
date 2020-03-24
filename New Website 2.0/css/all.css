@@ -33,6 +33,7 @@ body {
     padding-left: 15px;
 }
 
+/* highlight link of current page */
 .onThisPage{
   color: #B31B1B;
 }
@@ -41,16 +42,43 @@ body {
   color: #777;
 }
 
+.notOnThisPage:hover{
+  color: black;
+}
+
 /* mobile navbar */
 .hidden{
   display: none;
 }
 
-
 @media (max-width: 900px){
-/* navbar */
+  #navbar-links-container{
+      margin-right: .8em;
+  }
+
+  #navbar-links-container a{
+      font-size: 14px;
+      padding-right: 7.5px;
+      padding-left: 7.5px;
+  }
+}
 
 
+
+/* hide mobile navbar when window is resized */
+@media (min-width: 750px){
+  #mobile-top-navbar{
+    display: none;
+  }
+
+  #hamburger-icon{
+    display: none;
+  }
+}
+
+
+@media (max-width: 750px){
+/* mobile navbar */
 #mobile-top-navbar{
   background-color: #F2F2F2;
   height: 295px;
