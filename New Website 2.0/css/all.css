@@ -1,5 +1,5 @@
 body {
-  font-family: 'Libre Franklin', sans-serif !important;
+  font-family: 'Open Sans';
   scroll-behavior: smooth;
   margin: 0em;
 }
@@ -85,26 +85,45 @@ p{
 #bottom-navbar-container{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .footer-heading{
   font-size: 20px;
   margin-top: 1.5em;
+  font-weight: bold;
 }
 
 .footer-text-container{
   font-size: 15px;
 }
 
+#facebook-icon{
+  margin-left: 1em;
+}
+
+#instagram-icon{
+  margin-left: .73em;
+}
+
+#linkedin-icon{
+  margin-left: 1.5em;
+}
+
+#youtube-icon{
+  margin-left: 1.56em;
+}
+
 #footer-logo{
   width: 8em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  position: absolute;
+  right: 14em;
+  bottom: 0.1em;
 }
 
 #follow-us{
   width: 10em;
+  margin-left: 10em;
 }
 
 .media-links{
@@ -119,7 +138,6 @@ p{
 }
 
 #contact-us{
-  margin-left: 4.75em;
   width: 10em;
 }
 
@@ -140,6 +158,17 @@ p{
       padding-right: 7.5px;
       padding-left: 7.5px;
   }
+
+/* ipad bottom navbar*/
+  #follow-us{
+    margin-left: 5em;
+  }
+
+  #footer-logo{
+    right: 4em;
+    bottom: 0em;
+  }
+
 }
 
 
@@ -197,7 +226,7 @@ p{
 @media (max-width: 620px){
   /* mobile bottom navbar */
 #bottom-navbar{
-  height: 470px;
+  height: 420px;
 }
 
 #bottom-navbar-container{
@@ -207,6 +236,8 @@ p{
 
 #follow-us{
   text-align: center;
+  margin-left: 0em;
+  margin-bottom: 1em;
 }
 
 #contact-us{
@@ -220,8 +251,31 @@ p{
 }
 
 #footer-logo{
-  margin-top: 1em;
-  margin-bottom: 1em;
+  width: 4em;
 }
 
+}
+
+/* desktop screens */
+@media (min-width: 1200px){
+  /* bottom navbar */
+  #bottom-navbar{
+    height: 250px;
+  }
+
+  #footer-logo{
+    bottom: .8em;
+  }
+}
+
+/* large desktop screens */
+@media (min-width: 1800px){
+  /* bottom navbar */
+  #footer-logo{
+    bottom: 2em;
+  }
+
+  #follow-us{
+    margin-left: 20em;
+  }
 }
