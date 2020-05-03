@@ -31,36 +31,47 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 120px;
+  margin: 0em;
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 40px;
+  margin: 0em;
 }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 30px;
+  margin: 0em;
 }
 
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 25px;
+  margin: 0em;
 }
 
 h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 18px;
+  margin: 0em;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 15px;
+}
+
+.section-header{
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 

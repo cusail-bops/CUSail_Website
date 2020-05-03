@@ -1,0 +1,136 @@
+#page-header{
+  margin-top: 3em;
+}
+
+#text-video-section{
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+#text-video-section h4{
+  font-weight: normal;
+  margin-bottom: 1.5em;
+}
+
+
+
+#text-video-section a:hover{
+  color: black;
+}
+
+iframe{
+  width:560px;
+  height:315px;
+  margin-bottom: 5em;
+}
+
+.questions-section{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 1.5em;
+  max-width: 1000px;
+}
+
+.questions-section h4{
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+.question-container{
+  margin-bottom: .2em;
+  height: 37px;
+  background: #FBFBFB;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+}
+
+.question-container:hover{
+  color: #B31B1B;
+  text-decoration: underline;
+}
+
+.question-container p{
+  margin: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.slideup, .slidedown {
+    max-height: 0;
+    overflow-y: hidden;
+    -webkit-transition: max-height 0.6s ease-in-out;
+    -moz-transition: max-height 0.6s ease-in-out;
+    -o-transition: max-height 0.6s ease-in-out;
+    transition: max-height 0.6s ease-in-out;
+}
+.slidedown {
+    max-height: 500px ;
+}
+
+.answer-container{
+  margin-bottom: .2em;
+  background: #FBFBFB;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+}
+
+.answer-container p{
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+#team-photo-container{
+    text-align: center;
+    margin-top: 8em;
+}
+
+#team-photo{
+  width: 75%;
+  margin: auto;
+  border: 1px solid black;
+  max-width: 1000px;
+}
+
+@media (max-width: 700px){
+.question-container{
+  height: 50px;
+}
+}
+
+@media (max-width: 600px){
+iframe{
+  width:250px;
+  height:140px;
+  margin-bottom: 5em;
+}
+
+#team-photo-container{
+  margin-bottom: 10em;
+}
+
+#text-video-section{
+  width: 80%;
+}
+
+}
+
+@media (max-width: 350px){
+.question-container{
+  height: 75px;
+}
+}
+
+@media (min-width: 1500px){
+  iframe{
+    width:1000px;
+    height:560px;
+    margin-bottom: 5em;
+  }
+}
