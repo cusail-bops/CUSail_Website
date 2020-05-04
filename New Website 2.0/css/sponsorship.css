@@ -117,8 +117,14 @@ button:hover{
   margin: 1em;
 }
 
-@media (max-width: 620px){
-  
+@media (max-width: 650px){
+
+#sponsor-levels-container{
+  flex-direction: column;
+  align-items: center;
+}
+
+
 main{
   margin-bottom: 5em;
 }
