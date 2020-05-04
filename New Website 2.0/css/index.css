@@ -132,7 +132,7 @@
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 620px){
 
 #title{
   padding-top: 17em;
@@ -179,6 +179,9 @@
   width: 97%;
   justify-content: center;
   margin-left: 0%;
+}
+
+main{
   margin-bottom: 10em;
 }
 
