@@ -124,6 +124,24 @@
   line-height: 25px;
 }
 
+.hidden{
+  visibility: hidden;
+}
+
+.zoom-in{
+  animation:animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from{
+    transform:scale(0)
+  }
+  to{
+    transform:scale(1)
+  }
+}
+
+
 @media (max-width: 620px){
 
 main{
