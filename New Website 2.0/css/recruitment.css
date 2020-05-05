@@ -58,18 +58,6 @@ iframe{
   margin-right: 1em;
 }
 
-.slideup, .slidedown {
-    max-height: 0;
-    overflow-y: hidden;
-    -webkit-transition: max-height 0.8s ease-in-out;
-    -moz-transition: max-height 0.8s ease-in-out;
-    -o-transition: max-height 0.8s ease-in-out;
-    transition: max-height 0.8s ease-in-out;
-}
-.slidedown {
-    max-height: 500px ;
-}
-
 .answer-container{
   margin-bottom: .3em;
   margin-top: .3em;

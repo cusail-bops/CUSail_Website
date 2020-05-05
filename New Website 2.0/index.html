@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./css/all.css">
   <script defer src="./js/all.js"></script>
   <link rel="stylesheet" href="./css/index.css">
-  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/animations.css">
+  <script defer src="./js/index.js"></script>
 </head>
 
 <body>
@@ -51,27 +52,27 @@
       <h3 id="about-us-header" class="section-header">About Us</h3>
       <p class="section-desccription">CUSail is an engineering project team that designs and manufactures an autonomous sailboat to compete in the SailBot International Robotic Sailboat Regatta. In the long term, the team hopes to construct a fleet of autonomous sailboats that can independently navigate across the world to collect oceanic data. CUSail offers students across many disciplines the opportunity to apply what they have been learning in the classroom to real world engineering problems. With over 30 members, the team combines cutting-edge technology with advanced mechanical design to engineer a smarter and faster boat every year.</p>
       <div id="metrics-container">
-        <div>
+        <div class="metric">
           <img src="./images/icons/members-icon.svg" alt="Members Icon">
           <h2>34</h2>
           <p>Members</p>
         </div>
-        <div>
+        <div class="metric">
           <img src="./images/icons/majors-icon.svg" alt="Majors Icon">
           <h2>9</h2>
           <p>Majors across 3 colleges</p>
         </div>
-        <div>
+        <div class="metric">
           <img src="./images/icons/yearfounded-icon.svg" alt="Year Founded Icon">
           <h2>2014</h2>
           <p>Year Founded</p>
         </div>
       </div>
       <div id="images-container">
-        <img src="./images/index/dropping-boat.jpg" alt="Dropping boat in the water">
-        <img src="./images/index/christroylake.jpg" alt="Chris and Troy by the lake">
-        <img src="./images/index/electronics.jpg" alt="Closeup of boat electronics">
-        <img src="./images/index/diane-testing.jpg" alt="Dropping boat in the water">
+        <img class="pic" src="./images/index/dropping-boat.jpg" alt="Dropping boat in the water">
+        <img class="pic" src="./images/index/christroylake.jpg" alt="Chris and Troy by the lake">
+        <img class="pic" src="./images/index/electronics.jpg" alt="Closeup of boat electronics">
+        <img class="pic" src="./images/index/diane-testing.jpg" alt="Dropping boat in the water">
       </div>
       <hr class="section-separator">
       <h3 class="section-header">Sailbot</h3>
@@ -111,15 +112,15 @@
           <img src="./images/index/goal-timeline.svg" alt="Goal timeline">
         </div>
         <div id="description-container">
-            <div>
+            <div class="goal">
               <h4 id="current-goal">Sail the Length of Cayuga Lake</h4>
               <p id="cayuga-description">The first goal in our series of long-term goals is to sail from the southern end to the northern end of Cayuga Lake. Cayuga Lake is just under 40 miles long, and we would be able to test our navigation algorithm on a larger scale. This is the goal that our team is currently working towards.</p>
             </div>
-            <div>
+            <div class="goal">
               <h4>Cross the Atlantic Ocean</h4>
               <p id="ocean-description">We want to sail across the Atlantic Ocean from the east coast of the United States to the west coast of Europe. We plan to sail from New York to Portugal to demonstrate our boat is robust enough to survive ocean and weather conditions and our navigation algorithm can successfully navigate long distances.</p>
             </div>
-            <div>
+            <div class="goal">
               <h4>Empower Oceanic Research</h4>
               <p>After we perfect or mechanical design and navigation algorithm, we hope to experiment with applications of our boat for oceanic research using sensors and other scientific equipment. This would unlock a world of research opportunities from monitoring weather trends to tracking whale migration patterns.</p>
             </div>
