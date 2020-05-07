@@ -205,4 +205,8 @@ main p {
         transition:opacity 0.5s linear;
     }
 
+    main {
+        margin-bottom: 30%;
+    }
+
 }
