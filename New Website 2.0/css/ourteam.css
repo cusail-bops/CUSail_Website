@@ -1,16 +1,16 @@
 #page-header{
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: .5em;
 }
 
 #who-we-are-description{
-  width: 60%;
+  width: 50%;
   text-align: center;
   margin: auto;
 }
 
 #full-team-photo{
-  width: 60%;
+  width: 50%;
   max-width: 1000px;
   display: block;
   margin: auto;

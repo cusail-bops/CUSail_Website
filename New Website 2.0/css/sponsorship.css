@@ -1,5 +1,5 @@
 #page-header{
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 #sponsor-request{
@@ -61,6 +61,7 @@ button:hover{
 .sponsor-box{
   width: 175px;
   margin: auto;
+  padding: 30px;
 }
 
 .sponsor-box:hover{

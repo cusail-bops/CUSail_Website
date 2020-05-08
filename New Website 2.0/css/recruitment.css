@@ -1,5 +1,5 @@
 #page-header{
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 #text-video-section{
@@ -48,14 +48,18 @@ iframe{
 }
 
 .question-container:hover{
-  color: #B31B1B;
   text-decoration: underline;
+}
+
+.question-container:hover p{
+  color: black;
 }
 
 .question-container p{
   margin: auto;
   margin-left: 1em;
   margin-right: 1em;
+  color: #B31B1B;
 }
 
 .answer-container{

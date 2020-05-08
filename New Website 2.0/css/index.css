@@ -70,6 +70,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .event-card{
@@ -101,7 +103,7 @@
   width: 75%;
   max-width: 1000px;
   justify-content: center;
-  margin-left: 8%;
+  margin-left: 12%;
 }
 
 #current-goal{
