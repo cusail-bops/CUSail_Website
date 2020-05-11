@@ -5,12 +5,12 @@ let mobileIsDisplayed = false;
 const hamburgerIcon = document.getElementById("hamburger-icon")
 hamburgerIcon.addEventListener('click', function(event){
    if (mobileIsDisplayed){
-      mobileTopNavbar.classList.add('hidden')
+      mobileTopNavbar.classList.add('navhidden')
       mobileNavbarLinksContainer.classList.remove('mobile-navbar-links-container')
       mobileIsDisplayed = false;
    }
    else{
-       mobileTopNavbar.classList.remove('hidden')
+       mobileTopNavbar.classList.remove('navhidden')
        mobileNavbarLinksContainer.classList.add('mobile-navbar-links-container')
        mobileIsDisplayed = true;
    }

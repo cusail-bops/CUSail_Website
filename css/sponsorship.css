@@ -118,6 +118,15 @@ button:hover{
   margin: 1em;
 }
 
+#leddartech{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#argoai{
+  width: 13em;
+}
+
 @media (max-width: 650px){
 
 #sponsor-levels-container{

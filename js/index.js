@@ -58,7 +58,7 @@ if (width >= 526 && width <= 785){
   addHidden(pictures)
   window.addEventListener('scroll', (event) => {
     let y = window.scrollY
-    console.log(y)
+    og(y)
     if (y > 900 && y < 1500){
       displayItems(pictures, 0,1, 'slide-right')
       displayItems(pictures, 1,2, 'slide-left')
@@ -125,7 +125,6 @@ if (width >= 900  && width <= 1391){
   addHidden(goals)
   window.addEventListener('scroll', (event) => {
     let y = window.scrollY
-    console.log(y)
     if (y > 2600 && y < 3000){
       displayItems(goals, 0, 1, 'slide-left')
     }
