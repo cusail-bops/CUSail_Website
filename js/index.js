@@ -70,7 +70,7 @@ if (width >= 526 && width <= 785){
 })
 }
 
-if (width >= 1044 && width <= 1391){
+if (width >= 1305 && width <= 1738){
   addHidden(eventCards)
   window.addEventListener('scroll', (event) => {
     let y = window.scrollY
@@ -86,53 +86,53 @@ if (width >= 1044 && width <= 1391){
 })
 }
 
-if (width >= 696 && width <= 1043){
+if (width >= 870 && width <= 1304){
   addHidden(eventCards)
   window.addEventListener('scroll', (event) => {
     let y = window.scrollY
-    if (y > 1900 && y < 2400){
+    if (y > 1700 && y < 2200){
       displayItems(eventCards, 0, 1, 'slide-right')
       displayItems(eventCards, 1, 2, 'slide-left')
     }
-    if (y > 2400 && y < 2900){
+    if (y > 2200 && y < 2700){
       displayItems(eventCards, 2,3, 'slide-right')
       displayItems(eventCards, 3,4, 'slide-left')
     }
-    if (y > 2900 && y < 3400){
+    if (y > 2700 && y < 3200){
       displayItems(eventCards, 4,5, 'zoom-in')
 
     }
 })
 }
 
-if (width >= 700  && width < 900){
-  addHidden(goals)
-  window.addEventListener('scroll', (event) => {
-    let y = window.scrollY
-    if (y > 3600 && y < 4000){
-      displayItems(goals, 0, 1, 'slide-left')
-    }
-    if (y > 3900 && y < 4300){
-      displayItems(goals, 1, 2, 'slide-left')
-    }
-    if (y > 4200 && y < 4600){
-      displayItems(goals, 2, 3, 'slide-left')
-    }
-})
-}
-
-if (width >= 900  && width <= 1391){
-  addHidden(goals)
-  window.addEventListener('scroll', (event) => {
-    let y = window.scrollY
-    if (y > 2600 && y < 3000){
-      displayItems(goals, 0, 1, 'slide-left')
-    }
-    if (y > 2800 && y < 3300){
-      displayItems(goals, 1, 2, 'slide-left')
-    }
-    if (y > 3100 && y < 3600){
-      displayItems(goals, 2, 3, 'slide-left')
-    }
-})
-}
+// if (width >= 700  && width < 900){
+//   addHidden(goals)
+//   window.addEventListener('scroll', (event) => {
+//     let y = window.scrollY
+//     if (y > 3600 && y < 4000){
+//       displayItems(goals, 0, 1, 'slide-left')
+//     }
+//     if (y > 3900 && y < 4300){
+//       displayItems(goals, 1, 2, 'slide-left')
+//     }
+//     if (y > 4200 && y < 4600){
+//       displayItems(goals, 2, 3, 'slide-left')
+//     }
+// })
+// }
+//
+// if (width >= 900  && width <= 1391){
+//   addHidden(goals)
+//   window.addEventListener('scroll', (event) => {
+//     let y = window.scrollY
+//     if (y > 2600 && y < 3000){
+//       displayItems(goals, 0, 1, 'slide-left')
+//     }
+//     if (y > 2800 && y < 3300){
+//       displayItems(goals, 1, 2, 'slide-left')
+//     }
+//     if (y > 3100 && y < 3600){
+//       displayItems(goals, 2, 3, 'slide-left')
+//     }
+// })
+// }
