@@ -239,10 +239,6 @@ p {
 
 /* hide mobile top navbar when window is resized */
 @media (min-width: 750px){
-  #mobile-top-navbar{
-    display: none;
-  }
-
   #hamburger-icon{
     display: none;
   }
@@ -250,6 +246,11 @@ p {
 
 
 @media (max-width: 750px){
+
+#top-navbar{
+  position: static;
+}
+
 /* mobile top navbar */
 #mobile-top-navbar{
   background-color: #F2F2F2;
@@ -258,6 +259,13 @@ p {
 
 main{
   padding-bottom: 300px;
+  margin-top: 4em;
+}
+
+.section-header{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

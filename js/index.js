@@ -54,21 +54,20 @@ if (width >= 785 && width <= 1048){
 })
 }
 
-if (width >= 526 && width <= 785){
-  addHidden(pictures)
-  window.addEventListener('scroll', (event) => {
-    let y = window.scrollY
-    og(y)
-    if (y > 900 && y < 1500){
-      displayItems(pictures, 0,1, 'slide-right')
-      displayItems(pictures, 1,2, 'slide-left')
-    }
-    if (y > 1200 && y < 1800){
-      displayItems(pictures, 2,3, 'slide-right')
-      displayItems(pictures, 3,4, 'slide-left')
-    }
-})
-}
+// if (width >= 526 && width <= 785){
+//   addHidden(pictures)
+//   window.addEventListener('scroll', (event) => {
+//     let y = window.scrollY
+//     if (y > 900 && y < 1500){
+//       displayItems(pictures, 0,1, 'slide-right')
+//       displayItems(pictures, 1,2, 'slide-left')
+//     }
+//     if (y > 1200 && y < 1800){
+//       displayItems(pictures, 2,3, 'slide-right')
+//       displayItems(pictures, 3,4, 'slide-left')
+//     }
+// })
+// }
 
 if (width >= 1305 && width <= 1738){
   addHidden(eventCards)
