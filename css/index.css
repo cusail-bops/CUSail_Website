@@ -1,3 +1,7 @@
+main{
+  margin-top: 0em;
+}
+
 #hero-image{
   background: url(../images/index/drone-boat.jpg);
   background-size: cover;
