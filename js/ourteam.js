@@ -21,9 +21,9 @@ if (width >= 1333  && width <= 1600){
     if (y > 1800 && y < 2400){displayCards(12, 16)}
     if (y > 2200 && y < 2800){displayCards(16, 17)}
     if (y > 3200 && y < 3800){displayCards(17, 21)}
-    if (y > 3600 && y < 4200){displayCards(21, 23)}
-    if (y > 4400 && y < 5000){displayCards(23, 27)}
-    if (y > 4800 && y < 5400){displayCards(27, 29)}
+    if (y > 3600 && y < 4200){displayCards(21, 22)}
+    if (y > 4400 && y < 5000){displayCards(22, 26)}
+    if (y > 4800 && y < 5400){displayCards(26, 28)}
   })
 }
 
@@ -39,9 +39,9 @@ if (width <= 1332  && width >= 1015){
     if (y > 2900 && y < 3500){displayCards(13, 16)}
     if (y > 3300 && y < 3900){displayCards(16, 17)}
     if (y > 4100 && y < 4700){displayCards(17, 20)}
-    if (y > 4600 && y < 5200){displayCards(20, 23)}
-    if (y > 5000 && y < 5600){displayCards(23, 26)}
-    if (y > 5400 && y < 6000){displayCards(26, 29)}
+    if (y > 4600 && y < 5200){displayCards(20, 22)}
+    if (y > 5000 && y < 5600){displayCards(22, 25)}
+    if (y > 5400 && y < 6000){displayCards(25, 28)}
   })
 }
 
@@ -60,9 +60,9 @@ if (width <= 1014  && width >= 698){
     if (y > 4100 && y < 4800){displayCards(16, 17)}
     if (y > 4800 && y < 5400){displayCards(17, 19)}
     if (y > 5200 && y < 5800){displayCards(19, 21)}
-    if (y > 5600 && y < 6200){displayCards(21, 23)}
-    if (y > 6500 && y < 7100){displayCards(23, 25)}
-    if (y > 6900 && y < 7500){displayCards(25, 27)}
-    if (y > 7300 && y < 7900){displayCards(27, 29)}
+    if (y > 5600 && y < 6200){displayCards(21, 22)}
+    if (y > 6500 && y < 7100){displayCards(22, 24)}
+    if (y > 6900 && y < 7500){displayCards(24, 26)}
+    if (y > 7300 && y < 7900){displayCards(26, 28)}
   })
 }
