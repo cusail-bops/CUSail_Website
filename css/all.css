@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   scroll-behavior: smooth;
   margin: 0em;
   min-height: 100vh;
@@ -29,42 +29,42 @@ p{
 
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 800;
   font-size: 120px;
   margin: 0em;
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 600;
   font-size: 40px;
   margin: 0em;
 }
 
 h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 800;
   font-size: 30px;
   margin: 0em;
 }
 
 h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 700;
   font-size: 25px;
   margin: 0em;
 }
 
 h5 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 700;
   font-size: 18px;
   margin: 0em;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 15px;
 }
