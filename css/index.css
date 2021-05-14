@@ -1,45 +1,63 @@
-main{
+main {
   margin-top: 0em;
 }
 
-#hero-image{
-  background: url(../images/index/drone-boat.jpg);
+/* #hero-image{
+  background: url(../videos/CUSailWebVid.mp4);
   background-size: cover;
   height: 100vh;
-}
+} */
 
-#title{
+#videoDiv2 {
   width: 100%;
   margin: auto;
+  display: block;
+  position: relative;
+  background-color: black;
 }
 
-#title h1{
-  padding-top: 1.5em;
-  padding-left: 20%;
+/* This has been changed */
+#video2 {
+  width: 100%;
+  height: auto;
+  opacity: 0.8
 }
 
-#title h2{
-  padding-left: 20%;
+#title {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  color: white;
+  z-index: 12;
 }
 
-#about-us-header{
+#title h1 {
+  padding-top: 10vh;
+  padding-left: 10%;
+}
+
+#title h2 {
+  padding-left: 10%;
+}
+
+#about-us-header {
   margin-top: 3em;
 }
 
-.section-desccription{
+.section-desccription {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3em;
 }
 
-#metrics-container{
+#metrics-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-#metrics-container div{
+#metrics-container div {
   margin-left: 5em;
   margin-right: 5em;
   display: flex;
@@ -48,11 +66,11 @@ main{
   text-align: center;
 }
 
-#year-founded{
+#year-founded {
   width: 1.85em;
 }
 
-#images-container{
+#images-container {
   margin-top: 4em;
   display: flex;
   flex-direction: row;
@@ -60,20 +78,20 @@ main{
   flex-wrap: wrap;
 }
 
-#images-container img{
+#images-container img {
   margin-left: .5em;
   margin-right: .5em;
   margin-bottom: 1em;
   border: 1px solid black;
 }
 
-.section-separator{
+.section-separator {
   margin-top: 4em;
   margin-bottom: 4em;
   border: 1px solid #DADADA;
 }
 
-#events-container{
+#events-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -82,7 +100,7 @@ main{
   margin-right: 10%;
 }
 
-.event-card{
+.event-card {
   width: 316px;
   height: 460px;
   margin: 1em;
@@ -90,22 +108,22 @@ main{
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.event-card img{
+.event-card img {
   width: 100%;
 }
 
-.event-card h4{
+.event-card h4 {
   margin-left: 20px;
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-.event-card p{
+.event-card p {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-#goals-container{
+#goals-container {
   display: flex;
   flex-direction: row;
   width: 75%;
@@ -114,125 +132,137 @@ main{
   margin-left: 12%;
 }
 
-#current-goal{
+#current-goal {
   margin-top: 2.2em;
 }
 
-#cayuga-description{
+#cayuga-description {
   height: 9.4em;
 }
 
-#ocean-description{
+#ocean-description {
   height: 7.8em;
 }
 
-#goals-container h4{
+#goals-container h4 {
   margin-bottom: .25em;
 }
 
-#description-container{
+#description-container {
   display: flex;
   flex-direction: column;
 }
 
 
-@media (max-width: 700px){
-  #goals-container{
+@media (max-width: 700px) {
+  #goals-container {
     width: 85%;
     margin-left: 5%;
   }
 
-}
+  #title {
+    padding-top: 30%;
+    text-align: center;
+    color: black;
+  }
 
-@media (max-width: 620px){
+  #title h1 {
+    padding: 0;
+    font-size: 40px;
+  }
 
-#title{
-  padding-top: 17em;
-  text-align: center;
-}
+  #title h2 {
+    padding: 0;
+    font-size: 20px;
+  }
 
-#title h1{
-  padding: 0;
-  font-size: 100px;
-}
+  #videoDiv2 {
+    background: url(../images/index/drone-boat.jpg);
+    background-size: cover;
+    height: 100vh;
+    z-index: 10;
+  }
 
-#title h2{
-  padding: 0;
-  font-size: 30px;
-}
-
-#about-us-header{
-  margin-top: 1.5em;
-}
-
-.section-desccription{
-  width: 85%;
-}
-
-#metrics-container{
-  flex-direction: column;
-  align-items: center;
-}
-
-#metrics-container div{
-  margin-bottom: 1.5em;
-}
-
-#images-container{
-  margin-top: 1.5em;
-}
-
-.section-separator{
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-#goals-container{
-  width: 97%;
-  justify-content: center;
-  margin-left: 0%;
-}
-
-main{
-  margin-bottom: 10em;
-}
-
-#goals-container img{
-  height: 40em;
-  margin-right: -1.75em;
-  margin-left: -1.75em;
-}
-
-#current-goal{
-  margin-top: 3.5em;
-}
-
-#cayuga-description{
-  height: 12.5em;
-}
-
-#ocean-description{
-  height: 11.1em;
-}
-
-#goals-container h4{
-  margin-bottom: 0em;
-}
-
-#description-container{
-  display: flex;
-  flex-direction: column;
-}
-
-#description-container h4{
-  font-size: 20px;
-}
-
+  #video2 {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
 
 }
 
-@media (min-width: 1500px){
-  #goals-container{
+@media (max-width: 620px) {
+
+  #about-us-header {
+    margin-top: 1.5em;
+  }
+
+  .section-desccription {
+    width: 85%;
+  }
+
+  #metrics-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #metrics-container div {
+    margin-bottom: 1.5em;
+  }
+
+  #images-container {
+    margin-top: 1.5em;
+  }
+
+  .section-separator {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  #goals-container {
+    width: 97%;
+    justify-content: center;
+    margin-left: 0%;
+  }
+
+  main {
+    margin-bottom: 10em;
+  }
+
+  #goals-container img {
+    height: 40em;
+    margin-right: -1.75em;
+    margin-left: -1.75em;
+  }
+
+  #current-goal {
+    margin-top: 3.5em;
+  }
+
+  #cayuga-description {
+    height: 12.5em;
+  }
+
+  #ocean-description {
+    height: 11.1em;
+  }
+
+  #goals-container h4 {
+    margin-bottom: 0em;
+  }
+
+  #description-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #description-container h4 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #goals-container {
     margin-left: 20em;
   }
 }
