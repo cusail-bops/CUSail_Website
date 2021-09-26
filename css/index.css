@@ -14,6 +14,8 @@ main {
   display: block;
   position: relative;
   background-color: black;
+  background-size: cover;
+  top: 55px
 }
 
 /* This has been changed */
@@ -181,6 +183,7 @@ main {
     background-size: cover;
     height: 100vh;
     z-index: 10;
+    top: 0;
   }
 
   #video2 {
