@@ -14,6 +14,8 @@ main {
   display: block;
   position: relative;
   background-color: black;
+  background-size: cover;
+  top: 55px
 }
 
 /* This has been changed */
@@ -124,12 +126,14 @@ main {
 }
 
 #goals-container {
+
   display: flex;
   flex-direction: row;
-  width: 75%;
-  max-width: 1000px;
+  /*flex-wrap: wrap;*/
   justify-content: center;
-  margin-left: 12%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 75%;
 }
 
 #current-goal {
@@ -181,6 +185,7 @@ main {
     background-size: cover;
     height: 100vh;
     z-index: 10;
+    top: 0;
   }
 
   #video2 {

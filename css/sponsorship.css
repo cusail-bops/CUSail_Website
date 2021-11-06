@@ -39,6 +39,9 @@ button{
   color: #B31B1B;
   cursor: pointer;
   outline: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 
 button:hover{
