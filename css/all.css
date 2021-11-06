@@ -5,6 +5,7 @@ body {
   min-height: 100vh;
   position: relative;
   padding-bottom: 50px;
+  background-image: url('../images/BackgroundGrid.svg');
 }
 
 main{
@@ -86,7 +87,7 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 500;
 }
 
 #top-navbar-logo{
