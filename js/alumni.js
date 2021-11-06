@@ -1,12 +1,13 @@
+/*
+  Relevant examples
+  https://docs.mapbox.com/mapbox-gl-js/example/custom-marker-icons/
+  https://docs.mapbox.com/mapbox-gl-js/api/markers/
+  https://docs.mapbox.com/mapbox-gl-js/example/popup-on-click/
+  https://docs.mapbox.com/mapbox-gl-js/example/popup/
+  https://docs.mapbox.com/mapbox-gl-js/example/center-on-feature/
+*/
 mapboxgl.accessToken =
   "pk.eyJ1IjoiY3VzYWlsIiwiYSI6ImNrdGc5aDVzNTBnMXkycG9sZWxxdzRtejQifQ.TVmAAT0FjWRPjakxOHHJqA";
-
-const map = new mapboxgl.Map({
-  container: "map", // container ID
-  style: "mapbox://styles/cusail/cktg9k29a0pee18oaq1u4qk8f", // style URL
-  center: [-100, 40], // starting position [lng, lat]
-  zoom: 3, // starting zoom
-});
 
 const geojson = {
   type: "FeatureCollection",
@@ -23,7 +24,7 @@ const geojson = {
           computers, clicky mechanical keyboards, and all kinds of\
           software. He also really, really loves whole milk.",
         iconSize: [50, 50],
-        source: "/images/headshots/cj.jpg",
+        source: "/images/alumni/cj2.png",
       },
       geometry: {
         type: "Point",
@@ -40,7 +41,7 @@ const geojson = {
         CUSail, he is a part of Cayuga Capital and enjoys watching\
         soccer and basketball.",
         iconSize: [50, 50],
-        source: "/images/headshots/srikar.jpg",
+        source: "/images/alumni/cj2.png",
       },
       geometry: {
         type: "Point",
@@ -119,6 +120,15 @@ const geojson = {
   ],
 };
 
+const map = new mapboxgl.Map({
+  container: "map", // container ID
+  style: "mapbox://styles/cusail/cktg9k29a0pee18oaq1u4qk8f", // style URL
+  center: [-100, 40], // starting position [lng, lat]
+  zoom: 3, // starting zoom
+});
+
+map.addControl(new mapboxgl.NavigationControl({showCompass: false}));
+
 // Add markers to the map.
 for (const marker of geojson.features) {
   // Create a DOM element for each marker.
@@ -163,4 +173,5 @@ for (const marker of geojson.features) {
   new mapboxgl.Marker(el)
     .setLngLat(marker.geometry.coordinates)
     .addTo(map);
+    
 }

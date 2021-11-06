@@ -8,4 +8,14 @@
 
 .mapboxgl-popup-content {
   width: 350px;
+  left: -50px;
+}
+
+/* .Name {
+  font-size: 15px;
+} */
+
+.Title {
+  position: relative;
+  margin: auto;
 }
