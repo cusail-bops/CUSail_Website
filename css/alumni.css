@@ -6,9 +6,15 @@
   width: 100%;
 }
 
+.mapboxgl-map {
+  z-index: 2;
+}
+
 .mapboxgl-popup-content {
   width: 350px;
   left: -50px;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* .Name {
@@ -18,4 +24,16 @@
 .Title {
   position: relative;
   margin: auto;
+}
+
+a {
+  outline: none;
+}
+
+.linkedin-logo {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  height: 12px;
+  width: auto;
 }

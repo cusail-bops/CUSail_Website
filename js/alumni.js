@@ -15,16 +15,14 @@ const geojson = {
     {
       type: "Feature",
       properties: {
-        name: "CJ Lee | Business and Operations | Class of 2024",
-        title: "Student at Cornell University",
+        name: "Will Salcedo | Navigation | Class of 2023",
+        title: "Full Team Lead at CUSail",
         description:
-          "CJ hails from Ridgewood, New Jersey, although he spent\
-          most of his childhood in Oklahoma. Passionate about\
-          technology, he loves building and playing with cutting edge\
-          computers, clicky mechanical keyboards, and all kinds of\
-          software. He also really, really loves whole milk.",
+          "Will is a Freshman from the Jersey Shore. Aside from being a pro at\
+          putting in beach umbrellas, he also enjoys playing ping-pong and\
+          marching trumpet in the BRMB.",
         iconSize: [50, 50],
-        source: "/images/alumni/cj2.png",
+        source: "/images/alumni/will.png",
       },
       geometry: {
         type: "Point",
@@ -41,24 +39,42 @@ const geojson = {
         CUSail, he is a part of Cayuga Capital and enjoys watching\
         soccer and basketball.",
         iconSize: [50, 50],
-        source: "/images/alumni/cj2.png",
+        source: "/images/alumni/srikar.png",
       },
       geometry: {
         type: "Point",
         coordinates: [-122.41939396668471, 37.77194981145066],
       },
     },
+    // {
+    //   type: "Feature",
+    //   properties: {
+    //     name: "Meghana Gavirneni | Business and Operations | Class of 2023",
+    //     title: "Philosopher at Philosophists Inc.",
+    //     description:
+    //       "Meghana is a sophomore from Ithaca, NY. In her\
+    //     free time she enjoys visiting the local gorges, watching\
+    //     Netflix, and most of all eating grilled cheese.",
+    //     iconSize: [50, 50],
+    //     source: "/images/headshots/meghana.jpg",
+    //   },
+    //   geometry: {
+    //     type: "Point",
+    //     coordinates: [-74.00567219902246, 40.71474287940977],
+    //   },
+    // },
     {
       type: "Feature",
       properties: {
-        name: "Meghana Gavirneni | Business and Operations | Class of 2023",
-        title: "Philosopher at Philosophists Inc.",
+        name: "Aleksandra Nasiukiewicz | Mechanical | Class of 2023",
+        title: "Subteam Lead at CUSail",
         description:
-          "Meghana is a sophomore from Ithaca, NY. In her\
-        free time she enjoys visiting the local gorges, watching\
-        Netflix, and most of all eating grilled cheese.",
+          "Aleksandra “Ola” is from Queens New York. Originally from Poland,\
+          she loves making Polish cultural foods and hiking the Tatry\
+          mountains. She also enjoys rock climbing and watching historical\
+          dramas.",
         iconSize: [50, 50],
-        source: "/images/headshots/meghana.jpg",
+        source: "/images/alumni/aleksandra.png",
       },
       geometry: {
         type: "Point",
@@ -77,40 +93,43 @@ const geojson = {
           Cornell IEEE. While not in class, Crystal can be found\
           napping, playing Pentris, or designing stickers.",
         iconSize: [50, 50],
-        source: "/images/headshots/crystal.jpg",
+        source: "/images/alumni/crystal.png",
       },
       geometry: {
         type: "Point",
         coordinates: [-73.80713416114955, 41.58028319040764],
       },
     },
+    // {
+    //   type: "Feature",
+    //   properties: {
+    //     name: "Daniel Tuan | Business and Operations | Class of 2024",
+    //     title: "Businessman at IB Inc.",
+    //     description:
+    //       "Daniel is from Germantown, Maryland (about an hour away\
+    //       from D.C.). Outside of CUSail, he is involved with CSA. In\
+    //       his free time, he enjoys finding new restaurants, learning\
+    //       about entrepreneurship, golfing, and being overly\
+    //       competitive about the NYT Daily Mini crossword.",
+    //     iconSize: [50, 50],
+    //     source: "/images/headshots/daniel.jpg",
+    //   },
+    //   geometry: {
+    //     type: "Point",
+    //     coordinates: [-87.63720465675507, 41.88312422552314],
+    //   },
+    // },
     {
       type: "Feature",
       properties: {
-        name: "Daniel Tuan | Business and Operations | Class of 2024",
-        title: "Businessman at IB Inc.",
-        description:
-          "Daniel is from Germantown, Maryland (about an hour away\
-          from D.C.). Outside of CUSail, he is involved with CSA. In\
-          his free time, he enjoys finding new restaurants, learning\
-          about entrepreneurship, golfing, and being overly\
-          competitive about the NYT Daily Mini crossword.",
+        name: "Fabrizio Casanova | Navigation | Class of 2023",
+        title: "Subteam Lead at CUSail",
+        description: "Fabrizio is from Venezuela by way of Miami, Florida. You\
+        can usually find him napping in Olin in between Calculus sets. Outside\
+        of CUSail, he enjoys bowling, hiking, and arguing that Terraria is\
+        better than Minecraft.",
         iconSize: [50, 50],
-        source: "/images/headshots/daniel.jpg",
-      },
-      geometry: {
-        type: "Point",
-        coordinates: [-87.63720465675507, 41.88312422552314],
-      },
-    },
-    {
-      type: "Feature",
-      properties: {
-        name: "Jason Lan | Business and Operations | Class of 2024",
-        title: "Chilling at Texas.",
-        description: "Jason is chillin",
-        iconSize: [50, 50],
-        source: "/images/headshots/no-picture.jpg",
+        source: "/images/alumni/fabrizio.png",
       },
       geometry: {
         type: "Point",
@@ -155,6 +174,9 @@ for (const marker of geojson.features) {
         `
         <strong class="Name">${marker.properties.name}</strong> <br>
         <strong class="Title">${marker.properties.title}</strong>
+        <a target="_blank" href="https://www.linkedin.com/in/cj-lee/">
+          <img class="linkedin-logo" src="../images/alumni/linkedinlogo.svg" alt="LinkedIn Logo">
+        </a>
         <p style="font-size:12px"}>${marker.properties.description}</p>
         `
       )
