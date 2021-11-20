@@ -117,7 +117,8 @@ p {
 }
 
 .notOnThisPage{
-  color: #B31B1B;
+  color: black;
+  font-weight: bold;
   /* color: #777; */
 }
 
