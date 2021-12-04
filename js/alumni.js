@@ -113,22 +113,20 @@ for (const marker of geojson.features) {
       popup[0].remove();
     }
 
-    if (marker.properties.description != ""){
-      new mapboxgl.Popup({ offset: [0, -15] }, { closeOnClick: true })
-        .setLngLat(coord)
-        .setHTML(
-          `
-          <strong class="Name">${marker.properties.name}</strong> <br>
-          <strong class="Title">${marker.properties.title}</strong>
-          <a target="_blank" href="https://www.linkedin.com/in/cj-lee/">
-            <img class="linkedin-logo" src="../images/alumni/linkedinlogo.svg" alt="LinkedIn Logo">
-          </a>
-          <p style="font-size:12px"}>${marker.properties.description}</p>
-          `
-        )
-        .addTo(map);
-      e.stopPropagation(); // Needed to get popup to show up cuz of weird bug https://github.com/mapbox/mapbox-gl-js/issues/5289
-    }
+    new mapboxgl.Popup({ offset: [0, -15] }, { closeOnClick: true })
+      .setLngLat(coord)
+      .setHTML(
+        `
+        <strong class="Name">${marker.properties.name}</strong> <br>
+        <strong class="Title">${marker.properties.title}</strong>
+        <a target="_blank" href="https://www.linkedin.com/in/cj-lee/">
+          <img class="linkedin-logo" src="../images/alumni/linkedinlogo.svg" alt="LinkedIn Logo">
+        </a>
+        <p style="font-size:12px"}>${marker.properties.description}</p>
+        `
+      )
+      .addTo(map);
+    e.stopPropagation(); // Needed to get popup to show up cuz of weird bug https://github.com/mapbox/mapbox-gl-js/issues/5289
 
     map.flyTo({
       speed: 1.5,
