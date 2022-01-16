@@ -4,8 +4,18 @@
 
 #who-we-are-description{
   width: 50%;
-  text-align: center;
+  text-align: left;
   margin: auto;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#sub-heading{
+  padding-top: 10px;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-weight: 400;
 }
 
 #full-team-photo{
@@ -34,6 +44,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 2em;
+  font-family: 'Open Sans';
 }
 
 .member-card{
@@ -42,6 +53,7 @@
   width: 285px;
   height: 425px;
   margin: 1em;
+  
 }
 
 .flip-card {
@@ -75,6 +87,19 @@
   padding-left: 12px;
   padding-top: 12px;
   height: 109px;
+  font-family: 'Open Sans';
+}
+
+p {
+  font-family: 'Open Sans';
+  font-size: 15px ;
+}
+
+h4 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0em;
 }
 
 .headshot{
@@ -111,15 +136,11 @@
 }
 
 #aleksandra{
-  font-size: 21.5px;
-}
-
-#adi{
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .hidden{
-  visibility: hidden;
+  visibility: visible;
 }
 
 @media (max-width: 620px){
@@ -130,6 +151,7 @@ main{
 
 .subteam-description{
   width: 75%;
+  padding-top: 10px;
 }
 
 #who-we-are-description{

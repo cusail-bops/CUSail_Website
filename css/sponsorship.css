@@ -1,9 +1,9 @@
-body{
-  background-image: none;
-}
-
 #page-header{
   margin-top: 2em;
+}
+
+p {
+  font-size: 15px;
 }
 
 #donor-request{
@@ -108,6 +108,7 @@ button:hover{
 
 .donor-type-header{
   text-align: center;
+  position: fixed;
   margin-bottom: 1em;
 }
 
