@@ -1,0 +1,61 @@
+body{
+    background-image: none;
+  }
+  
+  #page-header{
+    margin-top: 2em;
+  }
+  
+  #description{
+    width: 75%;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+  }
+  
+  
+  #button-container{
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 6em;
+  }
+  
+  button{
+    width: 14em;
+    height: 3em;
+    border-radius: 100px;
+    border: 2px solid #B31B1B;
+    font-size: 18px;
+    font-weight: bold;
+    color: #B31B1B;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  
+  button:hover{
+    background-color: #B31B1B;
+    color: rgb(153, 133, 133);
+  }
+
+  #goals-header{
+    margin-top: 2em;
+  }
+  
+  @media (max-width: 650px){
+  
+  #donor-levels-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  main{
+    margin-bottom: 5em;
+  }
+  }
+  
