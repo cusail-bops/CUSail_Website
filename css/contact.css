@@ -28,14 +28,8 @@
   max-width: 500px;
 }
 
-#contactus h3{
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-#contactus p{
-  font-size: 15px;
-  margin-bottom: 1em;
+#contactus h5{
+  margin-top: 2em;
 }
 
 #contactus a:hover{
