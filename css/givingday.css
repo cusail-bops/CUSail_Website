@@ -46,6 +46,31 @@ body{
     margin-top: 2em;
   }
 
+  #goalcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #image{
+    width: 45%;
+    margin-left: 800px;
+    max-width: 400px;
+    max-height: 700px;
+  }
+
+  #watertube{
+    width: 100%;
+  }
+
+  #goaldescription{
+    width: 30%;
+    margin-left: 6em;
+    max-width: 500px;
+  }
+
   #goal{
     margin-top: 2em;
     text-align: center;
