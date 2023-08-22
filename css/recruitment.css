@@ -65,11 +65,16 @@
   margin-top: 2rem;
 }
 
-/* iframe{
-  width:560px;
+.iframe-container {
+  display: flex;
+  justify-content: left;   
+}
+
+iframe{
+  width:200px;
   height:315px;
   margin-bottom: 5em;
-} */
+}
 
 .questions-section{
   width: 80%;
