@@ -3,7 +3,7 @@ main {
 }
 
 #hero-image{
-  background: url(../images/index/drone-boat.jpg);
+  background: url(../images/index/the-godfather.jpg);
   background-size: cover;
   height: 100vh;
 }
@@ -34,12 +34,12 @@ main {
 }
 
 #title h1 {
-  padding-top: 20vh;
-  padding-left: 10%;
+  padding-top: 10vh;
+  padding-left: 4%;
 }
 
 #title h2 {
-  padding-left: 10%;
+  padding-left: 4%;
 }
 
 #about-us-header {
