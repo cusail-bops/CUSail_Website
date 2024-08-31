@@ -64,6 +64,13 @@ h5 {
   margin: 0em;
 }
 
+h5b {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0em;
+}
+
 p {
   font-family: 'Open Sans';
   font-weight: 400;
