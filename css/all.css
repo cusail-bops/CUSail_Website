@@ -218,6 +218,11 @@ p {
   margin-top: 1em;
 }
 
+#cornell-info{
+  width: 20em;
+  margin-left: 30%;
+  margin-top: 5%;
+}
 
 @media (max-width: 900px) {
   /* mobile top navbar */
@@ -251,6 +256,7 @@ p {
   #hamburger-icon {
     display: none;
   }
+
 }
 
 
@@ -354,6 +360,15 @@ p {
   #footer-logo {
     bottom: .8em;
   }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+    #cornell-info{
+      width: 20em;
+      margin-left: 15%;
+      margin-top: 5%;
+    }
 }
 
 /* large desktop screens */
@@ -367,4 +382,5 @@ p {
   #follow-us {
     margin-left: 20em;
   }
+
 }
