@@ -145,9 +145,18 @@ iframe{
   margin-top: 1em;
 }
 
+#fall-timeline{
+  margin-top: 5%;
+  width: 60%;
+}
+
 @media (max-width: 700px){
 .question-container{
   height: 50px;
+}
+
+#fall-timeline{
+  width: 100%;
 }
 }
 
@@ -156,6 +165,10 @@ iframe{
   width:300px;
   height:168px;
   margin-bottom: 5em;
+}
+
+#fall-timeline{
+  width: 100%;
 }
 
 #team-photo-container{
@@ -175,6 +188,10 @@ iframe{
 @media (max-width: 350px){
 .question-container{
   height: 75px;
+}
+
+#fall-timeline{
+  width: 100%;
 }
 }
 
