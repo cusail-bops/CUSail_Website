@@ -10,6 +10,11 @@ h3 {
     display: flex;
 }
 
+.past-boat-container img {
+    background: url(../images/fleet/blur.png);
+    background-size: 91%;
+}
+
 .left{
     float: left;
     width: 50%;
@@ -56,14 +61,18 @@ main{
     width: 100%;
     height: 33%;
     padding: 10px;
-
 }
+
 
 .feature-items:hover {
     background-color: #F9F9F9;
     border-radius: 5px;
+    color: #323232;
 }
 
+.feature-items:hover  p, .feature-items:hover h5 {
+    box-shadow: none;
+}
 
 .feature-items h5 {
     margin-bottom: 10px;
@@ -88,7 +97,8 @@ main p {
     top: 0;
     bottom: 0;
     margin: auto;
-
+    background: url(../images/fleet/blur.png);
+    background-size: 110%;
 }
 
 

@@ -6,8 +6,8 @@
   <title>CUSail | Our Team</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="shortcut icon" type="image/png" href="../images/logos/boat.png" />
   <link rel="stylesheet" href="../css/all.css" />
   <script defer src="../js/all.js"></script>
@@ -19,9 +19,9 @@
 <body>
   <header>
     <nav id="top-navbar">
-      <a href="../index.html">
-        <img loading="lazy" id="top-navbar-logo" src="../images/logos/justbigword.png" alt="CUSail Word Logo" />
-      </a>
+      <!-- <a href="../index.html">
+        <img id="top-navbar-logo" src="../images/logos/justbigword.png" alt="CUSail Word Logo" />
+      </a> -->
       <div id="navbar-links-container">
         <a class="notOnThisPage" href="../index.html">About</a>
         <a class="onThisPage" href="./ourteam.html">Our Team</a>
@@ -32,7 +32,7 @@
         <a class="notOnThisPage" href="./contact.html">Contact Us</a>
         <a class="notOnThisPage" href="./givingday.html">Giving Day</a>
       </div>
-      <img loading="lazy" id="hamburger-icon" class="navhidden" src="../images/icons/Hamburger.svg" alt="hamburger icon" />
+      <img id="hamburger-icon" class="navhidden" src="../images/icons/Hamburger.svg" alt="hamburger icon" />
     </nav>
     <nav class="navhidden" id="mobile-top-navbar">
       <div id="mobile-navbar-links-container">
@@ -51,8 +51,39 @@
     <p id="who-we-are-description">We are a team of 38 undergraduate students at Cornell University who share a passion
       to build the next generation of robotic, intelligent sailboats.</p>
     <div>
-      <img loading="lazy" id="full-team-photo" src="../images/teamphotos/full.jpg" alt="Full Team Photo" />
+      <img id="full-team-photo" src="../images/teamphotos/full.jpg" alt="Full Team Photo" />
     </div>
+
+    <h3>Our Team</h3>
+    <div id="subteam-links">
+      <div class="subteam-card">
+        <a href="#nav-team">
+        <div class="inner-card">
+          <img id="navigation-icon" src="../images/icons/navigation.png" alt="Navigation Icon">
+        </div>
+        </a>
+        <p>Navigation</p>
+      </div>
+
+      <div class="subteam-card">
+        <a href="#mech-team">
+        <div class="inner-card">
+          <img id="mechanical-icon" src="../images/icons/mech.png" alt="Mechanical Icon">
+        </div>
+        </a>
+        <p>Mechanical</p>
+      </div>
+
+      <div class="subteam-card">
+        <a href="#bops-team">
+        <div class="inner-card">
+          <img id="business-icon" src="../images/icons/bops.png" alt="Business Icon">
+        </div>
+        </a>
+        <p>Business</p>
+      </div>
+    </div>
+
     <p id="sub-heading" class="subteam-description">Our <b>Leads</b> ensure the team is fully prepared for the
       competition each June and making progress on the long term goals.</p>
     <div class="card-container">
@@ -258,7 +289,8 @@
             </div>
           </div>
         </div>
-        <div class="member-card-info">
+
+      <div class="member-card-info">
           <h4>Tiffany Li</h4>
           <h5>Business & Operations Lead</h5>
           <p>Computer Science</p>
@@ -284,9 +316,9 @@
               </div>
             </div>
           </div>
-        </div>
+      </div>
         
-        <div class="member-card-info">
+      <div class="member-card-info">
           <h4>Linda Chen</h4>
           <h5>Business & Operations Lead</h5>
           <p>Computer Science</p>
@@ -300,13 +332,15 @@
       </div>
 
 
+
+
     
     
     </div>
 
       
 
-    <p id="sub-heading" class="subteam-description">The <b style="color: #b31b1b">Mechanical Subteam</b> designs and
+    <p id="mech-team" class="subteam-description">The <b>Mechanical Subteam</b> designs and
       manufactures the mechanical components of the boat.</p>
     <div class="card-container">
       <div class="member-card">
@@ -727,11 +761,10 @@
         </div>
       </div>
 
-
     </div>
   </div>
 
-    <p id="sub-heading" class="subteam-description">The <b style="color: #65c8d0">Navigation Subteam</b> works with the
+    <p id="nav-team" class="subteam-description">The <b>Navigation Subteam</b> works with the
       boat's electrical and software components - including PCB design, sensor integration, sailing algorithms, power
       management, and radio communication.</p>
     <div class="card-container">
@@ -1147,7 +1180,7 @@
 
     </div>
 
-    <p id="sub-heading" class="subteam-description">The <b style="color: #4763c7">Business & Operations Subteam</b> is
+    <p id="bops-team" class="subteam-description">The <b>Business & Operations Subteam</b> is
       the connection between the team and the rest of Cornell. The team handles marketing, front end development,
       design, finances, outreach, and sponsorships.</p>
     <div class="card-container">
@@ -1294,7 +1327,6 @@
 
 
 
-
   </main>
   <footer>
     <nav id="bottom-navbar">
@@ -1304,23 +1336,19 @@
           <div class="media-links footer-text-container">
             <!-- <a target="_blank" href="https://www.facebook.com/cusail/">
               Facebook
-              <img loading="lazy"
- id="facebook-icon" class="footer-icon" src="../images/icons/facebook.svg" alt="Facebook Icon" />
+              <img id="facebook-icon" class="footer-icon" src="../images/icons/facebook.svg" alt="Facebook Icon">
             </a> -->
             <a target="_blank" href="https://www.instagram.com/cusail/">
               Instagram
-              <img loading="lazy"
- id="instagram-icon" class="footer-icon" src="../images/icons/instagram.svg" alt="Instagram Icon" />
+              <img id="instagram-icon" class="footer-icon" src="../images/icons/instagram.svg" alt="Instagram Icon">
             </a>
             <!-- <a target="_blank" href="https://www.linkedin.com/company/cusail/">
               LinkedIn
-              <img loading="lazy"
- id="linkedin-icon" class="footer-icon" src="../images/icons/linkedin.svg" alt="LinkedIn Icon" />
+              <img id="linkedin-icon" class="footer-icon" src="../images/icons/linkedin.svg" alt="LinkedIn Icon">
             </a> -->
             <a target="_blank" href="https://www.youtube.com/channel/UCYLMLKmgTJUMDos3ekQzPNg">
               Youtube
-              <img loading="lazy"
- id="youtube-icon" class="footer-icon" src="../images/icons/youtube.svg" alt="Youtube Icon" />
+              <img id="youtube-icon" class="footer-icon" src="../images/icons/youtube.svg" alt="Youtube Icon">
             </a>
           </div>
         </div>
@@ -1339,10 +1367,8 @@
           <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">Equal Education and Employment</a>
         </div>
       </div>
-      <a href="../index.html"><img loading="lazy"
- id="footer-logo" src="../images/logos/footer-boat.png" alt="boat logo" /></a>
-      <img loading="lazy"
- id="waves-img" src="../images/icons/waves.png" alt="waves" />
+      <a href="../index.html"><img id="footer-logo" src="../images/logos/footer-boat.png" alt="boat logo"></a>
+      <img id="waves-img" src="../images/icons/waves.png" alt="waves">
     </nav>
   </footer>
 </body>

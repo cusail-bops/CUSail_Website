@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans';
   scroll-behavior: smooth;
@@ -5,7 +9,9 @@ body {
   min-height: 100vh;
   position: relative;
   padding-bottom: 50px;
-  background-image: url('../images/BackgroundGrid.svg');
+  /* background-image: url('../images/BackgroundGrid.svg'); */
+  color: #FFFFFF;
+  background-color: #323232;
 }
 
 main {
@@ -15,7 +21,7 @@ main {
 }
 
 a {
-  color: #B31B1B;
+  color: #65C8D0;
   text-decoration: none;
 }
 
@@ -86,11 +92,11 @@ p {
 
 /* desktop top navbar */
 #top-navbar {
-  background-color: #F2F2F2;
+  background-color: #292828;
   height: 55px;
   border-style: solid;
   border-width: .015px 0px .05px 0px;
-  border-color: rgb(219, 219, 219);
+  border-color: #323232;
   position: fixed;
   top: 0;
   width: 100%;
@@ -112,41 +118,41 @@ p {
 
 #navbar-links-container a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
 /* highlight link of current page */
 .onThisPage {
-  color: #B31B1B;
-  font-weight: bold;
+  color: #65C8D0;
+  font-weight: 700;
 }
 
 .notOnThisPage {
-  color: black;
+  color: #FFFFFF;
   /* color: #777; */
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .notOnThisPage:hover {
-  color: #B31B1B;
+  color: #65C8D0;
 }
 
 /* desktop bottom navbar */
 #bottom-navbar {
-  background-color: #F2F2F2;
+  background-color: #323232;
   height: 225px;
   width: 100%;
   position: absolute;
   bottom: 0;
   border-style: solid;
   border-width: .1px 0px .1px 0px;
-  border-color: rgb(219, 219, 219);
+  border-color: #323232;
 }
 
 #bottom-navbar a:hover {
-  color: black;
+  text-decoration: underline;
 }
 
 #waves-img {
@@ -224,6 +230,7 @@ p {
   margin-top: 5%;
 }
 
+
 @media (max-width: 900px) {
   /* mobile top navbar */
 
@@ -256,7 +263,6 @@ p {
   #hamburger-icon {
     display: none;
   }
-
 }
 
 
@@ -268,8 +274,8 @@ p {
 
   /* mobile top navbar */
   #mobile-top-navbar {
-    background-color: #F2F2F2;
-    height: 295px;
+    background-color:  #323232;
+    height: 350px;
   }
 
   main {
@@ -360,7 +366,6 @@ p {
   #footer-logo {
     bottom: .8em;
   }
-
 }
 
 @media (min-width: 1200px) and (max-width: 1500px){
@@ -382,5 +387,4 @@ p {
   #follow-us {
     margin-left: 20em;
   }
-
 }

@@ -1,20 +1,24 @@
 #page-header{
-  margin-top: 2em;
+  margin-top: 5.5em;
 }
 
 #donor-request{
-  width: 75%;
+  width: 60%;
   font-weight: normal;
   text-align: center;
   margin: auto;
+  margin-top: 1em;
   max-width: 1000px;
 }
 
 #donor-description{
-  width: 60%;
+  width: 70%;
   text-align: center;
+  font-weight: lighter;
+  font-size: smaller;
   margin: auto;
   margin-top: 2em;
+  margin-bottom: 2em;
   max-width: 800px;
 }
 
@@ -25,8 +29,8 @@
 #button-container{
   text-align: center;
   margin: auto;
-  margin-top: 2em;
-  margin-bottom: 6em;
+  margin-top: 1em;
+  margin-bottom: -2em;
 }
 
 button{
@@ -34,20 +38,22 @@ button{
   height: 3em;
   background-color: transparent;
   border-radius: 100px;
-  border: 2px solid #B31B1B;
+  border: 2px solid #ffffff;
   font-size: 18px;
   font-weight: bold;
-  color: #B31B1B;
+  color: #ffffff;
   cursor: pointer;
   outline: none;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 5px;
+  transition: 0.3s ease;
 }
 
+
 button:hover{
-  background-color: #B31B1B;
-  color: white;
+  background-color: #ffffff;
+  color: #323232;
 }
 
 #donor-levels-container{
@@ -62,6 +68,14 @@ button:hover{
   width: 235px;
 }
 
+.boat-text-container{
+  transition: transform 0.3s ease;
+}
+
+.boat-text-container:hover{
+  transform: scale(1.02);
+}
+
 .donor-box{
   width: 175px;
   margin: auto;
@@ -69,8 +83,8 @@ button:hover{
 }
 
 .donor-box:hover{
-  border: 2px solid #B31B1B;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border: 2px solid  #ffffff;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
 }
 
 .donor-box h4{
@@ -86,17 +100,26 @@ button:hover{
   display: none;
 }
 
+
+.section-header{
+  margin-top: 4.5em;
+}
+
 .text-box{
-  background: url(../images/icons/bubble.svg);
+  /* background: url(../images/icons/bubble.svg); */
   background-size: cover;
-  height: 115px;
+  height: 135px;
   width: 250px;
-  padding-top: 2.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: auto;
   position: relative;
   right: 1.5em;
+  color: rgb(255, 255, 255);
+  margin-top: 10%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
 }
 
 .text-box h5{
@@ -105,6 +128,7 @@ button:hover{
 
 .donor-type-header{
   text-align: center;
+  margin-top: 3em;
   margin-bottom: 1em;
 }
 

@@ -14,9 +14,20 @@
   margin-bottom: 1em;
 }
 
+h4{
+  margin-bottom: 3%; 
+}
+
+#team-photo-container{
+  display:flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
 #application-button-section{
-  padding-top: 15px;
-  padding-bottom: 0px;
+  min-width: 350px;
+  padding-top: 10px;
+  padding-bottom: 50px;
   display:flex;
   flex-direction: row;
   margin: auto;
@@ -27,16 +38,17 @@
   color: black;
   padding: 15px 32px;
   text-align: center;
-  margin: 0px 20px;
+  margin: 0px 20%;
   transition-duration: 0.3s;
+  border-radius: 50px;
 }
 
 .application-button:hover{
-  color: white;
+  background-color: #ffffff;
 }
 
 #upperclassmen{
-  border: thick double #B31B1B;
+  border: solid white;
 }
 
 #upperclassmen:hover{
@@ -44,16 +56,25 @@
 }
 
 #underclassmen{
-  border: thick double #65C8D0;
+  border: solid #ffffff;
 }
 
 #underclassmen:hover{
-  background-color: #65C8D0;
+  background-color: #ffffff;
+  color: #323232;
+}
+
+#underclassmen:hover .application-button-text {
+  color: #323232;
 }
 
 .application-button-text{
-  font-family: 'ElephantOutline';
-  font-size: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.application-button-text:hover{
+  color: #323232;
 }
 
 .information-sessions {
@@ -65,9 +86,41 @@
   margin-top: 2rem;
 }
 
+.application-container{
+  text-align: center;
+  width: 40%;
+  padding: 2px;
+  margin-top: -10%;
+  background-color: #323232;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  margin-left: 30%;
+  margin-right: 30%; 
+  z-index: 10;
+  position: relative;
+  padding-bottom: 2%;
+}
+
+.application-container p {
+  margin-bottom: 4%;
+}
+
 .iframe-container {
-  display: flex;
-  justify-content: left;   
+  max-width: 1000px;
+  width: 100%; 
+  aspect-ratio: 16 / 9;
+  margin: 2rem auto 4em auto;
+  position: relative;
+  /* display: flex;
+  justify-content: left;    */
+}
+
+.iframe-container iframe{
+  width: 100%;
+  height: 100%; 
+  border: none; 
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 iframe{
@@ -91,47 +144,79 @@ iframe{
 
 .question-container{
   height: 37px;
-  background: #FBFBFB;
+  background: #323232;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   display: flex;
   cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  transition: transform 0.3s ease;
+}
+
+.question-container h4{
+  text-align: center;
+}
+
+.arrow{
+  /* font-size: 1rem; */
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  font-size: 1.5rem;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg); /* makes it point down */
+  margin-right: 2%;
 }
 
 .question-container:hover{
-  text-decoration: underline;
+  transform: scale(1.02);
 }
 
-.question-container:hover p{
-  color: black;
+.question-container.active span{
+  transform: rotate(225deg);
 }
 
 .question-container p{
   margin: auto;
   margin-left: 1em;
   margin-right: 1em;
-  color: #B31B1B;
+  color: #ffffff;
 }
 
 .answer-container{
   margin-bottom: .3em;
   margin-top: .3em;
-  background: #FBFBFB;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  /* background: #393939;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25); */
+  margin-left: 3%;
   border-radius: 5px;
   display: flex;
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
+
+
 
 .answer-container p{
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #team-photo-container{
     text-align: center;
     margin-top: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 40%;
 }
 
 #team-photo{
@@ -139,10 +224,11 @@ iframe{
   margin: auto;
   border: 1px solid black;
   max-width: 1000px;
+  position: relative;
 }
 
 #coffee-chat{
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 #fall-timeline{
@@ -161,18 +247,13 @@ iframe{
 }
 
 @media (max-width: 600px){
-iframe{
-  width:300px;
-  height:168px;
-  margin-bottom: 5em;
+
+#team-photo-container{
+  margin-bottom: 10em;
 }
 
 #fall-timeline{
   width: 100%;
-}
-
-#team-photo-container{
-  margin-bottom: 10em;
 }
 
 #text-video-section{
@@ -183,22 +264,19 @@ iframe{
   flex-direction: column;
 }
 
+#team-photo-container{
+  width: 100%;
+}
+
+.application-container{
+  width: 90%;
+}
+
 }
 
 @media (max-width: 350px){
 .question-container{
   height: 75px;
 }
-
-#fall-timeline{
-  width: 100%;
-}
 }
 
-@media (min-width: 1500px){
-  iframe{
-    width:1000px;
-    height:560px;
-    margin-bottom: 5em;
-  }
-}

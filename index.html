@@ -19,9 +19,9 @@
 
   <header>
     <nav id="top-navbar">
-      <a href="./index.html">
+      <!-- <a href="./index.html">
         <img id="top-navbar-logo" src="./images/logos/justbigword.png" alt="CUSail Word Logo">
-      </a>
+      </a> -->
       <div id="navbar-links-container">
         <a class="onThisPage" href="./index.html">About</a>
         <a class="notOnThisPage" href="./app/ourteam.html">Our Team</a>
@@ -55,98 +55,146 @@
       </div>
 
     </div>
-    <h3 id="about-us-header" class="section-header">About Us</h3>
-    <p class="section-desccription">CUSail, a registered student organization of Cornell University, is an engineering
-      project team that designs and manufactures an autonomous
-      sailboat to compete in the SailBot International Robotic Sailboat Regatta. In the long term, the team hopes to
-      construct a fleet of autonomous sailboats that can independently navigate across the world to collect oceanic
-      data. CUSail offers students across many disciplines the opportunity to apply what they have been learning in the
-      classroom to real world engineering problems. With over 30 members, the team combines cutting-edge technology with
-      advanced mechanical design to engineer a smarter and faster boat every year.</p>
+    <div id="about-us-container">
+      <h3 id="about-us-header" class="section-header">About Us</h3>
+      <p class="section-desccription">CUSail, a registered student organization of Cornell University, is an engineering
+        project team that designs and manufactures an autonomous
+        sailboat to compete in the SailBot International Robotic Sailboat Regatta. In the long term, the team hopes to
+        construct a fleet of autonomous sailboats that can independently navigate across the world to collect oceanic
+        data. CUSail offers students across many disciplines the opportunity to apply what they have been learning in the
+        classroom to real world engineering problems. With over 30 members, the team combines cutting-edge technology with
+        advanced mechanical design to engineer a smarter and faster boat every year.</p>
+    </div>
     <div id="metrics-container">
       <div class="metric">
-        <img src="./images/icons/members-icon.svg" alt="Members Icon">
+        <img src="./images/icons/members-icon-gray.svg" alt="Members Icon">
         <h2>38</h2>
         <p>Members</p>
       </div>
       <div class="metric">
-        <img src="./images/icons/majors-icon.svg" alt="Majors Icon">
-        <h2>9</h2>
+        <img src="./images/icons/majors-icon-gray.svg" alt="Majors Icon">
+        <h2>13</h2>
         <p>Majors across 3 colleges</p>
       </div>
       <div class="metric">
-        <img src="./images/icons/yearfounded-icon.svg" alt="Year Founded Icon">
+        <img src="./images/icons/yearfounded-icon-gray.svg" alt="Year Founded Icon">
         <h2>2014</h2>
         <p>Year Founded</p>
       </div>
     </div>
     <div id="images-container">
       <img class="pic" src="./images/index/dropping-boat.jpg" alt="Dropping boat in the water">
-      <img class="pic" src="./images/index/christroylake.jpg" alt="Chris and Troy by the lake">
-      <img class="pic" src="./images/index/electronics.jpg" alt="Closeup of boat electronics">
-      <img class="pic" src="./images/index/diane-testing.jpg" alt="Dropping boat in the water">
+      <img class="pic" src="./images/index/mech-lake.png" alt="Mechanical team by the lake">
+      <img class="pic" src="./images/index/electronics.png" alt="Closeup of boat electronics">
+      <img class="pic" src="./images/index/boat.png" alt="Team members in boat">
     </div>
+
     <h3 class="section-header">Sailbot</h3>
     <p class="section-desccription">Each year in June, CUSail competes in the Sailboat International Robotic Sailing
       Regatta. This contest helps the team evaluate the boats design and figure out what to improve on in future
       iterations. All the events in the regatta are designed to test the mechanical, electrical, and algorithmic
       components of the sailboat. This year, the competition will be from June 7-12 on Lake Attitash in Amesbury, MA.
     </p>
+
+
     <h3 class="section-header">Events</h3>
-    <div id="events-container">
-      <div class="event-card">
-        <img src="./images/index/cayuga-lake.jpg" alt="Cayuga Lake">
-        <h4>Fleet Race</h4>
-        <p>The sailboat sails in a loop around two buoys via remote control. The goal of this event is to demonstrate an
-          ability to operate the boat via remote control, as well as to judge the performance of the vessel.</p>
+    <div class="carousel-container">
+      <button class="carousel-button left">&#8249;</button>
+
+      <div class="carousel-viewport">
+        <div id="events-container">
+          <!-- JS will clone and rearrange these for infinite loop -->
+          <div class="event-card">
+            <img src="./images/index/cayuga-lake2.png" alt="Cayuga Lake" />
+            <h4>Fleet Race</h4>
+            <p>
+              The sailboat sails in a loop around two buoys via remote
+              control. The goal of this event is to demonstrate an ability to
+              operate the boat via remote control, as well as to judge the
+              performance of the vessel.
+            </p>
+          </div>
+          <div class="event-card">
+            <img
+              src="./images/index/boat-drone2.jpg"
+              alt="Boat in Cayuga Lake"
+            />
+            <h4>Endurance</h4>
+            <p>
+              The sailboat sails autonomously around four buoys continuously
+              for up to seven hours to demonstrate the boat's endurance and
+              ability to sail long distances.
+            </p>
+          </div>
+          <div class="event-card">
+            <img src="./images/index/boat-closeup.jpg" alt="Boat Closeup" />
+            <h4>Station Keeping</h4>
+            <p>
+              The sailboat autonomously sails into a 40 m x 40 m box and must
+              stay inside the box for five minutes, then exit the box within
+              30 seconds. The goal of this event is to demonstrate the boat's
+              ability to precisely position itself and respond to commands.
+            </p>
+          </div>
+          <div class="event-card">
+            <img src="./images/index/cayuga-lake3.png" alt="Cayuga Lake" />
+            <h4>Precision Navigation</h4>
+            <p>
+              The sailboat starts autonomously traverses a route around buoys.
+              The goal of this event is to demonstrate the boat's ability to
+              autonomously navigate a course with obstacles.
+            </p>
+          </div>
+          <div class="event-card">
+            <img
+              src="./images/index/cayuga-lake4.png"
+              alt="Boat in Cayuga Lake"
+            />
+            <h4>Search</h4>
+            <p>
+              The sailboat must autonously find an orange buoy placed in a 100
+              m search area, touch the buoy, and signal that it has done so.
+              The goal of this event is to demonstrate the boat�s ability to
+              autonomously find an object.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="event-card">
-        <img src="./images/index/boat-drone2.jpg" alt="Boat in Cayuga Lake">
-        <h4>Endurance</h4>
-        <p>The sailboat sails autonomously around four buoys continuously for up to seven hours to demonstrate the
-          boat's endurance and ability to sail long distances.</p>
-      </div>
-      <div class="event-card">
-        <img src="./images/index/boat-closeup.jpg" alt="Boat Closeup">
-        <h4>Station Keeping</h4>
-        <p>The sailboat autonomously sails into a 40 m x 40 m box and must stay inside the box for five minutes, then
-          exit the box within 30 seconds. The goal of this event is to demonstrate the boat's ability to precisely
-          position itself and respond to commands.</p>
-      </div>
-      <div class="event-card">
-        <img src="./images/index/cayuga-lake.jpg" alt="Cayuga Lake">
-        <h4>Precision Navigation</h4>
-        <p>The sailboat starts autonomously traverses a route around buoys. The goal of this event is to demonstrate the
-          boat's ability to autonomously navigate a course with obstacles.</p>
-      </div>
-      <div class="event-card">
-        <img src="./images/index/boat-drone2.jpg" alt="Boat in Cayuga Lake">
-        <h4>Search</h4>
-        <p>The sailboat must autonously find an orange buoy placed in a 100 m search area, touch the buoy, and signal
-          that it has done so. The goal of this event is to demonstrate the boat�s ability to autonomously find an
-          object.</p>
-      </div>
+
+      <button class="carousel-button right">&#8250;</button>
     </div>
+      
+
     <h3 class="section-header">Long Term Goals</h3>
     <div id="goals-container">
-      <div>
+      <!-- <div>
         <img src="./images/index/goaltimeline.png" alt="Goal timeline">
-      </div>
+      </div> -->
       <div id="description-container">
-        <div class="goal">
-          <h4 id="current-goal">Sail the Length of Cayuga Lake</h4>
-          <p id="cayuga-description">The first goal in our series of long-term goals is to sail from the southern end to
-            the northern end of Cayuga Lake. Cayuga Lake is just under 40 miles long, and we would be able to test our
-            navigation algorithm on a larger scale. This is the goal that our team is currently working towards.</p>
+        <div class="picture-goals">
+          <div class="goal">
+            <img src="./images/index/cayuga-lake.jpg" alt="Cayuga Lake">
+            <h4 id="current-goal">Sail the Length of Cayuga Lake</h4>
+            <p id="cayuga-description">The first goal in our series of long-term goals is to sail from the southern end to
+              the northern end of Cayuga Lake. Cayuga Lake is just under 40 miles long, and we would be able to test our
+              navigation algorithm on a larger scale. This is the goal that our team is currently working towards.</p>
+          </div>
+          <div class="goal">
+            <img src="./images/index/boat-drone2.jpg" alt="Boat in Cayuga Lake">
+            <h4>Cross the Atlantic Ocean</h4>
+            <p id="ocean-description">We want to sail across the Atlantic Ocean from the east coast of the United States
+              to the west coast of Europe. We plan to sail from New York to Portugal to demonstrate our boat is robust
+              enough to survive ocean and weather conditions and our navigation algorithm can successfully navigate long
+              distances.</p>
+          </div>
         </div>
-        <div class="goal">
-          <h4>Cross the Atlantic Ocean</h4>
-          <p id="ocean-description">We want to sail across the Atlantic Ocean from the east coast of the United States
-            to the west coast of Europe. We plan to sail from New York to Portugal to demonstrate our boat is robust
-            enough to survive ocean and weather conditions and our navigation algorithm can successfully navigate long
-            distances.</p>
-        </div>
-        <div class="goal">
+        <!-- <div class="goal">
+          <h4>Empower Oceanic Research</h4>
+          <p>After we perfect or mechanical design and navigation algorithm, we hope to experiment with applications of
+            our boat for oceanic research using sensors and other scientific equipment. This would unlock a world of
+            research opportunities from monitoring weather trends to tracking whale migration patterns.</p>
+        </div> -->
+        <div class="goal-test">
           <h4>Empower Oceanic Research</h4>
           <p>After we perfect or mechanical design and navigation algorithm, we hope to experiment with applications of
             our boat for oceanic research using sensors and other scientific equipment. This would unlock a world of
@@ -163,19 +211,19 @@
           <div class="media-links footer-text-container">
             <!-- <a target="_blank" href="https://www.facebook.com/cusail/">
               Facebook
-              <img id="facebook-icon" class="footer-icon" src="./images/icons/facebook.svg" alt="Facebook Icon">
+              <img id="facebook-icon" class="footer-icon" src="../images/icons/facebook.svg" alt="Facebook Icon">
             </a> -->
             <a target="_blank" href="https://www.instagram.com/cusail/">
               Instagram
-              <img id="instagram-icon" class="footer-icon" src="./images/icons/instagram.svg" alt="Instagram Icon">
+              <img id="instagram-icon" class="footer-icon" src="../images/icons/instagram-white.png" alt="Instagram Icon">
             </a>
             <!-- <a target="_blank" href="https://www.linkedin.com/company/cusail/">
               LinkedIn
-              <img id="linkedin-icon" class="footer-icon" src="./images/icons/linkedin.svg" alt="LinkedIn Icon">
+              <img id="linkedin-icon" class="footer-icon" src="../images/icons/linkedin.svg" alt="LinkedIn Icon">
             </a> -->
             <a target="_blank" href="https://www.youtube.com/channel/UCYLMLKmgTJUMDos3ekQzPNg">
               Youtube
-              <img id="youtube-icon" class="footer-icon" src="./images/icons/youtube.svg" alt="Youtube Icon">
+              <img id="youtube-icon" class="footer-icon" src="../images/icons/youtube-white.png" alt="Youtube Icon">
             </a>
           </div>
         </div>
@@ -188,17 +236,113 @@
             <a target="_blank" href="mailto:cusail.sponsors@cornell.edu">cusail.sponsors@cornell.edu</a>
           </div>
         </div>
-
-        <div id="cornell-info">
-          <p>This organization is a registered student organization of Cornell University.</p>
-          <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">Equal Education and Employment</a>
-        </div>
       </div>
-      
       <a href="./index.html"><img id="footer-logo" src="./images/logos/footer-boat.png" alt="boat logo"></a>
       <img id="waves-img" src="./images/icons/waves.png" alt="waves">
     </nav>
   </footer>
 
+  <script>
+    const container = document.getElementById("events-container");
+    const cards = container.children;
+    const visibleCount = 3;
+    let currentIndex = visibleCount;
 
+    function getCardWidth() {
+      const card = container.querySelector(".event-card");
+      return card ? card.offsetWidth + 8 : 0; // 8px = gap
+    }
+
+    function setupInfiniteLoop() {
+      const cardsArray = Array.from(cards);
+
+      // Clone last 3 to start
+      for (
+        let i = cardsArray.length - visibleCount;
+        i < cardsArray.length;
+        i++
+      ) {
+        const clone = cardsArray[i].cloneNode(true);
+        container.prepend(clone);
+      }
+
+      // Clone first 3 to end
+      for (let i = 0; i < visibleCount; i++) {
+        const clone = cardsArray[i].cloneNode(true);
+        container.appendChild(clone);
+      }
+
+      // Adjust initial position
+      const cardWidth = getCardWidth();
+      container.style.transform = `translateX(-${
+        currentIndex * cardWidth
+      }px)`;
+    }
+
+    function slideTo(index) {
+      const cardWidth = getCardWidth();
+      container.style.transition = "transform 0.4s ease-in-out";
+      container.style.transform = `translateX(-${index * cardWidth}px)`;
+      currentIndex = index;
+    }
+
+    function handleRight() {
+      if (container.children.length === 0) return;
+      slideTo(currentIndex + 1);
+
+      container.addEventListener(
+        "transitionend",
+        () => {
+          if (currentIndex >= container.children.length - visibleCount) {
+            container.style.transition = "none";
+            currentIndex = visibleCount;
+            const cardWidth = getCardWidth();
+            container.style.transform = `translateX(-${
+              currentIndex * cardWidth
+            }px)`;
+          }
+        },
+        { once: true }
+      );
+    }
+
+    function handleLeft() {
+      if (container.children.length === 0) return;
+      slideTo(currentIndex - 1);
+
+      container.addEventListener(
+        "transitionend",
+        () => {
+          if (currentIndex < visibleCount) {
+            container.style.transition = "none";
+            currentIndex = container.children.length - 2 * visibleCount;
+            const cardWidth = getCardWidth();
+            container.style.transform = `translateX(-${
+              currentIndex * cardWidth
+            }px)`;
+          }
+        },
+        { once: true }
+      );
+    }
+
+    document
+      .querySelector(".carousel-button.right")
+      .addEventListener("click", handleRight);
+    document
+      .querySelector(".carousel-button.left")
+      .addEventListener("click", handleLeft);
+
+    window.addEventListener("load", () => {
+      setupInfiniteLoop();
+    });
+
+    window.addEventListener("resize", () => {
+      const cardWidth = getCardWidth();
+      container.style.transition = "none";
+      container.style.transform = `translateX(-${
+        currentIndex * cardWidth
+      }px)`;
+    });
+  </script>
 </body>
