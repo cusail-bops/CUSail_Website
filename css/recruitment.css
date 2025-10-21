@@ -231,19 +231,11 @@ iframe{
   margin-top: 3em;
 }
 
-#fall-timeline{
-  margin-top: 5%;
-  width: 60%;
-}
-
 @media (max-width: 700px){
 .question-container{
   height: 50px;
 }
 
-#fall-timeline{
-  width: 100%;
-}
 }
 
 @media (max-width: 600px){
