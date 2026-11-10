@@ -9,15 +9,11 @@ main{
 #team-hero{
   position: relative;
   width: 100%;
-  height: 70vh;
+  aspect-ratio: 6000 / 4000;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#bg-curve-wrap {
-  top: 70vh;
 }
 
 #who-we-are-description{
@@ -53,7 +49,7 @@ h3 {
   width: 100%;
   text-align: center;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.25em;
 }
 
 #subteam-links {
@@ -222,14 +218,6 @@ h4 {
 
   #who-we-are-description{
     width: 80%;
-  }
-
-  #team-hero{
-    height: 60vh;
-  }
-
-  #bg-curve-wrap {
-    top: 60vh;
   }
 
   #subteam-links{

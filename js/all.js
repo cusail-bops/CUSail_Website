@@ -75,17 +75,24 @@ if (mainEl) {
   })
 }
 
-// curvy background line: stretch it to full page height, drift it as the page scrolls
+// curvy background line: stretch it to full page height, starting right
+// below any page-specific hero element (e.g. Our Team's photo)
 const bgCurveWrap = document.getElementById('bg-curve-wrap')
 const bgCurve = document.getElementById('bg-curve')
+const curveHeroEl = document.getElementById('team-hero')
 if (bgCurveWrap) {
   const resizeCurve = () => {
+    // a hero's rendered height can change (e.g. it's aspect-ratio based, not
+    // a fixed vh value), so measure it fresh instead of hardcoding a guess
+    if (curveHeroEl) {
+      bgCurveWrap.style.top = `${curveHeroEl.offsetHeight}px`
+    }
     // zero out first so the curve's own box can't inflate the measurement
     // (an unset SVG height falls back to a huge intrinsic size derived from
     // its viewBox, which was puffing up scrollHeight on every page)
     bgCurveWrap.style.height = '0px'
     if (bgCurve) bgCurve.style.height = '0px'
-    // some pages start the curve below a hero photo/video via a CSS "top"
+    // some pages start the curve below a hero photo/video via a CSS/JS "top"
     // offset -- subtract it so the curve's bottom edge still lands exactly
     // at the page's true bottom instead of overshooting by that offset
     const topOffset = parseFloat(getComputedStyle(bgCurveWrap).top) || 0
@@ -93,13 +100,7 @@ if (bgCurveWrap) {
     bgCurveWrap.style.height = `${h}px`
     if (bgCurve) bgCurve.style.height = `${h}px`
   }
-  const driftCurve = () => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop
-    bgCurveWrap.style.transform = `translateX(-50%) translateY(${scrollTop * -0.08}px)`
-  }
   window.addEventListener('resize', resizeCurve)
   window.addEventListener('load', resizeCurve)
-  window.addEventListener('scroll', driftCurve, { passive: true })
   resizeCurve()
-  driftCurve()
 }
