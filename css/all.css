@@ -26,7 +26,7 @@ main {
   width: 100%;
   padding-bottom: 250px;
   margin-top: 8em;
-  cursor: url('../images/logos/boat-cursor.png') 16 16, auto;
+  cursor: url('../images/fleet/boat-cursor.png') 11 20, auto;
 }
 
 a {
