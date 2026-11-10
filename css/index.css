@@ -100,6 +100,14 @@ main {
   padding-left: 4%;
 }
 
+.letter-c {
+  color: var(--accent);
+}
+
+.letter-u {
+  color: var(--accent-red);
+}
+
 #title h2 {
   padding-left: 4%;
 }

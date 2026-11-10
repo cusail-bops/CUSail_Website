@@ -125,6 +125,14 @@ h3 {
   font-family: 'Open Sans';
 }
 
+.member-card-info h4 {
+  color: #ffffff;
+}
+
+.member-card-info h5 {
+  color: var(--accent-red);
+}
+
 p {
   font-family: 'Open Sans';
   font-size: 15px ;

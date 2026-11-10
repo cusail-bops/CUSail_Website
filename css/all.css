@@ -18,6 +18,7 @@ body {
   margin: 0em;
   min-height: 100vh;
   position: relative;
+  display: flow-root;
   color: var(--text);
   background-color: var(--bg);
 }
