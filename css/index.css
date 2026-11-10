@@ -127,6 +127,10 @@ main {
   text-align: center;
 }
 
+#metrics-container img {
+  filter: drop-shadow(0 0 10px rgba(101, 200, 208, 0.85));
+}
+
 #year-founded {
   width: 1.85em;
 }
@@ -144,7 +148,7 @@ main {
   margin-right: .5em;
   margin-bottom: 1em;
   border: 1px solid black;
-  box-shadow: 0 0 40px rgba(101, 200, 208, 0.15), 0 4px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(101, 200, 208, 0.85), 0 0 32px rgba(101, 200, 208, 0.55);
 }
 
 .section-separator {
