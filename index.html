@@ -57,6 +57,11 @@
         <h1>CUSail</h1>
         <h2>Cornell Autonomous Sailboat Project Team</h2>
       </div>
+      <button id="scroll-down-button" aria-label="Scroll to About Us">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
     </div>
     <div id="about-us-container">
       <h3 id="about-us-header" class="section-header">About Us</h3>
@@ -350,5 +355,13 @@
         currentIndex * cardWidth
       }px)`;
     });
+
+    document
+      .getElementById("scroll-down-button")
+      .addEventListener("click", () => {
+        document
+          .getElementById("about-us-container")
+          .scrollIntoView({ behavior: "smooth" });
+      });
   </script>
 </body>
