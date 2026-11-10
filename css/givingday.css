@@ -24,7 +24,7 @@
     margin-right: auto;
     margin-top: -11%;
     margin-bottom: -2%;
-    background-color: #323232;
+    background-color: var(--bg-raised);
     width: 400px;
     height: 15%;
     float: auto;
@@ -45,7 +45,7 @@
   
   .giving-day-button{
     color: black;
-    border: 2px solid #ffffff;    
+    border: 2px solid var(--text);
     padding: 15px 32px;
     text-align: center;
     margin: 0px 20px;
@@ -55,11 +55,11 @@
 
 
   .giving-day-button:hover {
-    background-color: #ffffff; 
+    background-color: var(--text);
   }
 
   .giving-day-button:hover .giving-day-button-text {
-      color: #323232; 
+      color: var(--bg);
   }
 
   .giving-day-button-text{
@@ -116,7 +116,7 @@
   }
 
   .giving-day-card{
-    background: #323232;
+    background: var(--bg-raised);
     box-shadow: 4px 6px 10px -2px rgba(0, 0, 0, 0.4);
     width: 35%;
     height: 70%;
