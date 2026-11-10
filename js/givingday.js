@@ -33,3 +33,10 @@ if (givingButton) {
 
   setTimeout(() => burstConfetti(givingButton), 1600)
 }
+
+const givingScrollDownButton = document.getElementById("scroll-down-button")
+if (givingScrollDownButton) {
+  givingScrollDownButton.addEventListener("click", () => {
+    document.getElementById("help-out-header").scrollIntoView({ behavior: "smooth" })
+  })
+}
