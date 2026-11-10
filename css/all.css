@@ -159,6 +159,11 @@ p {
   color: #0a0a0a !important;
 }
 
+.nav-cta:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
 /* desktop bottom navbar */
 #bottom-navbar {
   background-color: var(--bg);
