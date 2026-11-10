@@ -77,9 +77,17 @@ if (mainEl) {
 
 // curvy background line: stretch it to full page height, drift it as the page scrolls
 const bgCurveWrap = document.getElementById('bg-curve-wrap')
+const bgCurve = document.getElementById('bg-curve')
 if (bgCurveWrap) {
   const resizeCurve = () => {
-    bgCurveWrap.style.height = `${document.documentElement.scrollHeight}px`
+    // zero out first so the curve's own box can't inflate the measurement
+    // (an unset SVG height falls back to a huge intrinsic size derived from
+    // its viewBox, which was puffing up scrollHeight on every page)
+    bgCurveWrap.style.height = '0px'
+    if (bgCurve) bgCurve.style.height = '0px'
+    const h = document.documentElement.scrollHeight
+    bgCurveWrap.style.height = `${h}px`
+    if (bgCurve) bgCurve.style.height = `${h}px`
   }
   const driftCurve = () => {
     const scrollTop = window.scrollY || document.documentElement.scrollTop
