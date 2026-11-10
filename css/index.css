@@ -96,6 +96,7 @@ main {
   justify-content: center;
   color: var(--text);
   z-index: 12;
+  pointer-events: none;
   text-align: center;
 }
 
