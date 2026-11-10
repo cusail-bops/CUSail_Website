@@ -33,7 +33,7 @@ if (scrollBoat && scrollTrack) {
   }
 
   const positionBoat = (x, animate) => {
-    scrollBoat.style.transition = animate ? "left 0.6s ease" : "none"
+    scrollBoat.style.transition = animate ? "left 0.9s cubic-bezier(0.22, 1, 0.36, 1)" : "none"
     scrollBoat.style.left = `${x}px`
   }
 
