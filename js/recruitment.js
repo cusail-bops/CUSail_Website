@@ -8,23 +8,24 @@ questions.forEach((q, i) => {
   })
 })
 
-// rotating, peeking photo stack on the team photo
+// team photo carousel: front photo centered, the rest orbiting around it on
+// a circle; every tick the ring rotates one slot and a new photo takes front
 let stackPhotos = Array.from(document.querySelectorAll('.stack-photo'))
 if (stackPhotos.length > 0) {
-  const stackOffsets = [
-    { x: 0, y: 0, scale: 1, opacity: 1 },
-    { x: 28, y: 20, scale: 0.96, opacity: 0.9 },
-    { x: 56, y: 40, scale: 0.92, opacity: 0.7 },
-    { x: 84, y: 60, scale: 0.88, opacity: 0.45 },
-    { x: 112, y: 80, scale: 0.84, opacity: 0.22 },
+  const stackSlots = [
+    { angle: 0, radius: 0, scale: 1, opacity: 1 },
+    { angle: 45, radius: 95, scale: 0.8, opacity: 0.55 },
+    { angle: 135, radius: 95, scale: 0.8, opacity: 0.55 },
+    { angle: 225, radius: 95, scale: 0.8, opacity: 0.55 },
+    { angle: 315, radius: 95, scale: 0.8, opacity: 0.55 },
   ]
 
   const applyStack = () => {
     stackPhotos.forEach((img, i) => {
-      const o = stackOffsets[i] || stackOffsets[stackOffsets.length - 1]
-      img.style.zIndex = stackPhotos.length - i
-      img.style.transform = `translate(${o.x}px, ${o.y}px) scale(${o.scale})`
-      img.style.opacity = o.opacity
+      const s = stackSlots[i] || stackSlots[stackSlots.length - 1]
+      img.style.zIndex = s.radius === 0 ? stackPhotos.length + 1 : stackPhotos.length - i
+      img.style.transform = `rotate(${s.angle}deg) translate(0, -${s.radius}px) rotate(${-s.angle}deg) scale(${s.scale})`
+      img.style.opacity = s.opacity
     })
   }
 
