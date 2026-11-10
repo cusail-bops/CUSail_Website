@@ -62,3 +62,15 @@ if (scrollBoat && scrollTrack) {
   }
   window.addEventListener("load", settleBoat)
 }
+
+// force an immediate cursor repaint on page load -- Chromium sometimes keeps
+// showing the previous page's cursor bitmap over <main> until the mouse
+// physically moves, which made the custom boat cursor look stale/wrong
+// right after navigating between pages
+const mainEl = document.querySelector("main")
+if (mainEl) {
+  mainEl.style.cursor = "none"
+  requestAnimationFrame(() => {
+    mainEl.style.cursor = ""
+  })
+}
