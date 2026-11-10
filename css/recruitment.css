@@ -35,7 +35,7 @@ h4{
 }
 
 .application-button{
-  color: #1f2020;
+  color: var(--bg);
   background-color: rgb(236, 242, 255);
   padding: 15px 32px;
   text-align: center;
@@ -45,7 +45,7 @@ h4{
 }
 
 .application-button:hover{
-  background-color: #828385;
+  background-color: var(--accent-dim);
 }
 
 #upperclassmen{
@@ -57,16 +57,16 @@ h4{
 }
 
 #underclassmen{
-  border: solid #ffffff;
+  border: solid var(--text);
 }
 
 #underclassmen:hover{
-  background-color: #ffffff;
-  color: #323232;
+  background-color: var(--text);
+  color: var(--bg);
 }
 
 #underclassmen:hover .application-button-text {
-  color: #323232;
+  color: var(--bg);
 }
 
 .application-button-text{
@@ -75,7 +75,7 @@ h4{
 }
 
 .application-button-text:hover{
-  color: #323232;
+  color: var(--bg);
 }
 
 .information-sessions {
@@ -92,7 +92,7 @@ h4{
   width: 45%;
   padding: 2px;
   margin-top: -10%;
-  background-color: #323232;
+  background-color: var(--bg-raised);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   margin-left: 30%;
   margin-right: 30%; 
@@ -145,7 +145,7 @@ iframe{
 
 .question-container{
   height: 37px;
-  background: #323232;
+  background: var(--bg-raised);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   display: flex;
@@ -162,7 +162,7 @@ iframe{
 
 .arrow{
   /* font-size: 1rem; */
-  color: #ffffff;
+  color: var(--text);
   transition: transform 0.3s ease;
   font-size: 1.5rem;
   width: 8px;
@@ -185,7 +185,7 @@ iframe{
   margin: auto;
   margin-left: 1em;
   margin-right: 1em;
-  color: #ffffff;
+  color: var(--text);
 }
 
 .answer-container{
