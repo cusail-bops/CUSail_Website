@@ -52,4 +52,13 @@ if (scrollBoat && scrollTrack) {
 
   window.addEventListener("resize", () => positionBoat(boatXFor(activeLink), false))
   placeBoat()
+
+  // re-snap once the real webfont has finished loading/swapping in --
+  // nav link widths can shift after the fallback-font measurement above,
+  // which is why the boat sometimes landed off-center under the tab name
+  const settleBoat = () => positionBoat(boatXFor(activeLink), false)
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(settleBoat)
+  }
+  window.addEventListener("load", settleBoat)
 }
