@@ -103,14 +103,8 @@ main {
 #title h1 {
   padding-top: 0;
   padding-left: 0;
-}
-
-.letter-c {
-  color: var(--accent);
-}
-
-.letter-u {
-  color: var(--accent-red);
+  color: #ffffff;
+  -webkit-text-stroke: 2px var(--accent-red);
 }
 
 #title h2 {
