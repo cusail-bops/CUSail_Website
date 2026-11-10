@@ -93,11 +93,12 @@ main {
   position: absolute;
   color: var(--text);
   z-index: 12;
+  text-align: center;
 }
 
 #title h1 {
   padding-top: 10vh;
-  padding-left: 4%;
+  padding-left: 0;
 }
 
 .letter-c {
@@ -109,7 +110,7 @@ main {
 }
 
 #title h2 {
-  padding-left: 4%;
+  padding-left: 0;
 }
 
 #title img {
