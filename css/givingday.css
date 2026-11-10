@@ -114,7 +114,7 @@
 
   .giving-day-card{
     background: var(--bg-raised);
-    box-shadow: 4px 6px 10px -2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 40px rgba(101, 200, 208, 0.15), 4px 6px 10px -2px rgba(0, 0, 0, 0.4);
     width: 35%;
     height: 70%;
     margin: 1em;

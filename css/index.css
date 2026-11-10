@@ -61,7 +61,7 @@ main {
   padding-top: 0;
   padding-left: 0;
   color: #ffffff;
-  -webkit-text-stroke: 2px var(--accent);
+  -webkit-text-stroke: 2px #000000;
 }
 
 #title h2 {
@@ -171,7 +171,7 @@ main {
   flex: 0 0 312px; /* fixed width for clean slicing */
   height: 460px;
   background: var(--bg-raised);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 40px rgba(101, 200, 208, 0.15), 0 4px 16px rgba(0, 0, 0, 0.25);
   color: white;
 }
 
