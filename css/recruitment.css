@@ -14,14 +14,6 @@
   width: 75%;
 }
 
-#team-photo{
-  width: 75%;
-  margin: auto;
-  border: 1px solid black;
-  max-width: 1000px;
-  position: relative;
-}
-
 .application-container{
   text-align: center;
   width: 60%;

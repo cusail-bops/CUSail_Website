@@ -135,19 +135,3 @@
 // // })
 // // }
 
-// curvy background line: stretch it to full page height, drift it as the page scrolls
-const bgCurveWrap = document.getElementById('bg-curve-wrap')
-if (bgCurveWrap) {
-  const resizeCurve = () => {
-    bgCurveWrap.style.height = `${document.documentElement.scrollHeight}px`
-  }
-  const driftCurve = () => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop
-    bgCurveWrap.style.transform = `translateX(-50%) translateY(${scrollTop * -0.08}px)`
-  }
-  window.addEventListener('resize', resizeCurve)
-  window.addEventListener('load', resizeCurve)
-  window.addEventListener('scroll', driftCurve, { passive: true })
-  resizeCurve()
-  driftCurve()
-}

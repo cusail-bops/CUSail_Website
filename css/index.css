@@ -2,41 +2,6 @@ main {
   margin-top: 0em;
 }
 
-#bg-curve-wrap {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 200px;
-  transform: translateX(-50%);
-  pointer-events: none;
-  z-index: -1;
-  overflow: visible;
-  will-change: transform;
-}
-
-#bg-curve {
-  display: block;
-  width: 200px;
-}
-
-#bg-curve path {
-  fill: none;
-  stroke: var(--accent-dim);
-  stroke-width: 2.5;
-  opacity: 0.35;
-  vector-effect: non-scaling-stroke;
-}
-
-@media (max-width: 700px) {
-  #bg-curve-wrap {
-    width: 100px;
-  }
-
-  #bg-curve {
-    width: 100px;
-  }
-}
-
 #hero-image {
   position: relative;
   height: 100vh;
