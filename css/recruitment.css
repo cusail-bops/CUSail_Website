@@ -14,12 +14,23 @@
   width: 75%;
 }
 
-#team-photo{
-  width: 75%;
-  margin: auto;
-  border: 1px solid black;
-  max-width: 1000px;
+#team-photo-stack{
   position: relative;
+  width: 75%;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  margin: auto;
+}
+
+.stack-photo{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.7s ease, opacity 0.7s ease;
 }
 
 .application-container{
