@@ -131,6 +131,18 @@ p {
   padding-left: 15px;
 }
 
+#navbar-links-container a:focus,
+#mobile-navbar-links-container a:focus {
+  outline: none;
+}
+
+#navbar-links-container a:focus-visible,
+#mobile-navbar-links-container a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 /* highlight link of current page */
 .onThisPage {
   color: var(--accent);
@@ -159,7 +171,8 @@ p {
   color: #0a0a0a !important;
 }
 
-.nav-cta:focus-visible {
+#navbar-links-container a.nav-cta:focus-visible,
+#mobile-navbar-links-container a.nav-cta:focus-visible {
   outline: 2px solid var(--text);
   outline-offset: 2px;
 }
