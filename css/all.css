@@ -117,6 +117,27 @@ p {
   margin-top: .25em;
 }
 
+#scroll-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(101, 200, 208, 0.18);
+  pointer-events: none;
+}
+
+#scroll-boat {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+  will-change: left;
+}
+
 #navbar-links-container {
   float: right;
   margin-right: 3em;

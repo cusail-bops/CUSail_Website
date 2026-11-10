@@ -15,3 +15,19 @@ hamburgerIcon.addEventListener('click', function(event){
        mobileIsDisplayed = true;
    }
 })
+
+// move the little boat along the nav scroll-track as the page scrolls
+const scrollBoat = document.getElementById("scroll-boat")
+const scrollTrack = document.getElementById("scroll-track")
+if (scrollBoat && scrollTrack) {
+  const updateBoatPosition = () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight
+    const progress = docHeight > 0 ? Math.min(Math.max(scrollTop / docHeight, 0), 1) : 0
+    scrollBoat.style.left = `${progress * scrollTrack.clientWidth}px`
+  }
+  window.addEventListener("scroll", updateBoatPosition, { passive: true })
+  window.addEventListener("resize", updateBoatPosition)
+  window.addEventListener("load", updateBoatPosition)
+  updateBoatPosition()
+}
