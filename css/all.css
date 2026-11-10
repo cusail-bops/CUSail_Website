@@ -131,16 +131,10 @@ p {
   padding-left: 15px;
 }
 
-#navbar-links-container a:focus,
-#mobile-navbar-links-container a:focus {
-  outline: none;
-}
-
-#navbar-links-container a:focus-visible,
-#mobile-navbar-links-container a:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: 4px;
+#top-navbar a,
+#mobile-top-navbar a {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* highlight link of current page */
@@ -169,12 +163,6 @@ p {
 .nav-cta:hover {
   background-color: var(--accent-dim);
   color: #0a0a0a !important;
-}
-
-#navbar-links-container a.nav-cta:focus-visible,
-#mobile-navbar-links-container a.nav-cta:focus-visible {
-  outline: 2px solid var(--text);
-  outline-offset: 2px;
 }
 
 /* desktop bottom navbar */
