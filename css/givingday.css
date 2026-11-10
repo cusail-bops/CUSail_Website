@@ -40,6 +40,7 @@
 
   #giving-day-header {
     margin-top: 0.5em;
+    font-size: 54px;
   }
 
   #giving-day-button-section{
@@ -50,41 +51,28 @@
     margin: auto;
     justify-content: center;
   }
-  
+
   .giving-day-button{
     position: relative;
     overflow: hidden;
     color: black;
     border: 2px solid var(--text);
-    padding: 15px 32px;
+    padding: 22px 46px;
     text-align: center;
     margin: 0px 20px;
     transition-duration: 0.3s;
     border-radius: 50px;
-    animation: buttonCelebratePop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 1.6s both;
+    background: linear-gradient(to right, var(--accent-red) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation:
+      sweepFillButton 1s ease-out 0.6s forwards,
+      buttonCelebratePop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 1.6s both;
   }
 
-  .giving-day-button::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 300px;
-    margin: -150px 0 0 -150px;
-    background: var(--accent-red);
-    border-radius: 50%;
-    transform: scale(0.055);
-    animation: fillButtonDot 1s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
-    z-index: 0;
-  }
-
-  @keyframes fillButtonDot {
-    from {
-      transform: scale(0.055);
-    }
+  @keyframes sweepFillButton {
     to {
-      transform: scale(1);
+      background-position: 0% 0;
     }
   }
 
@@ -111,12 +99,33 @@
   .giving-day-button-text{
     position: relative;
     z-index: 1;
-    font-size: 20px;
+    font-size: 26px;
     color: white;
   }
 
   #help-out-header{
     margin-top: 5%;
+  }
+
+  .confetti-piece {
+    position: fixed;
+    width: 8px;
+    height: 14px;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    animation: confettiBurst 1s ease-out forwards;
+  }
+
+  @keyframes confettiBurst {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) rotate(var(--rot));
+      opacity: 0;
+    }
   }
 
   /* .intro{

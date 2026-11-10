@@ -75,6 +75,7 @@ h3 {
   flex-direction: horizontal;
   justify-content: center;
   gap: 5em;
+  margin-top: 3em;
   margin-bottom: 5%;
 }
 

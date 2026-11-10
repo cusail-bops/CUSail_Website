@@ -61,6 +61,16 @@ if (scrollBoat && scrollTrack) {
     document.fonts.ready.then(settleBoat)
   }
   window.addEventListener("load", settleBoat)
+
+  // belt-and-suspenders: a ResizeObserver on the nav links container
+  // catches ANY layout shift that changes tab widths (a late font swap
+  // the above two hooks missed, zoom, etc.) and re-snaps the boat
+  // without animating, so misalignment can't linger regardless of cause
+  const navbarLinksContainer = document.getElementById("navbar-links-container")
+  if (window.ResizeObserver && navbarLinksContainer) {
+    const navResizeObserver = new ResizeObserver(() => positionBoat(boatXFor(activeLink), false))
+    navResizeObserver.observe(navbarLinksContainer)
+  }
 }
 
 // force an immediate cursor repaint on page load -- Chromium sometimes keeps
