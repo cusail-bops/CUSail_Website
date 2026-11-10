@@ -146,6 +146,19 @@ p {
   color: var(--accent);
 }
 
+.nav-cta {
+  background-color: var(--accent);
+  color: #0a0a0a !important;
+  border-radius: 100px;
+  padding: 6px 16px !important;
+  font-weight: 700;
+}
+
+.nav-cta:hover {
+  background-color: var(--accent-dim);
+  color: #0a0a0a !important;
+}
+
 /* desktop bottom navbar */
 #bottom-navbar {
   background-color: var(--bg);
