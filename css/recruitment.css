@@ -15,10 +15,6 @@
 }
 
 #join-cusail-header {
-  color: var(--accent-red);
-}
-
-#recruitment-about-header {
   color: var(--accent);
 }
 
@@ -57,27 +53,6 @@
     opacity: 0.45;
     box-shadow: 0 0 0 7px rgba(101, 200, 208, 0);
   }
-}
-
-#application-info-slides {
-  margin-top: 4em;
-}
-
-.iframe-container {
-  max-width: 1000px;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  margin: 2rem auto 4em auto;
-  position: relative;
-}
-
-.iframe-container iframe{
-  width: 100%;
-  height: 100%;
-  border: none;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .questions-section{

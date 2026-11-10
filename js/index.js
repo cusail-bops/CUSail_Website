@@ -135,3 +135,32 @@
 // // })
 // // }
 
+
+const countElements = Array.from(document.querySelectorAll('[data-count-to]'))
+if (countElements.length) {
+  const animateCount = (el) => {
+    const target = parseInt(el.getAttribute('data-count-to'), 10)
+    const duration = 1500
+    const start = performance.now()
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1)
+      const eased = 1 - Math.pow(1 - progress, 3)
+      el.textContent = Math.round(eased * target)
+      if (progress < 1) {
+        requestAnimationFrame(step)
+      }
+    }
+    requestAnimationFrame(step)
+  }
+
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target)
+        countObserver.unobserve(entry.target)
+      }
+    })
+  }, { threshold: 0.5 })
+
+  countElements.forEach((el) => countObserver.observe(el))
+}
