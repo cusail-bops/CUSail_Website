@@ -84,4 +84,9 @@ if (scrollDownButton) {
   scrollDownButton.addEventListener("click", () => {
     document.getElementById("our-team-header").scrollIntoView({ behavior: "smooth" })
   })
+  const updateScrollButtonVisibility = () => {
+    scrollDownButton.classList.toggle("is-hidden", window.scrollY > 80)
+  }
+  window.addEventListener("scroll", updateScrollButtonVisibility)
+  updateScrollButtonVisibility()
 }

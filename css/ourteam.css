@@ -56,6 +56,17 @@ h3 {
   scroll-margin-top: 55px;
 }
 
+#team-hero #scroll-down-button {
+  position: fixed;
+  bottom: 2.5em;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+
+#team-hero #scroll-down-button.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 #subteam-links {
   display: flex;
   flex-direction: horizontal;
