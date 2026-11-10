@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title> CUSail | Giving Day </title>
+  <title> CUSail | Crowdfunding </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
   <script defer src="../js/all.js"></script>
   <link rel="stylesheet" href="../css/givingday.css">
   <link rel="stylesheet" href="../css/animations.css">
-  <script defer src="../js/gallery.js"></script>
+  <script defer src="../js/givingday.js"></script>
 </head>
 
 <body>
@@ -29,9 +29,12 @@
         <a class="notOnThisPage" href="./sponsorship.html">Sponsorship</a>
         <a class="notOnThisPage" href="./gallery.html">Gallery</a>
         <a class="notOnThisPage" href="./contact.html">Contact Us</a>
-        <a class="onThisPage" href="./givingday.html">Giving Day</a>
+        <a class="onThisPage" href="./givingday.html">Crowdfunding</a>
       </div>
       <img id="hamburger-icon" class="navhidden" src="../images/icons/Hamburger.svg" alt="hamburger icon">
+      <div id="scroll-track">
+        <div id="scroll-boat"><img src="../images/logos/boat.png" alt="" aria-hidden="true"></div>
+      </div>
     </nav>
     <nav class="navhidden" id="mobile-top-navbar">
       <div id="mobile-navbar-links-container">
@@ -42,21 +45,28 @@
         <a class="notOnThisPage" href="./sponsorship.html">Sponsorship</a>
         <a class="notOnThisPage" href="./gallery.html">Gallery</a>
         <a class="notOnThisPage" href="./contact.html">Contact Us</a>
-        <a class="onThisPage" href="./givingday.html">Giving Day</a>
+        <a class="onThisPage" href="./givingday.html">Crowdfunding</a>
       </div>
     </nav>
   </header>
-  <div id="hero-image"></div>
-  <div class="donation-container">
-    <h3 id="giving-day-header" class="section-header">Giving Day</h3>
+  <main>
+  <div id="hero-image">
+    <div class="donation-container">
+      <h3 id="giving-day-header" class="section-header">Crowdfunding</h3>
 
-    <div id="giving-day-button-section">
-      <a href="https://givingday.cornell.edu/campaigns/cu-sail"
-        class="giving-day-button" id="giving-button"><span class="giving-day-button-text">Donation Page
-          </span></a>
+      <div id="giving-day-button-section">
+        <a href="https://crowdfunding.cornell.edu/project/50973"
+          class="giving-day-button" id="giving-button"><span class="giving-day-button-text">Donation Page
+            </span></a>
+      </div>
     </div>
+    <button id="scroll-down-button" aria-label="Scroll to Help Us Out">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
   </div>
-  
+
   <h3 id="help-out-header" class="section-header"> Help Us Out!</h3>
   <p class="section-description">Designing a world-class autonomous sailboat is fun, but challenging work.  </p>
   <p class="section-description">Consider donating to help us strive further.  </p>
@@ -74,7 +84,7 @@
       <img class="i1" src="../images/GivingDay/p4.JPG">
       <p class="intro">
         This year, however, we hope to not only come first in competition, but we’re aiming even higher: We want to
-        autonomously sail across Cayuga Lake. Your help can make our dreams possible!
+        autonomously sail across the Atlantic Ocean. Your help can make our dreams possible!
       </p>
     </div>
   </div>
@@ -96,47 +106,23 @@
   <h3 id="goals-header" class="section-header">Donation Goals</h3>
   <div id="goaldescription">
 
-    <h4 class="goal">$3500: Sail Across Cayuga Lake</h4>
-    <p class="description">Our top goal for giving day is to get the equipment out boat needs to make it across Cayuga Lake
-      fully autonomously.</p>
-    <h4 class="goal">$2000: Send 10 Team Members to our Regatta</h4>
-    <p class="description">Our boat will compete in the Sailboat International Robotic Sailing Regatta on Lake Attitash in
-      Amesbury, Massachusetts
-      this summer. We are hoping to have a strong showing of 10 members at the event but currently do not have the funds
-      to provide their and the boats
-      transportation and housing.
-    </p>
-    <h4 class="goal">$1500: Purchase an Anemometer</h4>
-    <p class="description">The anemometer is used to measure wind direction and speed as well as the acceleration of our
-      boat. Our current anemometer
-      is outdated and purchasing a new one would greatly improve our boats performance and allow us to explore new
-      oppurtunities with how we adjust
-      our sail given our acceleration. Improving our anemometer would be a large step towards sailing across Cayuga
-      Lake.
-    </p>
-    <h4 class="goal">$1000: Procure Carbon Fiber</h4>
-    <p class="description">We use carbon fiber to renforce the deck and hull of our sailboat. Through the course of sailing
-      these parts of our endure
-      a lot of wear and tear and must be replaced. Having a supply of carbon fiber is essential to keeping our boat on
-      the water and improving.
-    </p>
-    <h4 class="goal">$250: Fund our Lake Testing</h4>
-    <p class="description">We want to have 5 lake testing days this spring once it gets a bit warmer. This is when we can
-      see how the changes we have made
-      so far this year are working and are an important part of our boat's improvement. We provide transportation, food
-      (pizza), and water to our team
-      during these 5 hour long test days.
-    </p>
-    <h4 class="goal">$100: Host a Godfather Screening</h4>
-    <p class="description">In honor of our boat the Codfather, we want to host a campus wide screening of the Godfather to
-      raise awareness and bring
-      publicity to our team.
-    </p>
-    <h4 class="goal">$50: Buy Lifejackets</h4>
-    <p class="description">We want to get more high quality life jackets so that we can pursue more rigorous lake testing.
-      Also we prefer it when our
-      team members don't drown.
-    </p>
+    <h4 class="goal">$5: Cellular Telemetry</h4>
+    <p class="description">A $5 donation allows us to connect our boat to cellular service for telemetry and command sending</p>
+
+    <h4 class="goal">$10: Boat Harnessing & Wiring</h4>
+    <p class="description">A $10 donation helps cover the cost of all the harnessing and wiring within our boat</p>
+
+    <h4 class="goal">$20: Boat Computer & Batteries</h4>
+    <p class="description">A $20 donation covers the cost of our boat computer and batteries</p>
+
+    <h4 class="goal">$50: Sail & Ballast Hardware</h4>
+    <p class="description">A $50 donation covers the cost of our boat's hardware, such as our sail and ballast</p>
+
+    <h4 class="goal">$100: Send a Member to Competition</h4>
+    <p class="description">A $100 donation can fund the travel, food, and lodging expenses to send a member to our annual competition!</p>
+
+    <h4 class="goal">$500: GPS & IMU Sensors</h4>
+    <p class="description">A $500 donation will allow us to buy top-of-the-line GPS and IMU sensors, which will improve our autonomous algorithms!</p>
   </div>
   </main>
   <footer>

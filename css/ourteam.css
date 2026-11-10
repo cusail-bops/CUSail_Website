@@ -2,13 +2,30 @@
   margin-bottom: .5em;
 }
 
+main{
+  margin-top: 0em;
+}
+
+#team-hero{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 6000 / 4000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #who-we-are-description{
+  position: relative;
+  z-index: 2;
   width: 50%;
-  text-align: left;
+  text-align: center;
   margin: auto;
   font-family: 'Poppins';
   font-size: 30px;
   font-weight: 400;
+  color: var(--text);
 }
 
 #sub-heading, #mech-team, #nav-team, #bops-team{
@@ -19,20 +36,38 @@
 }
 
 #full-team-photo{
-  width: 50%;
-  max-width: 1000px;
-  display: block;
-  margin: auto;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 3%;
-  border: 1px solid black;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: 1;
 }
 
 h3 {
   width: 100%;
   text-align: center;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+#our-team-header {
+  scroll-margin-top: 55px;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#team-hero #scroll-down-button {
+  position: fixed;
+  bottom: 2.5em;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+
+#team-hero #scroll-down-button.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 #subteam-links {
@@ -40,6 +75,7 @@ h3 {
   flex-direction: horizontal;
   justify-content: center;
   gap: 5em;
+  margin-top: 3em;
   margin-bottom: 5%;
 }
 
@@ -47,7 +83,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(101, 200, 208, 0.15), 0 4px 16px rgba(0, 0, 0, 0.3);
   width: 330px;
   height: 250px;
   transition: transform 0.3s ease; 
@@ -62,6 +98,34 @@ h3 {
   font-size: 32px;
   text-align: center;
   padding-top:.75em;
+  color: var(--accent-red);
+}
+
+.subteam-icon {
+  width: 84px;
+  height: 84px;
+  background-color: var(--accent-red);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+#navigation-icon {
+  -webkit-mask-image: url(../images/icons/navigation.png);
+  mask-image: url(../images/icons/navigation.png);
+}
+
+#mechanical-icon {
+  -webkit-mask-image: url(../images/icons/mech.png);
+  mask-image: url(../images/icons/mech.png);
+}
+
+#business-icon {
+  -webkit-mask-image: url(../images/icons/bops.png);
+  mask-image: url(../images/icons/bops.png);
 }
 
 .subteam-header{
@@ -84,8 +148,8 @@ h3 {
 }
 
 .member-card{
-  background: #323232;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+  background: var(--bg-raised);
+  box-shadow: 0 0 30px rgba(101, 200, 208, 0.12), 2px 5px 10px rgba(0, 0, 0, 0.25);
   width: 285px;
   height: 425px;
   margin: 1em;
@@ -125,6 +189,14 @@ h3 {
   font-family: 'Open Sans';
 }
 
+.member-card-info h4 {
+  color: #ffffff;
+}
+
+.member-card-info h5 {
+  color: var(--accent-red);
+}
+
 p {
   font-family: 'Open Sans';
   font-size: 15px ;
@@ -141,6 +213,7 @@ h4 {
   width: 100%;
   height: 285px;
   object-fit: cover;
+  box-shadow: 0 0 10px rgba(101, 200, 208, 0.85), 0 0 32px rgba(101, 200, 208, 0.55);
 }
 
 .logo-container{
@@ -195,13 +268,16 @@ h4 {
     width: 80%;
   }
 
-  #full-team-photo{
-    width: 80%;
-  }
-
   #subteam-links{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 0 1.5em;
+  }
 
+  .subteam-card .inner-card{
+    width: 100%;
+    max-width: 330px;
   }
 }

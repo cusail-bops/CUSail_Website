@@ -9,7 +9,7 @@
   width: 20%;
   margin: .5em;
   align-self: center;
-  box-shadow: 1px 1px 2px 0 rgb(59, 59, 59);
+  box-shadow: 0 0 30px rgba(101, 200, 208, 0.15), 1px 1px 2px 0 rgb(59, 59, 59);
   box-sizing: border-box;
 }
 
