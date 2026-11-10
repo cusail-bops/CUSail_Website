@@ -14,9 +14,12 @@
   width: 75%;
 }
 
-#join-cusail-header,
-#recruitment-about-header {
+#join-cusail-header {
   color: var(--accent-red);
+}
+
+#recruitment-about-header {
+  color: var(--accent);
 }
 
 .application-container{
