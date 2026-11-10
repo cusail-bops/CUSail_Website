@@ -94,6 +94,34 @@ h3 {
   font-size: 32px;
   text-align: center;
   padding-top:.75em;
+  color: var(--accent-red);
+}
+
+.subteam-icon {
+  width: 84px;
+  height: 84px;
+  background-color: var(--accent-red);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+#navigation-icon {
+  -webkit-mask-image: url(../images/icons/navigation.png);
+  mask-image: url(../images/icons/navigation.png);
+}
+
+#mechanical-icon {
+  -webkit-mask-image: url(../images/icons/mech.png);
+  mask-image: url(../images/icons/mech.png);
+}
+
+#business-icon {
+  -webkit-mask-image: url(../images/icons/bops.png);
+  mask-image: url(../images/icons/bops.png);
 }
 
 .subteam-header{

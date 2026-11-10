@@ -143,6 +143,18 @@ main {
   box-shadow: 0 0 10px rgba(179, 27, 27, 0.85), 0 0 32px rgba(179, 27, 27, 0.55);
 }
 
+#metrics-container #members-metric h2,
+#metrics-container #members-metric p,
+#metrics-container #yearfounded-metric h2,
+#metrics-container #yearfounded-metric p {
+  color: var(--accent);
+}
+
+#metrics-container #majors-metric h2,
+#metrics-container #majors-metric p {
+  color: var(--accent-red);
+}
+
 #year-founded {
   width: 1.85em;
 }
