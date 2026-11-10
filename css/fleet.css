@@ -65,9 +65,9 @@ main{
 
 
 .feature-items:hover {
-    background-color: #F9F9F9;
+    background-color: var(--bg-raised);
     border-radius: 5px;
-    color: #323232;
+    color: var(--text);
 }
 
 .feature-items:hover  p, .feature-items:hover h5 {
