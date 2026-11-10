@@ -78,3 +78,10 @@
 //     if (y > 10000 && y < 10600){displayCards(38, 39)}
 //   })
 // }
+
+const scrollDownButton = document.getElementById("scroll-down-button")
+if (scrollDownButton) {
+  scrollDownButton.addEventListener("click", () => {
+    document.getElementById("our-team-header").scrollIntoView({ behavior: "smooth" })
+  })
+}

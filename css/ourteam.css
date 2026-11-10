@@ -52,6 +52,10 @@ h3 {
   margin-bottom: 0.25em;
 }
 
+#our-team-header {
+  scroll-margin-top: 55px;
+}
+
 #subteam-links {
   display: flex;
   flex-direction: horizontal;

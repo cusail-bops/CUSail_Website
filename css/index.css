@@ -26,49 +26,6 @@ main {
   z-index: 2;
 }
 
-#scroll-down-button {
-  position: absolute;
-  bottom: 2.5em;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  width: 48px;
-  height: 48px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border: 2px solid var(--text);
-  border-radius: 50%;
-  color: var(--text);
-  cursor: pointer;
-  animation: scrollBounce 2s ease-in-out infinite;
-  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
-}
-
-#scroll-down-button:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  background-color: rgba(101, 200, 208, 0.1);
-}
-
-#scroll-down-button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-}
-
-@keyframes scrollBounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  40% {
-    transform: translateX(-50%) translateY(-10px);
-  }
-  60% {
-    transform: translateX(-50%) translateY(-5px);
-  }
-}
 
 #videoDiv2 {
   width: 100%;
