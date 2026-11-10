@@ -54,6 +54,9 @@ h3 {
 
 #our-team-header {
   scroll-margin-top: 55px;
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #team-hero #scroll-down-button {
