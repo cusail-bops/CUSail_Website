@@ -10,9 +10,9 @@
 #sponsor-hero::before {
   content: "";
   position: absolute;
-  inset: -2em 0;
+  inset: -6em 0;
   background: url(../images/fleet/blur.png) center / contain no-repeat;
-  opacity: 0.4;
+  opacity: 0.75;
   z-index: -1;
   pointer-events: none;
 }

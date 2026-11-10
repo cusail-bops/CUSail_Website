@@ -61,19 +61,11 @@ main {
   padding-top: 0;
   padding-left: 0;
   color: #ffffff;
-  text-shadow:
-    -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-     0px -2px 0 #000,
-     0px  2px 0 #000,
-    -2px  0px 0 #000,
-     2px  0px 0 #000;
 }
 
 #title h2 {
   padding-left: 0;
+  color: #000000;
 }
 
 #title img {
