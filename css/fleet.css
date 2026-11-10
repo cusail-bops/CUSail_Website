@@ -67,6 +67,7 @@ main{
 .feature-items:hover {
     background-color: var(--bg-raised);
     border-radius: 5px;
+    box-shadow: 0 0 30px rgba(101, 200, 208, 0.15);
     color: var(--text);
 }
 
