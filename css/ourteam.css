@@ -271,6 +271,13 @@ h4 {
   #subteam-links{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 0 1.5em;
+  }
 
+  .subteam-card .inner-card{
+    width: 100%;
+    max-width: 330px;
   }
 }
