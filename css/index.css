@@ -61,11 +61,27 @@ main {
   padding-top: 0;
   padding-left: 0;
   color: #ffffff;
+  background: linear-gradient(to right, var(--accent) 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: sweepFill 1.8s ease-out 0.4s 1 forwards;
+}
+
+@keyframes sweepFill {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0% 0;
+  }
 }
 
 #title h2 {
   padding-left: 0;
-  color: #000000;
+  color: #ffffff;
 }
 
 #title img {
