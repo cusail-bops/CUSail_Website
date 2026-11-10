@@ -1,3 +1,12 @@
+:root {
+  --bg: #0a0a0a;
+  --bg-raised: #161616;
+  --text: #f2f2f2;
+  --text-muted: #9a9a9a;
+  --accent: #65C8D0;
+  --accent-dim: #3d7a80;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,9 +18,8 @@ body {
   min-height: 100vh;
   position: relative;
   padding-bottom: 50px;
-  /* background-image: url('../images/BackgroundGrid.svg'); */
-  color: #FFFFFF;
-  background-color: #323232;
+  color: var(--text);
+  background-color: var(--bg);
 }
 
 main {
@@ -21,7 +29,7 @@ main {
 }
 
 a {
-  color: #65C8D0;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -38,7 +46,7 @@ p {
 h1 {
   font-family: 'Open Sans';
   font-weight: 800;
-  font-size: 110px;
+  font-size: 140px;
   margin: 0em;
 }
 
@@ -92,11 +100,11 @@ p {
 
 /* desktop top navbar */
 #top-navbar {
-  background-color: #292828;
+  background-color: var(--bg-raised);
   height: 55px;
   border-style: solid;
-  border-width: .015px 0px .05px 0px;
-  border-color: #323232;
+  border-width: 0px 0px 1px 0px;
+  border-color: rgba(255, 255, 255, 0.08);
   position: fixed;
   top: 0;
   width: 100%;
@@ -125,30 +133,29 @@ p {
 
 /* highlight link of current page */
 .onThisPage {
-  color: #65C8D0;
+  color: var(--accent);
   font-weight: 700;
 }
 
 .notOnThisPage {
-  color: #FFFFFF;
-  /* color: #777; */
+  color: var(--text);
   font-weight: 700;
 }
 
 .notOnThisPage:hover {
-  color: #65C8D0;
+  color: var(--accent);
 }
 
 /* desktop bottom navbar */
 #bottom-navbar {
-  background-color: #323232;
+  background-color: var(--bg);
   height: 225px;
   width: 100%;
   position: absolute;
   bottom: 0;
   border-style: solid;
-  border-width: .1px 0px .1px 0px;
-  border-color: #323232;
+  border-width: 1px 0px 0px 0px;
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 #bottom-navbar a:hover {
@@ -274,7 +281,7 @@ p {
 
   /* mobile top navbar */
   #mobile-top-navbar {
-    background-color:  #323232;
+    background-color: var(--bg-raised);
     height: 350px;
   }
 
