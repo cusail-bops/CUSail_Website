@@ -85,7 +85,11 @@ if (bgCurveWrap) {
     // its viewBox, which was puffing up scrollHeight on every page)
     bgCurveWrap.style.height = '0px'
     if (bgCurve) bgCurve.style.height = '0px'
-    const h = document.documentElement.scrollHeight
+    // some pages start the curve below a hero photo/video via a CSS "top"
+    // offset -- subtract it so the curve's bottom edge still lands exactly
+    // at the page's true bottom instead of overshooting by that offset
+    const topOffset = parseFloat(getComputedStyle(bgCurveWrap).top) || 0
+    const h = document.documentElement.scrollHeight - topOffset
     bgCurveWrap.style.height = `${h}px`
     if (bgCurve) bgCurve.style.height = `${h}px`
   }
