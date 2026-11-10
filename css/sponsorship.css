@@ -148,6 +148,10 @@ button:hover{
   width: 20em;
   align-self: center;
   margin: 1em;
+  padding: 1em 1.5em;
+  background-color: var(--text);
+  border-radius: 12px;
+  box-sizing: border-box;
 }
 
 #leddartech{

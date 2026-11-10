@@ -2,13 +2,14 @@
 """Resize+recompress images for the CUSail site: max 900px long side, JPEG q82."""
 import sys
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageOps
 
 MAX_DIM = 900
 JPEG_QUALITY = 82
 
 def process_one(src: Path, dest: Path):
     img = Image.open(src)
+    img = ImageOps.exif_transpose(img)
     img = img.convert("RGB") if img.mode in ("RGBA", "P") else img
     w, h = img.size
     scale = MAX_DIM / max(w, h)
