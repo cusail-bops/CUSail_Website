@@ -8,23 +8,6 @@ main {
   height: 100vh;
 }
 
-#videoDiv2 {
-  width: 100%;
-  margin: auto;
-  display: block;
-  position: relative;
-  background-color: black;
-  background-size: cover;
-  top: 55px
-}
-
-/* This has been changed */
-#video2 {
-  width: 100%;
-  height: auto;
-  opacity: 0.8
-}
-
 #title {
   width: 100%;
   margin: auto;
@@ -276,20 +259,6 @@ main {
   #title h2 {
     padding: 0;
     font-size: 20px;
-  }
-
-  #videoDiv2 {
-    background: url(../images/index/drone-boat.jpg);
-    background-size: cover;
-    height: 100vh;
-    z-index: 10;
-    top: 0;
-  }
-
-  #video2 {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
   }
 
 }
