@@ -10,8 +10,9 @@
   }
 
   #hero-image{
-    background: url(../images/GivingDay/p2.jpeg);
+    background: url(../images/index/crowdfunding.JPG);
     background-size: cover;
+    background-position: center;
     height: 70vh;
   }
 
@@ -26,8 +27,15 @@
     margin-bottom: -2%;
     background-color: #323232;
     width: 400px;
-    height: 15%;
+    height: auto;
+    padding-bottom: 1.25em;
     float: auto;
+  }
+
+  #campaign-end {
+    text-align: center;
+    margin: 0.25em 1em 0;
+    font-size: 16px;
   }
 
   #giving-day-header {
