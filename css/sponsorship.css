@@ -107,7 +107,8 @@ button:hover{
 
 .text-box{
   background-size: cover;
-  height: 135px;
+  height: auto;
+  min-height: 135px;
   width: 250px;
   padding-top: 1em;
   padding-left: 1em;
