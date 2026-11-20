@@ -245,105 +245,107 @@
 
   <script>
     const container = document.getElementById("events-container");
-    const cards = container.children;
-    const visibleCount = 3;
+    const viewport = document.querySelector(".carousel-viewport");
+    const originals = Array.from(container.children).map((card) => card.cloneNode(true));
+    let visibleCount = 3;
     let currentIndex = visibleCount;
 
-    function getCardWidth() {
-      const card = container.querySelector(".event-card");
-      return card ? card.offsetWidth + 8 : 0; // 8px = gap
+    function getVisibleCount() {
+      const width = window.innerWidth;
+      if (width <= 760) return 1;
+      if (width <= 1040) return 2;
+      return 3;
     }
 
-    function setupInfiniteLoop() {
-      const cardsArray = Array.from(cards);
+    function getGap() {
+      const styles = getComputedStyle(container);
+      const gap = parseFloat(styles.columnGap || styles.gap);
+      return Number.isFinite(gap) ? gap : 0;
+    }
 
-      // Clone last 3 to start
-      for (
-        let i = cardsArray.length - visibleCount;
-        i < cardsArray.length;
-        i++
-      ) {
-        const clone = cardsArray[i].cloneNode(true);
-        container.prepend(clone);
+    function getStep() {
+      const card = container.querySelector(".event-card");
+      return card ? card.getBoundingClientRect().width + getGap() : 0;
+    }
+
+    function sizeCards() {
+      const cards = container.querySelectorAll(".event-card");
+      if (visibleCount >= 3) {
+        cards.forEach((card) => {
+          card.style.flexBasis = "";
+        });
+        return;
       }
 
-      // Clone first 3 to end
-      for (let i = 0; i < visibleCount; i++) {
-        const clone = cardsArray[i].cloneNode(true);
-        container.appendChild(clone);
+      const width = (viewport.clientWidth - getGap() * (visibleCount - 1)) / visibleCount;
+      cards.forEach((card) => {
+        card.style.flexBasis = width + "px";
+      });
+    }
+
+    function jumpTo(index) {
+      currentIndex = index;
+      container.style.transition = "none";
+      container.style.transform = "translateX(-" + (currentIndex * getStep()) + "px)";
+    }
+
+    function render(resetIndex) {
+      const nextCount = getVisibleCount();
+      const expectedLength = originals.length + nextCount * 2;
+      const shouldRebuild = nextCount !== visibleCount || container.children.length !== expectedLength;
+      visibleCount = nextCount;
+
+      if (shouldRebuild) {
+        const clonesBefore = originals.slice(-visibleCount).map((node) => node.cloneNode(true));
+        const realCards = originals.map((node) => node.cloneNode(true));
+        const clonesAfter = originals.slice(0, visibleCount).map((node) => node.cloneNode(true));
+        container.replaceChildren();
+        clonesBefore.concat(realCards, clonesAfter).forEach((node) => container.appendChild(node));
+        if (resetIndex || currentIndex < visibleCount || currentIndex >= visibleCount + originals.length) {
+          currentIndex = visibleCount;
+        }
       }
 
-      // Adjust initial position
-      const cardWidth = getCardWidth();
-      container.style.transform = `translateX(-${
-        currentIndex * cardWidth
-      }px)`;
+      sizeCards();
+      jumpTo(currentIndex);
     }
 
     function slideTo(index) {
-      const cardWidth = getCardWidth();
-      container.style.transition = "transform 0.4s ease-in-out";
-      container.style.transform = `translateX(-${index * cardWidth}px)`;
       currentIndex = index;
+      container.style.transition = "transform 0.4s ease-in-out";
+      container.style.transform = "translateX(-" + (currentIndex * getStep()) + "px)";
+    }
+
+    function snapIfNeeded() {
+      const realCount = originals.length;
+      if (currentIndex >= visibleCount + realCount) {
+        jumpTo(currentIndex - realCount);
+      } else if (currentIndex < visibleCount) {
+        jumpTo(currentIndex + realCount);
+      }
     }
 
     function handleRight() {
-      if (container.children.length === 0) return;
+      if (!container.children.length) return;
       slideTo(currentIndex + 1);
-
-      container.addEventListener(
-        "transitionend",
-        () => {
-          if (currentIndex >= container.children.length - visibleCount) {
-            container.style.transition = "none";
-            currentIndex = visibleCount;
-            const cardWidth = getCardWidth();
-            container.style.transform = `translateX(-${
-              currentIndex * cardWidth
-            }px)`;
-          }
-        },
-        { once: true }
-      );
+      container.addEventListener("transitionend", snapIfNeeded, { once: true });
     }
 
     function handleLeft() {
-      if (container.children.length === 0) return;
+      if (!container.children.length) return;
       slideTo(currentIndex - 1);
-
-      container.addEventListener(
-        "transitionend",
-        () => {
-          if (currentIndex < visibleCount) {
-            container.style.transition = "none";
-            currentIndex = container.children.length - 2 * visibleCount;
-            const cardWidth = getCardWidth();
-            container.style.transform = `translateX(-${
-              currentIndex * cardWidth
-            }px)`;
-          }
-        },
-        { once: true }
-      );
+      container.addEventListener("transitionend", snapIfNeeded, { once: true });
     }
 
-    document
-      .querySelector(".carousel-button.right")
-      .addEventListener("click", handleRight);
-    document
-      .querySelector(".carousel-button.left")
-      .addEventListener("click", handleLeft);
+    document.querySelector(".carousel-button.right").addEventListener("click", handleRight);
+    document.querySelector(".carousel-button.left").addEventListener("click", handleLeft);
 
     window.addEventListener("load", () => {
-      setupInfiniteLoop();
+      render(true);
     });
 
     window.addEventListener("resize", () => {
-      const cardWidth = getCardWidth();
-      container.style.transition = "none";
-      container.style.transform = `translateX(-${
-        currentIndex * cardWidth
-      }px)`;
+      render(false);
     });
   </script>
 </body>
