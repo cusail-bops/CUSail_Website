@@ -35,6 +35,9 @@ h4{
 }
 
 .application-button{
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 100%;
   color: #1f2020;
   background-color: rgb(236, 242, 255);
   padding: 15px 32px;
@@ -42,6 +45,7 @@ h4{
   margin: 0px 20%;
   transition-duration: 0.2s;
   border-radius: 50px;
+  line-height: 1.3;
 }
 
 .application-button:hover{
@@ -239,6 +243,11 @@ iframe{
   margin-top: 30px;
 }
 
+#text-video-section .application-button{
+  margin-left: 0;
+  margin-right: 0;
+}
+
 #application-button-section{
   flex-direction: column;
 }
@@ -248,35 +257,74 @@ iframe{
 }
 
 @media (max-width: 700px){
-.question-container{
-  height: 50px;
-}
+  .question-container{
+    height: auto;
+    min-height: 48px;
+    padding: 0.75em 0.65em;
+  }
 
+  .question-container p{
+    min-width: 0;
+    flex: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.35;
+    text-align: left;
+  }
+
+  #application-button-section{
+    min-width: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  #team-photo-container{
+    margin-bottom: 1.5rem;
+  }
+
+  #coffee-chat{
+    margin-top: 0.5rem;
+    line-height: 1.3;
+  }
+
+  #text-video-section{
+    width: 92%;
+  }
+
+  .slidedown{
+    max-height: 800px;
+  }
 }
 
 @media (max-width: 600px){
 
-#team-photo-container{
-  margin-bottom: 10em;
-}
+  #team-photo-container{
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
 
-#text-video-section{
-  width: 80%;
-}
+  #team-photo{
+    width: min(92%, 420px);
+  }
 
-#team-photo-container{
-  width: 100%;
-}
+  #text-video-section{
+    width: 92%;
+  }
 
-.application-container{
-  width: 90%;
-}
+  .application-container{
+    width: min(92%, 420px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
 
 }
 
 @media (max-width: 350px){
-.question-container{
-  height: 75px;
-}
+  .question-container{
+    height: auto;
+  }
 }
 
