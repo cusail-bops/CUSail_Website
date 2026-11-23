@@ -124,8 +124,23 @@ h3 {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+@media (hover: hover) and (pointer: fine) {
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+.flip-card.is-flipped .flip-card-inner {
   transform: rotateY(180deg);
+}
+
+.flip-card:focus-visible {
+  outline: 2px solid #65C8D0;
+  outline-offset: 3px;
+}
+
+.tap-hint {
+  display: none;
 }
 
 .flip-card-front, .flip-card-back {
@@ -198,28 +213,139 @@ h4 {
   visibility: visible;
 }
 
+@media (max-width: 1200px) {
+  #subteam-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 2rem;
+    margin-bottom: 2.5rem;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+  }
+
+  .subteam-card {
+    flex: 1 1 200px;
+    max-width: 280px;
+  }
+
+  .subteam-card .inner-card {
+    width: 100%;
+    height: 168px;
+    box-sizing: border-box;
+  }
+
+  .subteam-card p {
+    font-size: 22px;
+    padding-top: 0.45em;
+  }
+}
+
+@media (max-width: 760px) {
+  #subteam-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .subteam-card {
+    flex: none;
+    width: min(280px, 100%);
+  }
+}
+
 @media (max-width: 620px){
 
   main{
     margin-bottom: 8em;
   }
 
-  .subteam-description{
-    width: 75%;
-    padding-top: 10px;
-  }
-
   #who-we-are-description{
-    width: 80%;
+    width: 90%;
+    font-size: 22px;
+    line-height: 1.45;
+    text-align: center;
   }
 
   .team-photo-wrap{
-    width: 80%;
+    width: 92%;
+    margin-bottom: 1.25rem;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .subteam-description,
+  #sub-heading,
+  #mech-team,
+  #nav-team,
+  #bops-team {
+    width: 90%;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 0;
   }
 
   #subteam-links{
-    display: flex;
-    flex-direction: column;
+    padding: 0 1rem;
+  }
 
+  .subteam-card .inner-card {
+    height: 148px;
+  }
+
+  .subteam-card p {
+    font-size: 20px;
+  }
+
+  .card-container {
+    margin: 1.25rem 0.75rem 2rem;
+    gap: 1.25rem;
+  }
+
+  .member-card {
+    width: min(320px, 100%);
+    height: auto;
+    margin: 0;
+  }
+
+  .flip-card {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .headshot {
+    height: 100%;
+  }
+
+  .member-card-info {
+    height: auto;
+    padding: 12px 14px 10px;
+    box-sizing: border-box;
+  }
+
+  .logo-container {
+    height: auto;
+    margin-top: 0.35rem;
+  }
+
+  .linkedin-logo {
+    width: 28px;
+    height: 28px;
+    margin: 0;
+  }
+}
+
+@media (hover: none) {
+  .tap-hint {
+    display: block;
+    width: 90%;
+    margin: 0 auto 0.25rem;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.75);
   }
 }

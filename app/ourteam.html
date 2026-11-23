@@ -86,6 +86,7 @@
 
     <p id="sub-heading" class="subteam-description">Our <b>Leads</b> ensure the team is fully prepared for the
       competition each June and making progress on the long term goals.</p>
+    <p class="tap-hint">Tap a photo to read a bio.</p>
     <div class="card-container">
 
       <div class="member-card">
@@ -150,7 +151,7 @@
             <div class="flip-card-back">
               <div>
                 <p>Jason is from Flushing, New York. He enjoys baking and cooking in his free time,
-                  always open to exploring new recipes. Outside of CUSail, I'm a part of Cornell Lion Dance. </p>
+                  always open to exploring new recipes. Outside of CUSail, he's a part of Cornell Lion Dance. </p>
               </div>
             </div>
           </div>
@@ -1449,6 +1450,31 @@
       <img id="waves-img" src="../images/icons/waves.png" alt="waves">
     </nav>
   </footer>
+  <script>
+    const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    if (!canHover) {
+      document.querySelectorAll(".flip-card").forEach((card) => {
+        const name = card.parentElement.querySelector("h4")?.textContent.trim() || "team member";
+        card.tabIndex = 0;
+        card.setAttribute("role", "button");
+        card.setAttribute("aria-label", "Show bio for " + name);
+        card.setAttribute("aria-pressed", "false");
+
+        const toggle = () => {
+          const flipped = card.classList.toggle("is-flipped");
+          card.setAttribute("aria-pressed", flipped ? "true" : "false");
+        };
+
+        card.addEventListener("click", toggle);
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            toggle();
+          }
+        });
+      });
+    }
+  </script>
 </body>
 
 </html>
